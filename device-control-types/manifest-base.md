@@ -1,4 +1,4 @@
-# Manifest Base URI
+# Manifest Base URL
 
 - **Name:** urn:x-nmos:control:manifest-base/v1.0
   - **Description:** Use of this control type provides redundant locators for sender transport files (also known as manifests).
@@ -14,13 +14,13 @@ Other URL properties in the model were introduced as arrays, including node 'ser
 
 This extension affects the interpretation of the sender 'manifest_href'.
 
-## Using the Manifest Base URI
+## Using the Manifest Base URL
 
 The following actions SHOULD be taken by an IS-04 API client in order to construct redundant URLs to retrieve a sender's transport file.
 
 1. Identify the associated device resource via the sender 'device_id'.
-2. From that device resource, retrieve the list of Manifest Base URIs, that is the 'href' values of the controls of the above type.
-3. Use the first value to relativize the sender 'manifest_href'.
+2. From that device resource, retrieve the list of Manifest Base URLs, that is the 'href' values of the controls of the above type.
+3. Establish which base URL value to use to relativize the sender 'manifest_href'.
 4. Construct additional URLs by combining each advertised base URL with the relative URL.
 
 API clients which do not implement this extension simply use the 'manifest_href' directly.
@@ -66,13 +66,21 @@ Implementations are free to use the NMOS sender and/or device identifiers somewh
 - http://172.29.80.65/x-manufacturer/senders/d7aa5a30-681d-4e72-92fb-f0ba0f6f4c3e/stream.sdp
 - http://172.29.180.65/x-manufacturer/senders/d7aa5a30-681d-4e72-92fb-f0ba0f6f4c3e/stream.sdp
 
-### Implementation Notes
+### Establishing the Base URL and Resolving the Relative URL
 
-It is expected that all web-development platforms provide construction of absolute URLs from a base URL and a relative URL.
+[RFC 3986](https://tools.ietf.org/html/rfc3986) specifies the Uniform Resource Identifier (URI) Generic Syntax.
+
+RFC 3986 [Section 5.2](https://tools.ietf.org/html/rfc3986#section-5.2) describes how relative URIs are resolved once a base URI is established.
+It is expected that all web-development platforms provide the construction of absolute URLs from a base URL and a relative URL.
 
 The "relativize" operation seems to be widely available too (e.g. [URI.js / relativeTo](http://medialize.github.io/URI.js/docs.html#relativeto))
 or there are public domain algorithms available for this (such as [getRelativeURL.js](https://gist.github.com/m93a/2553dd45de35aa05d0233c6f9dc04bc2)).
-In many cases identifying a simple string prefix match is sufficient (and using URLs for which this is the case is RECOMMENDED).
+
+Using normalized URLs is strongly RECOMMENDED, in order that simple string comparison ([Section 6.2.1](https://tools.ietf.org/html/rfc3986#section-6.2.1))
+between the 'manifest_href' value and the base URL values is sufficient, to identify the appropriate one, and to generate the relative URL.
+The resulting relative URL SHOULD NOT have the scheme or authority component defined, and the path component SHOULD NOT contain any ".." segments.
+API clients MAY choose not to implement normalization as described in [Section 6.2.2](https://tools.ietf.org/html/rfc3986#section-6.2.2)
+and subsequent sections, and to simply use the 'manifest_href' directly if they cannot establish which base URL value to use.
 
 ## Rationale
 
