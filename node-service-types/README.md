@@ -18,5 +18,5 @@ This Node Service Types parameter repository contains values that may be used to
   - **Proponent:** [AMWA-TV](https://github.com/AMWA-TV)
 - **Name:** urn:x-ipstudio:service:mdnsbridge/v1.0
   - **Description:** This API provides a zeroconf/HTTP bridge for NMOS service types.
-  - **Proponent:** [BBC](https://github.com/bbc) (contact @simonrankine)
+  - **Proponent:** [BBC](https://github.com/bbc) (contact [@simonrankine](https://github.com/simonrankine))
   - **Specification:** [NMOS MDNS Bridge](https://github.com/bbc/nmos-mdns-bridge)

@@ -19,5 +19,5 @@ This Device Control Types parameter repository contains values that may be used 
   - **Specification:** [AMWA NMOS Device Connection Management (IS-05) v1.0](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.0.x)
 - **Name:** urn:x-nmos:control:manifest-base/v1.0
   - **Description:** Use of this control type provides redundant locators for sender transport files (also known as manifests).
-  - **Proponent:** [Sony](https://github.com/sony) (contact @garethsb-sony)
+  - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb-sony](https://github.com/garethsb-sony))
   - **Specification:** [Manifest Base URL](manifest-base.md)
