@@ -4,11 +4,11 @@
   - **Description:** Use of this control type provides redundant locators for sender transport files (also known as manifests).
   - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb-sony](https://github.com/garethsb-sony))
 
-This document describes a purely behavioural extension to IS-04 to provide redundant locators for an (IS-04) NMOS sender's transport file, using the above device control 'type'.
+This document describes a purely behavioural extension to AMWA IS-04 to provide redundant locators for an NMOS sender's transport file, using the above device control 'type'.
 
 ## Introduction
 
-Since IS-04 v1.0, updates to the specification have endeavoured to facilitate redundant access to a node and its resources.
+Since AMWA IS-04 v1.0, updates to the specification have endeavoured to facilitate redundant access to a node and its resources.
 For example, the v1.1 update added the 'api' property to the node resource with an array of 'endpoints', deprecating the 'href' property.
 Other URL properties in the model were introduced as arrays, including node 'services' and device 'controls'.
 
@@ -89,7 +89,7 @@ Several other possible solutions to the single point of failure presented by 'ma
 1. **Use a DNS name in the 'manifest_href' property**  
    This approach would provide redundancy by indirection in the style of DNS load balancing.
    However, this would require independent configuration of a separate system and goes against the explicit redundancy now familiar in the rest of IS-04.
-2. **Use the Connection API /transportfile endpoint**  
+2. **Use the AMWA IS-05 Connection API /transportfile endpoint**  
    This has several issues:
    - It would effectively mandate IS-04 Nodes also implement IS-05.
      While implementation of both specifications is attractive in many cases, it makes incremental adoption of the NMOS specifications harder;
