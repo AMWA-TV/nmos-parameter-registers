@@ -1,8 +1,8 @@
-# AMWA NMOS Parameters Register
+# AMWA NMOS Parameter Registers
 
 The [AMWA Networked Media Open Specifications](https://github.com/AMWA-TV/nmos) are intended to support extensibility, using constants for parameter values that identify additional operational constraints or capabilities. In order to promote interoperability, the parameter registers in this repository contain entries for constants used, for example, with the [AMWA IS-04 NMOS Discovery and Registration Specification](https://github.com/AMWA-TV/nmos-discovery-registration) and the [AMWA IS-05 NMOS Device Connection Management Specification](https://github.com/AMWA-TV/nmos-device-connection-management). These specifications do not require values to be included in this repository but doing so allows common definitions to be shared and deployed more easily.
 
-Parameter values recorded herein may be applicable to one or more of the AMWA NMOS specifications, and to one or more versions of each specification. The Parameters Register as a whole is not versioned, and is expected to be updated as needed to promote interoperability.
+Parameter values recorded herein may be applicable to one or more of the AMWA NMOS specifications, and to one or more versions of each specification. The Parameter Registers are not themselves versioned, and are expected to be updated as needed to promote interoperability.
 
 ## Parameter Registers
 
@@ -32,7 +32,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
 NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED",
 "MAY", and "OPTIONAL" in the defined criteria are to be interpreted as
 described in [RFC2119](https://tools.ietf.org/html/rfc2119).
-
 Note that the force of these words is confined to the scope of this repository.
 
 A typical example of specific criteria is found in the [NMOS Node Service Types](node-service-types/) parameter register. AMWA IS-04, since v1.1, allows a list of 'services' to be advertised on the node resource in the Node API. Each advertised service has a 'type' property whose value is a Uniform Resource Name (URN), as well as its 'href' property which provides a URL to reach the service. The Node Service Types parameter register provides implementers with the means to discover and disclose service type names (URNs) that are in use.
@@ -45,6 +44,6 @@ So, for example, its criteria includes the following statements:
 > - In the case of substantial revision to the service specification, a new service type name MUST be defined. Using versioned names is therefore RECOMMENDED.
 > - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](README.md#general-procedures-and-criteria).
 
-However, modifications to a parameter register may be more closely controlled than this. For example, in the case of the [NMOS Formats](formats/) parameter register, values SHALL only be added by a revision to an AMWA NMOS specification.
+However, modifications to a parameter register may be more closely controlled than this. For example, in the case of the [NMOS Formats](formats/) parameter register, values are defined only by revisions of AMWA IS-04 itself.
 
 For more information about AMWA, NMOS and the Networked Media Incubator, please refer to http://amwa.tv/.
