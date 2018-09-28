@@ -14,11 +14,7 @@ Parameter register contains values that may be used to identify resources relati
 
 ## Values
 
-- **Name:** urn:x-nmos:grouphint:group
+- **Name:** urn:x-nmos:grouphint
   - **Description:** OPTIONAL group tag that can be used in a JSON description for an NMOS resource.
-  - **Proponent:** [Grass Valley](https://github.com/AMWA-TV/nmos-parameter-registers) (contact [@sagrondin](https://github.com/sagrondin))
-  - **Specification:** [Group Hints Rules](group-hints-rules.md)
-- **Name:** urn:x-nmos:grouphint:role
-  - **Description:**  OPTIONAL role tag that can be used in a JSON description for an NMOS resource.
-  - **Proponent:** [Grass Valley](https://github.com/AMWA-TV/nmos-parameter-registers) (contact [@sagrondin](https://github.com/sagrondin))
+  - **Proponent:** [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
   - **Specification:** [Group Hints Rules](group-hints-rules.md)
