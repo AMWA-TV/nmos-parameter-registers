@@ -13,7 +13,7 @@ The following parameter registers are maintained:
 - [NMOS Formats](formats/)
 - [NMOS Transports](transports/)
 - [NMOS Device Types](device-types/)
-- [NMOS Group Hints](group-hints/)
+- [NMOS Tags](tags/)
 
 Each parameter register defines specific criteria and considerations for when and how values can be included, and identifies the procedures for revision and deprecation of entries.
 

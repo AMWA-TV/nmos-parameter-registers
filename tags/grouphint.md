@@ -1,10 +1,10 @@
-# Group hints tags
+# Group hint tags
 
 - **Name:**  urn:x-nmos:grouphint
   - **Description:** Group description tag that can be used in a JSON description for an NMOS resource.
   - **Proponent:**  [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
 
-This document describes a purely behavioural extension to AMWA IS-04 to help control systems identify relationships between NMOS resources listed in a registry or node.
+This document describes an application of the AMWA IS-04 “tags” structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
 
 ## Introduction
 
