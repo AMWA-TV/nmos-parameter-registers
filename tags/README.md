@@ -13,7 +13,7 @@ Parameter register contains values that may be used to expose some reserved tags
 
 ## Values
 
-- **Name:** urn:x-nmos:grouphint
-  - **Description:** OPTIONAL group tag that can be used in a JSON description for an NMOS resource.
+- **Name:** urn:x-nmos:grouphint/v1.0
+  - **Description:** Group tag that can be used in a JSON description for an NMOS resource v1.0.
   - **Proponent:** [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
   - **Specification:** [Group Hint tags](grouphint.md)
