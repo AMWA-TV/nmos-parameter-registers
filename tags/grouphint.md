@@ -4,11 +4,12 @@
   - **Description:** Group description tag that can be used in a JSON description for an NMOS resource v1.0.
   - **Proponent:**  [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
 
-This document describes an application of the AMWA IS-04 “tags” structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
+This document describes an application of the AMWA IS-04 â€œtagsâ€ structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
+
 
 ## Introduction
 
-Since AMWA IS-04 v1.0, NMOS resources contain a “tags” field that has not been used in a standard way.  However when the control systems are trying to control multiple NMOS devices there is no defined way of representing related resources together.
+Since AMWA IS-04 v1.0, NMOS resources contain a â€œtagsâ€ field that has not been used in a standard way.  However when the control systems are trying to control multiple NMOS devices there is no defined way of representing related resources together.
 
 The initial goal of the group hints definition is to have an easy way of identifying natural groups of sources and destinations.  This document defines a clear way of identifying natural groups in the NMOS registry but it does not limit usage of these tags to natural grouping.  The only requirement is to respect the rules for natural grouping.
 
@@ -27,7 +28,7 @@ Audio 2 group : "Camera"role: "Audio 2"
 
 ## Group hint URN
 
-The group hint urn ‘urn:x-nmos:grouphint’ defines a set of groups to which a resource belongs to.
+The group hint urn â€˜urn:x-nmos:grouphintâ€™ defines a set of groups to which a resource belongs to.
 
 ```json
 "tags": {
@@ -71,19 +72,19 @@ The colon character is therefore reserved and MUST not be used in any of the par
 
 Natural groups applies only to NMOS senders and receivers
 
--	If “urn:x-nmos:grouphint” tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.
--	Senders and Receivers may both contain matching values of the “urn:x-nmos:x-nmos:grouphint” tag, indicating that the group has elements in both signal flow directions.
+-	If â€œurn:x-nmos:grouphintâ€ tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.
+-	Senders and Receivers may both contain matching values of the â€œurn:x-nmos:x-nmos:grouphintâ€ tag, indicating that the group has elements in both signal flow directions.
 
 
 ### Examples
 
 #### 1. Playout server sender with 1 video 2 audio
-- Video 1 group : “Playout Master”
-- Video 1 role: “Primary”
-- Audio 1 group : “Playout Master”
-- Audio 1 role: “Audio 1 – 2ch”
-- Audio 2 group : “Playout Master”
-- Audio 2 role: “Audio 2 – 5.1ch”
+- Video 1 group : â€œPlayout Masterâ€
+- Video 1 role: â€œPrimaryâ€
+- Audio 1 group : â€œPlayout Masterâ€
+- Audio 1 role: â€œAudio 1 â€“ 2châ€
+- Audio 2 group : â€œPlayout Masterâ€
+- Audio 2 role: â€œAudio 2 â€“ 5.1châ€
 
 JSON tags for Video 1 sender
 ```json
@@ -98,7 +99,7 @@ JSON tags for Audio 1 sender
 ```json
 "tags": {
    "urn:x-nmos:grouphint/v1.0": [
-      "Playout Master:Audio 1 – 2ch"
+      "Playout Master:Audio 1 â€“ 2ch"
    ]
 }
 ```
@@ -107,18 +108,18 @@ JSON tags for Audio 2 sender
 ```json
 "tags": {
    "urn:x-nmos:grouphint/v1.0": [
-      "Playout Master:Audio 2 – 5.1ch"
+      "Playout Master:Audio 2 â€“ 5.1ch"
    ]
 }
 ```
 
 #### 2. MultiviewerPIP, receiver with 1 video 4 audio
-- Video 1 group : “MV PIP 1”
-- Video 1 role: “Video”
-- Audio 1 group : “MV PIP 1”
-- Audio 1 role: “Audio 1”
-- Audio 2 group : “MV PIP 1”
-- Audio 2 role: “Audio 2”
+- Video 1 group : â€œMV PIP 1â€
+- Video 1 role: â€œVideoâ€
+- Audio 1 group : â€œMV PIP 1â€
+- Audio 1 role: â€œAudio 1â€
+- Audio 2 group : â€œMV PIP 1â€
+- Audio 2 role: â€œAudio 2â€
 
 
 JSON tags for Video 1 receiver
