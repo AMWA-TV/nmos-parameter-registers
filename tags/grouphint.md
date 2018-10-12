@@ -2,7 +2,7 @@
 
 - **Name:**  urn:x-nmos:grouphint/v1.0
   - **Description:** Group description tag that can be used in a JSON description for an NMOS resource v1.0.
-  - **Proponent:**  [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
+  - **Proponent:** [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
 
 This document describes an application of the AMWA IS-04 “tags” structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
 
@@ -23,7 +23,7 @@ Video group : "Camera" role: "Primary"
 
 Audio 1 group : "Camera" role: "Audio 1"
 
-Audio 2 group : "Camera"role: "Audio 2" 
+Audio 2 group : "Camera" role: "Audio 2" 
 
 
 ## Group hint URN
@@ -171,69 +171,69 @@ This defines an extra membership to tally group valid for the entire node scope.
 
 ```json
 {
-"format": "urn:x-nmos:format:video",
-"caps": {},
-"device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
-"transport": "urn:x-nmos:transport:rtp.mcast",
-"interface_bindings": [],
-"subscription": {
-   "sender_id": null,
-   "active": true
+   "format": "urn:x-nmos:format:video",
+   "caps": {},
+   "device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
+   "transport": "urn:x-nmos:transport:rtp.mcast",
+   "interface_bindings": [],
+   "subscription": {
+      "sender_id": null,
+      "active": true
    },
-"id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
-"version": "1525121173:668000000",
-"label": "GV[KIP_AMWA] Video 1",
-"description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID VIDEO index:1",
-"tags": {
-    "urn:x-nmos:grouphint/v1.0": [
-            "IP input 1:Video 1"
-     ],
-}
+   "id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
+   "version": "1525121173:668000000",
+   "label": "GV[KIP_AMWA] Video 1",
+   "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID VIDEO index:1",
+   "tags": {
+      "urn:x-nmos:grouphint/v1.0": [
+         "IP input 1:Video 1"
+      ]
+   }
 }
 ```
 
 ```json
 {
-"format": "urn:x-nmos:format:audio",
-"caps": {},
-"device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
-"transport": "urn:x-nmos:transport:rtp.mcast",
-"interface_bindings": [],
-"subscription": {
-   "sender_id": null,
-   "active": true
+   "format": "urn:x-nmos:format:audio",
+   "caps": {},
+   "device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
+   "transport": "urn:x-nmos:transport:rtp.mcast",
+   "interface_bindings": [],
+   "subscription": {
+      "sender_id": null,
+      "active": true
    },
-"id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
-"version": "1525121173:668000000",
-"label": "GV[KIP_AMWA] Audio 1",
-"description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:1",
-"tags": {
-    "urn:x-nmos:grouphint/v1.0": [
-            "IP input 1:Audio 1"
-     ]
-}
+   "id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
+   "version": "1525121173:668000000",
+   "label": "GV[KIP_AMWA] Audio 1",
+   "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:1",
+   "tags": {
+      "urn:x-nmos:grouphint/v1.0": [
+         "IP input 1:Audio 1"
+      ]
+   }
 }
 ```
 
 ```json
 {
-"format": "urn:x-nmos:format:audio",
-"caps": {},
-"device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
-"transport": "urn:x-nmos:transport:rtp.mcast",
-"interface_bindings": [],
-"subscription": {
-   "sender_id": null,
-   "active": true
+   "format": "urn:x-nmos:format:audio",
+   "caps": {},
+   "device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
+   "transport": "urn:x-nmos:transport:rtp.mcast",
+   "interface_bindings": [],
+   "subscription": {
+      "sender_id": null,
+      "active": true
    },
-"id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
-"version": "1525121173:668000000",
-"label": "GV[KIP_AMWA] Audio 2",
-"description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:2",
-"tags": {
-    "urn:x-nmos:grouphint/v1.0": [
-            "IP input 1:Audio 2"
-     ]
-}
+   "id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
+   "version": "1525121173:668000000",
+   "label": "GV[KIP_AMWA] Audio 2",
+   "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:2",
+   "tags": {
+      "urn:x-nmos:grouphint/v1.0": [
+         "IP input 1:Audio 2"
+      ]
+   }
 }
 ```
