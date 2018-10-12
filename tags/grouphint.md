@@ -2,13 +2,14 @@
 
 - **Name:**  urn:x-nmos:grouphint/v1.0
   - **Description:** Group description tag that can be used in a JSON description for an NMOS resource v1.0.
-  - **Proponent:**  [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
+  - **Proponent:** [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
 
-This document describes an application of the AMWA IS-04 ìtagsî structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
+This document describes an application of the AMWA IS-04 ‚Äútags‚Äù structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
+
 
 ## Introduction
 
-Since AMWA IS-04 v1.0, NMOS resources contain a ìtagsî field that has not been used in a standard way.  However when the control systems are trying to control multiple NMOS devices there is no defined way of representing related resources together.
+Since AMWA IS-04 v1.0, NMOS resources contain a ‚Äútags‚Äù field that has not been used in a standard way.  However when the control systems are trying to control multiple NMOS devices there is no defined way of representing related resources together.
 
 The initial goal of the group hints definition is to have an easy way of identifying natural groups of sources and destinations.  This document defines a clear way of identifying natural groups in the NMOS registry but it does not limit usage of these tags to natural grouping.  The only requirement is to respect the rules for natural grouping.
 
@@ -22,12 +23,12 @@ Video group : "Camera" role: "Primary"
 
 Audio 1 group : "Camera" role: "Audio 1"
 
-Audio 2 group : "Camera"role: "Audio 2" 
+Audio 2 group : "Camera" role: "Audio 2" 
 
 
 ## Group hint URN
 
-The group hint urn ëurn:x-nmos:grouphintí defines a set of groups to which a resource belongs to.
+The group hint urn ‚Äòurn:x-nmos:grouphint‚Äô defines a set of groups to which a resource belongs to.
 
 ```json
 "tags": {
@@ -71,19 +72,19 @@ The colon character is therefore reserved and MUST not be used in any of the par
 
 Natural groups applies only to NMOS senders and receivers
 
--	If ìurn:x-nmos:grouphintî tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.
--	Senders and Receivers may both contain matching values of the ìurn:x-nmos:x-nmos:grouphintî tag, indicating that the group has elements in both signal flow directions.
+-	If ‚Äúurn:x-nmos:grouphint‚Äù tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.
+-	Senders and Receivers may both contain matching values of the ‚Äúurn:x-nmos:x-nmos:grouphint‚Äù tag, indicating that the group has elements in both signal flow directions.
 
 
 ### Examples
 
 #### 1. Playout server sender with 1 video 2 audio
-- Video 1 group : ìPlayout Masterî
-- Video 1 role: ìPrimaryî
-- Audio 1 group : ìPlayout Masterî
-- Audio 1 role: ìAudio 1 ñ 2chî
-- Audio 2 group : ìPlayout Masterî
-- Audio 2 role: ìAudio 2 ñ 5.1chî
+- Video 1 group : ‚ÄúPlayout Master‚Äù
+- Video 1 role: ‚ÄúPrimary‚Äù
+- Audio 1 group : ‚ÄúPlayout Master‚Äù
+- Audio 1 role: ‚ÄúAudio 1 ‚Äì 2ch‚Äù
+- Audio 2 group : ‚ÄúPlayout Master‚Äù
+- Audio 2 role: ‚ÄúAudio 2 ‚Äì 5.1ch‚Äù
 
 JSON tags for Video 1 sender
 ```json
@@ -98,7 +99,7 @@ JSON tags for Audio 1 sender
 ```json
 "tags": {
    "urn:x-nmos:grouphint/v1.0": [
-      "Playout Master:Audio 1 ñ 2ch"
+      "Playout Master:Audio 1 ‚Äì 2ch"
    ]
 }
 ```
@@ -107,18 +108,18 @@ JSON tags for Audio 2 sender
 ```json
 "tags": {
    "urn:x-nmos:grouphint/v1.0": [
-      "Playout Master:Audio 2 ñ 5.1ch"
+      "Playout Master:Audio 2 ‚Äì 5.1ch"
    ]
 }
 ```
 
 #### 2. MultiviewerPIP, receiver with 1 video 4 audio
-- Video 1 group : ìMV PIP 1î
-- Video 1 role: ìVideoî
-- Audio 1 group : ìMV PIP 1î
-- Audio 1 role: ìAudio 1î
-- Audio 2 group : ìMV PIP 1î
-- Audio 2 role: ìAudio 2î
+- Video 1 group : ‚ÄúMV PIP 1‚Äù
+- Video 1 role: ‚ÄúVideo‚Äù
+- Audio 1 group : ‚ÄúMV PIP 1‚Äù
+- Audio 1 role: ‚ÄúAudio 1‚Äù
+- Audio 2 group : ‚ÄúMV PIP 1‚Äù
+- Audio 2 role: ‚ÄúAudio 2‚Äù
 
 
 JSON tags for Video 1 receiver
@@ -170,69 +171,69 @@ This defines an extra membership to tally group valid for the entire node scope.
 
 ```json
 {
-"format": "urn:x-nmos:format:video",
-"caps": {},
-"device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
-"transport": "urn:x-nmos:transport:rtp.mcast",
-"interface_bindings": [],
-"subscription": {
-   "sender_id": null,
-   "active": true
+   "format": "urn:x-nmos:format:video",
+   "caps": {},
+   "device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
+   "transport": "urn:x-nmos:transport:rtp.mcast",
+   "interface_bindings": [],
+   "subscription": {
+      "sender_id": null,
+      "active": true
    },
-"id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
-"version": "1525121173:668000000",
-"label": "GV[KIP_AMWA] Video 1",
-"description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID VIDEO index:1",
-"tags": {
-    "urn:x-nmos:grouphint/v1.0": [
-            "IP input 1:Video 1"
-     ],
-}
+   "id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
+   "version": "1525121173:668000000",
+   "label": "GV[KIP_AMWA] Video 1",
+   "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID VIDEO index:1",
+   "tags": {
+      "urn:x-nmos:grouphint/v1.0": [
+         "IP input 1:Video 1"
+      ]
+   }
 }
 ```
 
 ```json
 {
-"format": "urn:x-nmos:format:audio",
-"caps": {},
-"device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
-"transport": "urn:x-nmos:transport:rtp.mcast",
-"interface_bindings": [],
-"subscription": {
-   "sender_id": null,
-   "active": true
+   "format": "urn:x-nmos:format:audio",
+   "caps": {},
+   "device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
+   "transport": "urn:x-nmos:transport:rtp.mcast",
+   "interface_bindings": [],
+   "subscription": {
+      "sender_id": null,
+      "active": true
    },
-"id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
-"version": "1525121173:668000000",
-"label": "GV[KIP_AMWA] Audio 1",
-"description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:1",
-"tags": {
-    "urn:x-nmos:grouphint/v1.0": [
-            "IP input 1:Audio 1"
-     ]
-}
+   "id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
+   "version": "1525121173:668000000",
+   "label": "GV[KIP_AMWA] Audio 1",
+   "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:1",
+   "tags": {
+      "urn:x-nmos:grouphint/v1.0": [
+         "IP input 1:Audio 1"
+      ]
+   }
 }
 ```
 
 ```json
 {
-"format": "urn:x-nmos:format:audio",
-"caps": {},
-"device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
-"transport": "urn:x-nmos:transport:rtp.mcast",
-"interface_bindings": [],
-"subscription": {
-   "sender_id": null,
-   "active": true
+   "format": "urn:x-nmos:format:audio",
+   "caps": {},
+   "device_id": "8570e409-eb39-4c28-b083-fb2be5d44abe",
+   "transport": "urn:x-nmos:transport:rtp.mcast",
+   "interface_bindings": [],
+   "subscription": {
+      "sender_id": null,
+      "active": true
    },
-"id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
-"version": "1525121173:668000000",
-"label": "GV[KIP_AMWA] Audio 2",
-"description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:2",
-"tags": {
-    "urn:x-nmos:grouphint/v1.0": [
-            "IP input 1:Audio 2"
-     ]
-}
+   "id": "51e6b7ef-7061-4121-b8d3-426527d3ac4f",
+   "version": "1525121173:668000000",
+   "label": "GV[KIP_AMWA] Audio 2",
+   "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:2",
+   "tags": {
+      "urn:x-nmos:grouphint/v1.0": [
+         "IP input 1:Audio 2"
+      ]
+   }
 }
 ```
