@@ -1,6 +1,6 @@
 # Group hint tags
 
-- **Name:**  urn:x-nmos:grouphint/v1.0
+- **Name:**  urn:x-nmos:tag:grouphint/v1.0
   - **Description:** Group description tag that can be used in a JSON description for an NMOS resource v1.0.
   - **Proponent:** [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
 
@@ -28,11 +28,11 @@ Audio 2 group : "Camera" role: "Audio 2"
 
 ## Group hint URN
 
-The group hint urn ‘urn:x-nmos:grouphint’ defines a set of groups to which a resource belongs to.
+The group hint urn ‘urn:x-nmos:tag:grouphint’ defines a set of groups to which a resource belongs to.
 
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "{group-name}:{role-in-group}:{optional-group-scope}"
    ]
 }
@@ -60,7 +60,7 @@ The colon character is therefore reserved and MUST not be used in any of the par
 #### role-in-group rules
 
 - Resources within the same group MUST use the role to differentiate themselves.
-- Roles SHOULD be unique within the same group.
+- Roles MUST be unique within the same group.
 - Can be use to index a sender or a receiver inside a group (like audio 1, audio 2).
 
 #### optional-group-scope rules
@@ -72,8 +72,8 @@ The colon character is therefore reserved and MUST not be used in any of the par
 
 Natural groups applies only to NMOS senders and receivers
 
--	If “urn:x-nmos:grouphint” tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.
--	Senders and Receivers may both contain matching values of the “urn:x-nmos:x-nmos:grouphint” tag, indicating that the group has elements in both signal flow directions.
+-	If “urn:x-nmos:tag:grouphint” tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.
+-	Senders and Receivers may both contain matching values of the “urn:x-nmos:tag:grouphint” tag, indicating that the group has elements in both signal flow directions.
 
 
 ### Examples
@@ -89,7 +89,7 @@ Natural groups applies only to NMOS senders and receivers
 JSON tags for Video 1 sender
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "Playout Master:Primary"
    ]
 }
@@ -98,7 +98,7 @@ JSON tags for Video 1 sender
 JSON tags for Audio 1 sender
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "Playout Master:Audio 1 – 2ch"
    ]
 }
@@ -107,7 +107,7 @@ JSON tags for Audio 1 sender
 JSON tags for Audio 2 sender
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "Playout Master:Audio 2 – 5.1ch"
    ]
 }
@@ -125,7 +125,7 @@ JSON tags for Audio 2 sender
 JSON tags for Video 1 receiver
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "MV PIP 1:Video"
    ]
 }
@@ -134,7 +134,7 @@ JSON tags for Video 1 receiver
 JSON tags for Audio 1 receiver
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "MV PIP 1:Audio 1"
    ]
 }
@@ -142,7 +142,7 @@ JSON tags for Audio 1 receiver
 JSON tags for Audio 2 receiver
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "MV PIP 1:Audio 2"
    ]
 }
@@ -155,7 +155,7 @@ Multiple groups are mainly for usage outside "natural grouping".
 JSON tags for Video 1 receiver and tally
 ```json
 "tags": {
-   "urn:x-nmos:grouphint/v1.0": [
+   "urn:x-nmos:tag:grouphint/v1.0": [
       "MV PIP 1:Video",
       "tally:left:node"
    ]
@@ -185,7 +185,7 @@ This defines an extra membership to tally group valid for the entire node scope.
    "label": "GV[KIP_AMWA] Video 1",
    "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID VIDEO index:1",
    "tags": {
-      "urn:x-nmos:grouphint/v1.0": [
+      "urn:x-nmos:tag:grouphint/v1.0": [
          "IP input 1:Video 1"
       ]
    }
@@ -208,7 +208,7 @@ This defines an extra membership to tally group valid for the entire node scope.
    "label": "GV[KIP_AMWA] Audio 1",
    "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:1",
    "tags": {
-      "urn:x-nmos:grouphint/v1.0": [
+      "urn:x-nmos:tag:grouphint/v1.0": [
          "IP input 1:Audio 1"
       ]
    }
@@ -231,7 +231,7 @@ This defines an extra membership to tally group valid for the entire node scope.
    "label": "GV[KIP_AMWA] Audio 2",
    "description": "(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:2",
    "tags": {
-      "urn:x-nmos:grouphint/v1.0": [
+      "urn:x-nmos:tag:grouphint/v1.0": [
          "IP input 1:Audio 2"
       ]
    }
