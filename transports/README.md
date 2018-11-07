@@ -10,7 +10,7 @@ This Transports parameter register contains values that may be used to identify 
 - Each entry SHOULD provide a link to a specification for the transport, as well as identifying the AMWA IS-04 API Versions for which the entry is applicable.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
-Manufacturers MAY use their own namespaces to indicate transports which are not defined within the NMOS namespace at a particular API version, but should support be added in a future version the NMOS variant MUST be used when upgrading to that API version.
+Manufacturers MAY use their own namespaces to indicate transports which are not currently defined within the NMOS namespace.
 
 ## Values
 
