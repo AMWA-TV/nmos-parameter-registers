@@ -7,7 +7,7 @@ Parameter register contains values that may be used to expose some reserved tags
 ## Criteria
 
 - Each entry MUST have a short description and include contact information for the proponent(s).
-- Each entry SHOULD provide a link to a specification for the tag usage, as well as identifying the AMWA IS-04 API Versions for which the entry is applicable.
+- Each entry SHOULD provide a link to a specification for the tag usage, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - In the case of substantial revision to the tag specification, a new tag type name MUST be defined. Using versioned names is therefore RECOMMENDED when this applies.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
@@ -17,3 +17,4 @@ Parameter register contains values that may be used to expose some reserved tags
   - **Description:** Group tag that can be used in a JSON description for an NMOS resource v1.0.
   - **Proponent:** [Grass Valley, a Belden brand](http://grassvalley.com/) (contact [Serge Grondin](https://github.com/sagrondin))
   - **Specification:** [Group Hint tags](grouphint.md)
+  - **Applicability:** AMWA IS-04 v1.0+
