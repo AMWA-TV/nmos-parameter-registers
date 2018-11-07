@@ -26,5 +26,11 @@ Manufacturers MAY use their own namespaces to indicate transports which are not 
 - **Name:** urn:x-nmos:transport:dash
   - **Description:** Identifies the Dynamic Adaptive Streaming over HTTP technology.
   - **Specification:** [AMWA IS-04 v1.1](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.1.x)
+- **Name:** urn:x-nmos:transport:mqtt
+  - **Description:** Identifies Message Queueing Telemetry Transport (MQTT).
+  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1-dev)
+- **Name:** urn:x-nmos:transport:websocket
+  - **Description:** Identifies the WebSocket transport type.
+  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1-dev)
 
 Note: An RTP Transmitter sending to a multicast group should use the transport 'urn:x-nmos:transport:rtp.mcast', but a receiver supporting both unicast and multicast should present the transport 'urn:x-nmos:transport:rtp' to indicate its less restrictive state.
