@@ -56,17 +56,26 @@ The colon character is therefore reserved and MUST not be used in any of the par
 - If a group hint tag is present inside a resource within the same scope which have matching values of this tag MUST be considered as related members of a group by a controlling entity.
 - If multiple group tags are present in the same resource, resource can be considered part of multiple groups if this applies
 - A resource may contain multiple group hints but special rules apply to senders and receiver for natural grouping.
+- Group names SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.
+
 
 #### role-in-group rules
 
 - Resources within the same group MUST use the role to differentiate themselves.
 - Roles MUST be unique within the same group.
-- Can be use to index a sender or a receiver inside a group (like audio 1, audio 2).
+- It SHOULD be use to index a sender or a receiver inside a group (like audio 1, audio 2) and it SHOULD be easy to sort on alphanumerical values. 
+- Group roles SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.
+
+NOTE: There is no standard roles (or reserved role names) define in this document.  However this may be define in the future inside the NMOS parameters register. 
+
 
 #### optional-group-scope rules
 
 - Missing "optional-group-scope" assumes a default "device" scope.  To extend the group scope to a node, "node" scope MUST be specified.
 - Note that extending a scope to "node" can lead to performance impact on the controller side since more work is required to track down the relationships.
+
+NOTE: There might be a need for a "system" scope in the future (group across multiple nodes) but this is out of the natural grouping described in this document.  The system scope may be define in the future inside the NMOS parameters register.
+
 
 ## Natural groups
 
