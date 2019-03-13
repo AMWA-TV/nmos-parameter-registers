@@ -6,6 +6,7 @@
 
 This document describes an application of the AMWA IS-04 “tags” structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
 
+The values of the grouphint tag are an **immutable** property of the resource.  
 
 ## Introduction
 
@@ -25,6 +26,7 @@ Audio 1 group : "Camera" role: "Audio 1"
 
 Audio 2 group : "Camera" role: "Audio 2" 
 
+It is expected that system controllers use the natural group hints to guide users through a process of associating production meaning and naming with the NMOS resources.  This is inherently a setup/configuration-time task.  If the natural group hint tag changes later, there is not necessarily an opportunity to re-ask the user if/how that change affects the overall system naming and mapping configuration.  That’s why immutability is important for natural grouping and it MUST be respected.
 
 ## Group hint URN
 
