@@ -58,6 +58,7 @@ The colon character is therefore reserved and MUST not be used in any of the par
 - If a group hint tag is present inside a resource within the same scope which have matching values of this tag MUST be considered as related members of a group by a controlling entity.
 - If multiple group tags are present in the same resource, resource can be considered part of multiple groups if this applies
 - A resource may contain multiple group hints but special rules apply to senders and receiver for natural grouping.
+- Group names MAY be used to index groups within the same scope and it SHOULD be easy to sort on alphanumerical values (example: "... SDI 09, SDI 10, SDI 11")
 - Group names SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.
 
 
