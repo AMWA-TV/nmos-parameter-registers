@@ -26,6 +26,10 @@ Query API clients MUST be tolerant to the presence of formats not yet defined he
   - **Description:** Identifies (sources of) data flows.
   - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
   - **Applicability:** AMWA IS-04 v1.0+
+- **Name:** urn:x-nmos:format:data.event
+  - **Description:** Identifies (sources of) Query API subscription event Grains.
+  - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
+  - **Applicability:** AMWA IS-04 v1.0+
 - **Name:** urn:x-nmos:format:mux
   - **Description:** Identifies (sources of) multiplexed flows.
   - **Specification:** [AMWA IS-04 v1.1](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.1.x)
