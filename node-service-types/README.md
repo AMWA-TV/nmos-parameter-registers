@@ -7,7 +7,7 @@ This Node Service Types parameter register contains values that may be used to i
 - Values used for the service 'type' property are not required to be included in this parameter register.
 - Each entry MUST define a unique service type name (which is a URN).
 - Each entry MUST have a short description and include contact information for the proponent(s).
-- Each entry SHOULD provide a link to a specification for the service type, as well as identifying the AMWA IS-04 API Versions for which the entry is applicable.
+- Each entry SHOULD provide a link to a specification for the service type, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - In the case of substantial revision to the service specification, a new service type name MUST be defined. Using versioned names is therefore RECOMMENDED.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
@@ -20,3 +20,4 @@ This Node Service Types parameter register contains values that may be used to i
   - **Description:** This API provides a zeroconf/HTTP bridge for NMOS service types.
   - **Proponent:** [BBC](https://github.com/bbc) (contact [@simonrankine](https://github.com/simonrankine))
   - **Specification:** [NMOS MDNS Bridge](https://github.com/bbc/nmos-mdns-bridge)
+  - **Applicability:** AMWA IS-04 v1.0+

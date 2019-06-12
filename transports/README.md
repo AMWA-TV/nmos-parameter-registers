@@ -7,24 +7,36 @@ This Transports parameter register contains values that may be used to identify 
 - Values used for the 'transport' property are not required to be included in this parameter register.
 - Each entry MUST define a unique transport name (which is a URN).
 - Each entry MUST have a short description.
-- Each entry SHOULD provide a link to a specification for the transport, as well as identifying the AMWA IS-04 API Versions for which the entry is applicable.
+- Each entry SHOULD provide a link to a specification for the transport, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
-Manufacturers MAY use their own namespaces to indicate transports which are not defined within the NMOS namespace at a particular API version, but should support be added in a future version the NMOS variant MUST be used when upgrading to that API version.
+Manufacturers MAY use their own namespaces to indicate transports which are not currently defined within the NMOS namespace.
 
 ## Values
 
 - **Name:** urn:x-nmos:transport:rtp
   - **Description:** Identifies the Real-time Transport Protocol.
   - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
+  - **Applicability:** AMWA IS-04 v1.0+, IS-05 v1.0+
 - **Name:** urn:x-nmos:transport:rtp.mcast
   - **Description:** Identifies RTP multicast.
   - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
+  - **Applicability:** AMWA IS-04 v1.0+, IS-05 v1.0+
 - **Name:** urn:x-nmos:transport:rtp.ucast
   - **Description:** Identifies RTP unicast.
   - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
+  - **Applicability:** AMWA IS-04 v1.0+, IS-05 v1.0+
 - **Name:** urn:x-nmos:transport:dash
   - **Description:** Identifies the Dynamic Adaptive Streaming over HTTP technology.
   - **Specification:** [AMWA IS-04 v1.1](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.1.x)
+  - **Applicability:** AMWA IS-04 v1.1+, IS-05 v1.0+
+- **Name:** urn:x-nmos:transport:mqtt
+  - **Description:** Identifies Message Queuing Telemetry Transport (MQTT).
+  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1-dev)
+  - **Applicability:** AMWA IS-04 v1.3+, IS-05 v1.1+, IS-07 v1.0+
+- **Name:** urn:x-nmos:transport:websocket
+  - **Description:** Identifies the WebSocket transport type.
+  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1-dev)
+  - **Applicability:** AMWA IS-04 v1.3+, IS-05 v1.1+, IS-07 v1.0+
 
 Note: An RTP Transmitter sending to a multicast group should use the transport 'urn:x-nmos:transport:rtp.mcast', but a receiver supporting both unicast and multicast should present the transport 'urn:x-nmos:transport:rtp' to indicate its less restrictive state.
