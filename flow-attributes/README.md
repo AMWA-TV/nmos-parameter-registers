@@ -79,3 +79,67 @@ Clients should be aware that requesting data about a very broad 'media\_type' ma
 ### Relating to urn:x-nmos:format:mux
 
 - No parameters currently defined
+
+## Common Examples
+
+The following examples are noted to highlight the breadth of content which may be represented using these attributes.
+
+### Video
+
+**Raw Video** (including ST.2110-20 and RFC4175 when sent as RTP)
+* format: urn:x-nmos:format:video
+* media\_type: video/raw
+
+**Coded Video** (including ST.2110-22 when sent as RTP)
+* format: urn:x-nmos:format:video
+* media\_type: Various, including video/H264 and video/vc2
+
+**MPEG 4 Transport Streams** (containing video only)
+* format: urn:x-nmos:format:video
+* media\_type: video/mpeg4-generic
+
+### Audio
+
+**Raw Audio** (including ST.2110-30 and AES67 when sent as RTP)
+* format: urn:x-nmos:format:audio
+* media\_type: Various, including audio/L24
+
+**Coded Audio**
+* format: urn:x-nmos:format:audio
+* media\_type: Various, including audio/opus
+
+**AES3 Encapsulated Audio** (including ST.2110-31 when sent as RTP)
+* format: urn:x-nmos:format:audio
+* media\_type: audio/AM824
+
+**MPEG 4 Transport Streams** (containing audio only)
+* format: urn:x-nmos:format:audio
+* media\_type: audio/mpeg4-generic
+
+### Data
+
+**ST.291 Ancillary Data**
+* format: urn:x-nmos:format:data
+* media\_type: video/smpte291
+
+**JSON Data**
+* format: urn:x-nmos:format:data
+* media\_type: application/json
+
+**MPEG 4 Transport Streams** (containing data only)
+* format: urn:x-nmos:format:data
+* media\_type: application/mpeg4-generic
+
+### Mux
+
+**MPEG 2 Transport Streams** (containing mixed formats)
+* format: urn:x-nmos:format:mux
+* media\_type: video/MP2T
+
+**MPEG 4 Transport Streams** (containing mixed formats)
+* format: urn:x-nmos:format:mux
+* media\_type: video/mpeg4-generic
+
+**SMPTE 2022-6**
+* format: urn:x-nmos:format:mux
+* media\_type: video/SMPTE2022-6
