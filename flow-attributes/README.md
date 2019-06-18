@@ -4,7 +4,7 @@ This Flow Attributes parameter register contains values that may be used to iden
 
 ## Criteria
 
-- Each entry MUST be associated with an existing defined [NMOS Format](../formats) and a media_type.
+- Each entry MUST be associated with an existing defined [NMOS Format](../formats) and a media\_type.
 - Each entry MUST define a unique attribute name within the scope of a Flow.
 - Each entry MUST have a short description.
 - Each entry MUST identify any AMWA Specifications and versions from which it is valid.
@@ -14,6 +14,8 @@ This Flow Attributes parameter register contains values that may be used to iden
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
 Query API clients from v1.3 of IS-04 onwards MUST be tolerant to the presence of Flow attributes not yet defined here which may be added in later API versions.
+
+Clients should be aware that requesting data about a very broad 'media\_type' may return more results than are expected. For example, a media\_type of 'application/json' is likely to be used by more than just IS-07 Flows. In this specific example case, use of the 'event_type' attribute can aid in differentiation.
 
 ## Values
 
