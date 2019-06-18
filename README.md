@@ -15,12 +15,13 @@ The following parameter registers are maintained:
 - [NMOS Device Types](device-types/)
 - [NMOS Tags](tags/)
 - [NMOS Flow Attributes](flow-attributes/)
+- [NMOS Capabilities](capabilities/)
 
 Each parameter register defines specific criteria and considerations for when and how values can be included, and identifies the procedures for revision and deprecation of entries.
 
 New parameter registers may be added in the future as required by AMWA NMOS specifications.
 
-### General Procedures and Criteria 
+### General Procedures and Criteria
 
 There are a number of procedures and criteria that are common to all registers. These are documented [here](common/).
 
