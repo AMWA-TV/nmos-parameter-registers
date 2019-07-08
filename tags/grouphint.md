@@ -6,7 +6,7 @@
 
 This document describes an application of the AMWA IS-04 “tags” structures to enable control systems to identify relationships between NMOS resources listed in a registry or node.
 
-The values of the grouphint tag are an **immutable** property of the resource.  
+The values of the grouphint tag are an **immutable** property of the resource.
 
 ## Introduction
 
@@ -24,13 +24,13 @@ Video group : "Camera" role: "Primary"
 
 Audio 1 group : "Camera" role: "Audio 1"
 
-Audio 2 group : "Camera" role: "Audio 2" 
+Audio 2 group : "Camera" role: "Audio 2"
 
-It is expected that system controllers use the natural group hints to guide users through a process of associating production meaning and naming with the NMOS resources.  This is inherently a setup/configuration-time task.  If the natural group hint tag changes later, there is not necessarily an opportunity to re-ask the user if/how that change affects the overall system naming and mapping configuration.  That’s why immutability is important for natural grouping and it MUST be respected.
+It is expected that system controllers use the natural group hints to guide users through a process of associating production meaning and naming with the NMOS resources.  This is inherently a setup/configuration-time task.  If the natural group hint tag changes later, there is not necessarily an opportunity to re-ask the user if/how that change affects the overall system naming and mapping configuration.  That's why immutability is important for natural grouping and it MUST be respected.
 
 ## Group hint URN
 
-The group hint urn ‘urn:x-nmos:tag:grouphint’ defines a set of groups to which a resource belongs to.
+The group hint URN 'urn:x-nmos:tag:grouphint' defines a set of groups to which a resource belongs to.
 
 ```json
 "tags": {
@@ -42,11 +42,11 @@ The group hint urn ‘urn:x-nmos:tag:grouphint’ defines a set of groups to whi
 
 Where
 
-| Parameter | Description | Values  |
-| ------------- | ------------------------------ | ------ |
-| group-name    | A string that defines the name of the group. | Any string not containing ":" |
-| role-in-group     | A string that defines the role of the resource in the group, MUST be unique inside the same group |   Any string not containing ":" |
-| optional-group-scope | Optional string that defines the scope of the group, MUST be 'device' or 'node'     | "device" (default) or "node"  |
+| Parameter | Description | Values |
+| --------- | ----------- | ------ |
+| group-name | A string that defines the name of the group | Any string not containing ':' |
+| role-in-group | A string that defines the role of the resource in the group, MUST be unique inside the same group | Any string not containing ':' |
+| optional-group-scope | Optional string that defines the scope of the group, MUST be "device" or "node" | "device" (default) or "node" |
 
 The colon character is therefore reserved and MUST not be used in any of the parameters listed.
 
@@ -56,9 +56,9 @@ The colon character is therefore reserved and MUST not be used in any of the par
 - If the group hint tag is missing, no assumption MUST be made on relationships.
 - If the group hint tag is present but contains an empty string, no assumption MUST be made on relationships.
 - If a group hint tag is present inside a resource within the same scope which have matching values of this tag MUST be considered as related members of a group by a controlling entity.
-- If multiple group tags are present in the same resource, resource can be considered part of multiple groups if this applies
-- A resource may contain multiple group hints but special rules apply to senders and receiver for natural grouping.
-- Group names MAY be used to index groups within the same scope and it SHOULD be easy to sort on alphanumerical values (example: "... SDI 09, SDI 10, SDI 11")
+- If multiple group tags are present in the same resource, resource can be considered part of multiple groups if this applies.
+- A resource may contain multiple group hints but special rules apply to senders and receivers for natural grouping.
+- Group names MAY be used to index groups within the same scope and so nodes SHOULD make it easy to sort on alphanumerical values (example: ..., 'SDI 09', 'SDI 10', 'SDI 11', ...)
 - Group names SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.
 
 
@@ -66,10 +66,10 @@ The colon character is therefore reserved and MUST not be used in any of the par
 
 - Resources within the same group MUST use the role to differentiate themselves.
 - Roles MUST be unique within the same group.
-- Roles SHOULD be used to index a sender or a receiver inside a group and it SHOULD be easy to sort on alphanumerical values (example: "... audio 09, audio 10, audio 11") 
+- Roles SHOULD be used to index a sender or a receiver inside a group and so nodes SHOULD make it easy to sort on alphanumerical values (example: ..., 'audio 09', 'audio 10', 'audio 11', ...)
 - Group roles SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.
 
-NOTE: There are no standard roles (or reserved role names) defined in this document.  However this may be defined in the future inside the NMOS parameters register. 
+NOTE: There are no standard roles (or reserved role names) defined in this document.  However these may be defined in the future inside the NMOS parameters register.
 
 
 #### optional-group-scope rules
