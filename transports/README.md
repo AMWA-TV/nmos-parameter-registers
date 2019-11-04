@@ -32,11 +32,11 @@ Manufacturers MAY use their own namespaces to indicate transports which are not 
   - **Applicability:** AMWA IS-04 v1.1+, IS-05 v1.0+
 - **Name:** urn:x-nmos:transport:mqtt
   - **Description:** Identifies Message Queuing Telemetry Transport (MQTT).
-  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1-dev)
+  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1.x)
   - **Applicability:** AMWA IS-04 v1.3+, IS-05 v1.1+, IS-07 v1.0+
 - **Name:** urn:x-nmos:transport:websocket
   - **Description:** Identifies the WebSocket transport type.
-  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1-dev)
+  - **Specification:** [AMWA IS-05 v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1.x)
   - **Applicability:** AMWA IS-04 v1.3+, IS-05 v1.1+, IS-07 v1.0+
 
 Note: An RTP Transmitter sending to a multicast group should use the transport 'urn:x-nmos:transport:rtp.mcast', but a receiver supporting both unicast and multicast should present the transport 'urn:x-nmos:transport:rtp' to indicate its less restrictive state.
