@@ -19,6 +19,8 @@ Each parameter register defines specific criteria and considerations for when an
 
 New parameter registers may be added in the future as required by AMWA NMOS specifications.
 
-General Procedures and Criteria common to all registers are given [here](common/)
+### General Procedures and Criteria 
+
+There are a number of procedures and criteria that are common to all registers. These are documented [here](common/).
 
 For more information about AMWA, NMOS and the Networked Media Incubator, please refer to http://amwa.tv/.
