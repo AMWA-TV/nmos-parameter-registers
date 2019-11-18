@@ -16,7 +16,7 @@ Note that the force of these words is confined to the scope of this repository.
 
 ## Example
 
-A typical example of specific criteria is found in the [NMOS Node Service Types](node-service-types/) parameter register. AMWA IS-04, since v1.1, allows a list of 'services' to be advertised on the node resource in the Node API. Each advertised service has a 'type' property whose value is a Uniform Resource Name (URN), as well as its 'href' property which provides a URL to reach the service. The Node Service Types parameter register provides implementers with the means to discover and disclose service type names (URNs) that are in use.
+A typical example of specific criteria is found in the [NMOS Node Service Types](../node-service-types/) parameter register. AMWA IS-04, since v1.1, allows a list of 'services' to be advertised on the node resource in the Node API. Each advertised service has a 'type' property whose value is a Uniform Resource Name (URN), as well as its 'href' property which provides a URL to reach the service. The Node Service Types parameter register provides implementers with the means to discover and disclose service type names (URNs) that are in use.
 
 So, for example, its criteria includes the following statements:
 
@@ -26,4 +26,4 @@ So, for example, its criteria includes the following statements:
 > - In the case of substantial revision to the service specification, a new service type name MUST be defined. Using versioned names is therefore RECOMMENDED.
 > - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](README.md#general-procedures-and-criteria).
 
-However, modifications to a parameter register may be more closely controlled than this. For example, in the case of the [NMOS Formats](formats/) parameter register, values are defined only by revisions of AMWA IS-04 itself.
+However, modifications to a parameter register may be more closely controlled than this. For example, in the case of the [NMOS Formats](../formats/) parameter register, values are defined only by revisions of AMWA IS-04 itself.
