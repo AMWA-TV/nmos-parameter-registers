@@ -24,6 +24,6 @@ So, for example, its criteria includes the following statements:
 > - Each entry MUST have a short description and include contact information for the proponent(s).
 > - Each entry SHOULD provide a link to a specification for the service type, as well as identifying the AMWA IS-04 API Versions for which the entry is applicable.
 > - In the case of substantial revision to the service specification, a new service type name MUST be defined. Using versioned names is therefore RECOMMENDED.
-> - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](common/).
+> - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the General Procedures and Criteria.
 
 However, modifications to a parameter register may be more closely controlled than this. For example, in the case of the [NMOS Formats](../formats/) parameter register, values are defined only by revisions of AMWA IS-04 itself.
