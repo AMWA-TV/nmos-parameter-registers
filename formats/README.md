@@ -8,7 +8,7 @@ This Formats parameter register contains values that may be used to identify a d
 - Each entry MUST define a unique format name (which is a URN).
 - Each entry MUST have a short description.
 - Each entry MUST identify any AMWA Specifications and versions from which it is valid.
-- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
+- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
 Query API clients MUST be tolerant to the presence of formats not yet defined here which may be added in later API versions.
 

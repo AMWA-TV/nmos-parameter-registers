@@ -9,7 +9,7 @@ This Node Service Types parameter register contains values that may be used to i
 - Each entry MUST have a short description and include contact information for the proponent(s).
 - Each entry SHOULD provide a link to a specification for the service type, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - In the case of substantial revision to the service specification, a new service type name MUST be defined. Using versioned names is therefore RECOMMENDED.
-- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
+- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
 ## Values
 

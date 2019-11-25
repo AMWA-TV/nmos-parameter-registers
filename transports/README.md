@@ -8,7 +8,7 @@ This Transports parameter register contains values that may be used to identify 
 - Each entry MUST define a unique transport name (which is a URN).
 - Each entry MUST have a short description.
 - Each entry SHOULD provide a link to a specification for the transport, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
-- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
+- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
 Manufacturers MAY use their own namespaces to indicate transports which are not currently defined within the NMOS namespace.
 

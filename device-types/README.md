@@ -8,7 +8,7 @@ This Device Types parameter register contains values that may be used to identif
 - Each entry MUST define a unique device type name (which is a URN).
 - Each entry MUST have a short description and include contact information for the proponent(s).
 - Each entry SHOULD provide a link to a specification for the device type, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
-- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
+- Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
 Manufacturers MAY use their own namespaces to indicate device types which are not currently defined within the NMOS namespace.
 
