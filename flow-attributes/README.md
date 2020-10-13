@@ -9,7 +9,7 @@ This Flow Attributes parameter register contains extensible attributes and their
 - Each entry MUST have a short description.
 - Each entry MUST identify any AMWA Specifications and versions from which it is valid.
 - Each entry MUST define all permitted values for the attribute, either via an explicit list, well-defined references or both.
-- Entries MAY be used to expand the set of permitted values associated with an existing attribute.
+- Entries MAY be used to expand the set of permitted values associated with an existing extensible attribute.
 - Each entry MUST link to a schema definition held within this repository (unless covered by a schema within the original specification).
 - Schemas MUST NOT have 'required' attributes removed following their inclusion in this register.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
