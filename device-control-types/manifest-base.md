@@ -63,8 +63,8 @@ Implementations are free to use the NMOS sender and/or device identifiers somewh
 
 #### Redundant URLs
 
-- http://172.29.80.65/x-manufacturer/senders/d7aa5a30-681d-4e72-92fb-f0ba0f6f4c3e/stream.sdp
-- http://172.29.180.65/x-manufacturer/senders/d7aa5a30-681d-4e72-92fb-f0ba0f6f4c3e/stream.sdp
+- <http://172.29.80.65/x-manufacturer/senders/d7aa5a30-681d-4e72-92fb-f0ba0f6f4c3e/stream.sdp>
+- <http://172.29.180.65/x-manufacturer/senders/d7aa5a30-681d-4e72-92fb-f0ba0f6f4c3e/stream.sdp>
 
 ### Establishing the Base URL and Resolving the Relative URL
 
