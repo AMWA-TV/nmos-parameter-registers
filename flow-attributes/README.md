@@ -16,7 +16,7 @@ This Flow Attributes parameter register contains extensible attributes and their
 
 Query API clients from v1.3 of IS-04 onwards MUST be tolerant to the presence of Flow attributes and values not yet defined here which may be added at a later date.
 
-## Values
+## Attributes
 
 ### urn:x-nmos:format:video
 
