@@ -5,16 +5,15 @@ This Flow Attributes parameter register contains extensible attributes and their
 ## Criteria
 
 - Each entry MUST be associated with an existing defined [NMOS Format](../formats), and MAY additionally relate to a specific `media_type`.
-- Each entry MUST define a unique attribute name within the scope of a Flow.
+- Each entry MUST define or refer to an existing unique attribute name within the scope of a Flow.
 - Each entry MUST have a short description.
 - Each entry MUST identify any AMWA Specifications and versions from which it is valid.
 - Each entry MUST define all permitted values for the attribute, either via an explicit list, well-defined references or both.
 - Entries MAY be used to expand the set of permitted values associated with an existing extensible attribute.
 - Each entry MUST link to a schema definition held within this repository (unless covered by a schema within the original specification).
-- Schemas MUST NOT have 'required' attributes removed following their inclusion in this register.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
-Query API clients from v1.3 of IS-04 onwards MUST be tolerant to the presence of Flow attributes and values not yet defined here which may be added at a later date.
+As noted in [IS-04 v1.3](https://amwa-tv.github.io/nmos-discovery-registration/tags/v1.3/docs/4.3._Behaviour_-_Nodes.html#sources--flows), new Flow attributes may be defined here as opposed to requiring a new version of the specification. Query API clients from v1.3 of IS-04 onwards MUST be tolerant to the presence of Flow attributes and values which may be added at a later date.
 
 ## Attributes
 
