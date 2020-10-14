@@ -18,3 +18,8 @@ Parameter register contains values that may be used to expose some reserved tags
   - **Proponent:** [AMWA](https://github.com/AMWA-TV/)
   - **Specification:** [Group Hint tags](grouphint.md)
   - **Applicability:** AMWA IS-04 v1.0+
+- **Name:** urn:x-nmos:tag:certprov/v1.0
+  - **Description:** Certificate Provisioning tag that can be used advertise is BCP-003-03 is enabled.
+  - **Proponent:** [AMWA](https://github.com/AMWA-TV/)
+  - **Specification:** [Certificate Provisioning tags](certprov.md)
+  - **Applicability:** AMWA IS-04 v1.0+
