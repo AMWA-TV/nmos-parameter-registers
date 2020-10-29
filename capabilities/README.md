@@ -45,7 +45,7 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
   - **Description:** Identifies streams which may be created or consumed based upon their IANA media type.
   - **Specification:**
     - **Type:** string
-    - **Target:** (a) Flow 'media_type' attribute, (b) SDP media description 'm=' <media> and associated attribute 'a=rtpmap:' <encoding name>
+    - **Target:** (a) Flow 'media_type' attribute, (b) SDP media description 'm=' \<media\> and associated attribute 'a=rtpmap:' \<encoding name\>
   - **Applicability:** AMWA IS-04, AMWA BCP-xxx-01
 - **Name:** urn:x-nmos:cap:format:grain_rate
   - **Description:** Identifies streams which may be created or consumed based upon their grain rate.
