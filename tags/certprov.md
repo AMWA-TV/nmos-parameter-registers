@@ -1,6 +1,6 @@
 # Certificate Provisioning Tags
 
-- **Name:**  urn:x-nmos:tag:certpro
+- **Name:**  urn:x-nmos:tag:certprov
   - **Description:** Certificate Provisioning tag that can be used to advertise if BCP-003-03 is enabled.
   - **Proponent:** [AMWA](https://github.com/AMWA-TV/)
 
@@ -26,7 +26,7 @@ Where
 
 | Parameter | Description | Values |
 | --------- | ----------- | ------ |
-| enabled version | A string that defines what version of BCP-003-03 is enabled | Version string "v{major}.{minor}", eg. "v1.0" |
+| enabled version | A string that defines what version of BCP-003-03 is enabled | Version string "v{major}.{minor}", e.g. "v1.0" |
 
 
 ### Examples
@@ -54,9 +54,9 @@ JSON tags for when BCP-003-03 is being used to automatically provision TLS certi
 }
 ```
 
-#### 3. BCP-003-03 disabled
+#### 3. BCP-003-03 implemented but disabled
 
-JSON tags for when BCP-003-03 is NOT being used to automatically provision TLS certificates or is not supported
+JSON tags for when BCP-003-03 is supported but NOT currently being used to automatically provision TLS certificates
 ```json
 "tags": {
    "urn:x-nmos:tag:certprov": [
