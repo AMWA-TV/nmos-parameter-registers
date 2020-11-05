@@ -22,10 +22,49 @@
       "default": true
     },
     "urn:x-nmos:cap:format:media_type": {
-      "$ref": "parameter_constraint_string.json"
+      "$ref": "param_constraint_string.json"
     },
     "urn:x-nmos:cap:format:grain_rate": {
-      "$ref": "parameter_constraint_rational.json"
+      "$ref": "param_constraint_rational.json"
+    },
+    "urn:x-nmos:cap:format:frame_width": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-nmos:cap:format:frame_height": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-nmos:cap:format:interlace_mode": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:format:colorspace": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:format:transfer_characteristic": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:format:color_sampling": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:format:component_depth": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-nmos:cap:format:channel_count": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-nmos:cap:format:sample_rate": {
+      "$ref": "param_constraint_rational.json"
+    },
+    "urn:x-nmos:cap:format:sample_depth": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-nmos:cap:format:event_type": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:transport:packet_time": {
+      "$ref": "param_constraint_number.json"
+    },
+    "urn:x-nmos:cap:transport:max_packet_time": {
+      "$ref": "param_constraint_number.json"
     }
   },
   "patternProperties": {
