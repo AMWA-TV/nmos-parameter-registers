@@ -44,6 +44,10 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
   - **Description:** Expresses the relative 'weight' that the Receiver assigns to its preference for the streams satisfied by the associated Constraint Set.
   - **Specification:** [AMWA BCP-xxx-01 (Work In Progress)](https://github.com/AMWA-TV/nmos-receiver-capabilities/tree/v1.0-dev)
   - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:meta:enabled
+  - **Description:** Indicates whether a Constraint Set is available to use immediately (true) or whether this is an offline capability which requires out of band configuration to activate (false).
+  - **Specification:** [AMWA BCP-xxx-01 (Work In Progress)](https://github.com/AMWA-TV/nmos-receiver-capabilities/tree/v1.0-dev)
+  - **Applicability:** AMWA IS-04
 
 ### Parameter Constraints
 

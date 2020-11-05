@@ -16,6 +16,11 @@
       "maximum": 100,
       "minimum": -100
     },
+    "urn:x-nmos:cap:meta:enabled": {
+      "description": "This value indicates whether a Constraint Set is available to use immediately (true) or whether this is an offline capability which requires out of band configuration to activate (false). When the attribute is omitted its value is assumed to be true.",
+      "type": "boolean",
+      "default": true
+    },
     "urn:x-nmos:cap:format:media_type": {
       "$ref": "parameter_constraint_string.json"
     },
