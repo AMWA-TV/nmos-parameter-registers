@@ -59,3 +59,84 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
     - **Type:** rational
     - **Target:** (a) Flow 'grain_rate' (or from Source if omitted), (b) SDP attribute 'a=fmtp:' format-specific parameter 'exactframerate'
   - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:frame_width
+  - **Description:** Identifies the acceptable width in pixels of the picture in a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** integer
+    - **Target:** (a) video Flow 'frame_width', (b) SDP attribute 'a=fmtp:' format-specific parameter 'width'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:frame_height
+  - **Description:** Identifies the acceptable height in pixels of the picture in a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** integer
+    - **Target:** (a) video Flow 'frame_height', (b) SDP attribute 'a=fmtp:' format-specific parameter 'height'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:interlace_mode
+  - **Description:** Identifies the acceptable interlace mode of a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** string (enumerated values as per AMWA IS-04)
+    - **Target:** (a) video Flow 'interlace_mode', (b) SDP attribute 'a=fmtp:' format-specific parameters 'interlace', 'segmented' and 'top-field-first'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:colorspace
+  - **Description:** Identifies the acceptable colorspace of a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md) register)
+    - **Target:** (a) video Flow 'colorspace', (b) SDP attribute 'a=fmtp:' format-specific parameter 'colorimetry'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:transfer_characteristic
+  - **Description:** Identifies the acceptable transfer characteristic system of a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md) register)
+    - **Target:** (a) video Flow 'transfer_characteristic', (b) SDP attribute 'a=fmtp:' format-specific parameter 'TCS'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:color_sampling
+  - **Description:** Identifies the acceptable color (sub-)sampling mode of a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** string (enumerated values as per ST 2110-20 and the IANA [Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling][color-sampling])
+    - **Target:** (a) SDP attribute 'a=fmtp:' format-specific parameter 'sampling', (b) uncompressed video Flow 'components'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:component_depth
+  - **Description:** Identifies the acceptable number of bits per component sample of a video stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** integer
+    - **Target:** (a) SDP attribute 'a=fmtp:' format-specific parameter 'depth', (b) uncompressed video Flow 'components'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:channel_count
+  - **Description:** Identifies the acceptable number of channels of an audio stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** integer
+    - **Target:** (a) audio Flow 'channels', (b) SDP attribute 'a=rtpmap:' \<encoding parameters\>
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:sample_rate
+  - **Description:** Identifies the acceptable number of samples per second in an audio stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** rational
+    - **Target:** (a) audio Flow 'sample_rate', (b) SDP attribute 'a=rtpmap:' \<clock rate\>
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:sample_depth
+  - **Description:** Identifies the acceptable number of bits per sample of an audio stream.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** integer
+    - **Target:** uncompressed audio Flow 'bit_depth'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:format:event_type
+  - **Description:** Identifies acceptable data streams based upon their event type.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** string (values as per AMWA IS-07 [Event types capability management](https://github.com/AMWA-TV/nmos-event-tally/blob/v1.0.1/docs/3.0.%20Event%20types.md#event-types-capability-management))
+    - **Target:** data Flow 'event_type'
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:transport:packet_time
+  - **Description:** Identifies the acceptable length of time in milliseconds represented by the media in a packet.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** number (as per [RFC 4566][RFC-4566])
+    - **Target:** SDP attribute 'a=ptime:' \<packet time\>
+  - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:transport:max_packet_time
+  - **Description:** Identifies the acceptable maximum amount of media that can be encapsulated in each packet, expressed as time in milliseconds.
+  - **Specification:** per AMWA BCP-xxx-01
+    - **Type:** number (as per [RFC 4566][RFC-4566])
+    - **Target:** SDP attribute 'a=maxptime:' \<maximum packet time\>
+  - **Applicability:** AMWA IS-04
+
+[RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
+[color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"
