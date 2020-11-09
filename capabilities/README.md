@@ -4,12 +4,15 @@ This Capabilities parameter register contains values that may be used to identif
 
 ## Criteria
 
+- Capabilities used in the IS-04 'caps' properties are strongly RECOMMENDED to be included in this parameter register.
 - Each entry MUST define a unique capability name (which is a string, with words separated by underscores, or a URN).
 - Each entry MUST have a short description.
 - Each entry MUST identify any AMWA Specifications and versions from which it is valid.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../README.md#general-procedures-and-criteria).
 
 Query API clients MUST be tolerant to the presence of capabilities not yet defined here which may be added in later API versions.
+
+Manufacturers MAY use their own namespaces to indicate capabilities which are not currently defined within the NMOS namespace (`urn:x-nmos:cap`). In order to avoid collisions with simple names allocated by AMWA specifications, they MUST NOT use capability names that do not start with `urn:`.
 
 Capabilities are most used by IS-04 Receivers to indicate what they may consume, but may be used by other 'caps' objects in the future, potentially to indicate what they may be re-configured to generate.
 
