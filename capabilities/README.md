@@ -100,7 +100,7 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
   - **Description:** Identifies the acceptable color (sub-)sampling mode of a video stream.
   - **Specification:** per AMWA BCP-004-01
     - **Type:** string (enumerated values as per ST 2110-20 and the IANA [Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling][color-sampling])
-    - **Target:** (a) SDP attribute 'a=fmtp:' format-specific parameter 'sampling', (b) uncompressed video Flow 'components'
+    - **Target:** (a) SDP attribute 'a=fmtp:' format-specific parameter 'sampling', (b) uncompressed video Flow 'components.bit_depth'
   - **Applicability:** AMWA IS-04
 - **Name:** urn:x-nmos:cap:format:component_depth
   - **Description:** Identifies the acceptable number of bits per component sample of a video stream.
@@ -112,7 +112,7 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
   - **Description:** Identifies the acceptable number of channels of an audio stream.
   - **Specification:** per AMWA BCP-004-01
     - **Type:** integer
-    - **Target:** (a) audio Flow 'channels', (b) SDP attribute 'a=rtpmap:' \<encoding parameters\>
+    - **Target:** (a) audio Source 'channels', (b) SDP attribute 'a=rtpmap:' \<encoding parameters\>
   - **Applicability:** AMWA IS-04
 - **Name:** urn:x-nmos:cap:format:sample_rate
   - **Description:** Identifies the acceptable number of samples per second in an audio stream.
