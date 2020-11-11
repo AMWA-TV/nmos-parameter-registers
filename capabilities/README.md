@@ -144,6 +144,12 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
     - **Type:** number (as per [RFC 4566][RFC-4566])
     - **Target:** SDP attribute 'a=maxptime:' \<maximum packet time\>
   - **Applicability:** AMWA IS-04
+- **Name:** urn:x-nmos:cap:transport:st2110_21_sender_type
+  - **Description:** Identifies the ST 2110-21 receiver capabilities, expressed as the acceptable sender type or types.
+  - **Specification:** per AMWA BCP-004-01
+    - **Type:** string (enumerated values as per ST 2110-21, such as '2110TPNL' for narrow linear senders)
+    - **Target:** SDP attribute 'a=fmtp:' format-specific parameter 'TP'
+    - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
 [color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"
