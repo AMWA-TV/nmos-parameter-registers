@@ -11,10 +11,10 @@ yarn.lock
 .scripts/
 .ssh/
 Gemfile.lock
-raml2html-nmos-theme/
-_site/
-assets/
-branches/
+render/raml2html-nmos-theme/
+render/_site/
+render/assets/
+render/branches/
 index.md
 source-repo/
-tags/
+render/tags/
