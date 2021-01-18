@@ -1,5 +1,16 @@
-# Don't change this
+# Don't change these
 theme: jekyll-theme-primer
+spec_server: specs.amwa.tv
 
-# GitHub project
+# AMWA ID
+amwa_id: NMOS-PARAMETER-REGISTERS
+
+# Base name for site (typically lower case version of AMWA ID, or the repo name)
 baseurl: /nmos-parameter-registers
+
+# Which relase or branch appears in header links and on the home page
+default_tree: branches/master # alternatively e.g. tags/v1.0
+
+# Regex patterns of tags (releases) and branches to show
+show_tags:
+show_branches: master|main|publish-*|capabilities
