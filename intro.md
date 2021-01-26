@@ -1,11 +1,6 @@
-# AMWA NMOS Parameter Registers
-
-[![Lint Status](https://github.com/AMWA-TV/nmos-parameter-registers/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/nmos-parameter-registers/actions?query=workflow%3ALint)
-[![Render Status](https://github.com/AMWA-TV/nmos-parameter-registers/workflows/Render/badge.svg)](https://github.com/AMWA-TV/nmos-parameter-registers/actions?query=workflow%3ARender)
-
-[//]: # "INTRO-START"
-
 ### What does it do?
+
+> WARNING specs.amwa.tv still in development, these may not all be available
 
 - List constants for parameter values used in NMOS specifications, currently:
   - [Device Control Types](branches/master/device-control-types/)
@@ -28,9 +23,3 @@
 - Each type of parameter has a register, listed on this site.
 - Values are represented as ``urn:x-nmos:<type>:<value>/<version>``
 - Updates are made using GitHub pull requests (PRs)
-
-[//]: # "INTRO-END"
-
-## Getting started
-
-There is more information about the NMOS Specifications and their GitHub repos at <https://specs.amwa.tv/nmos>.
