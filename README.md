@@ -8,15 +8,15 @@
 ### What does it do?
 
 - List constants for parameter values used in NMOS specifications, currently:
-  - [Device Control Types](branches/master/device-control-types/)
-  - [Node Service Types](branches/master/node-service-types/)
-  - [Formats](branches/master/formats/)
-  - [Transports](branches/master/transports/)
-  - [Device Types](branches/master/device-types/)
-  - [Tags](branches/master/tags/)
+  - [Device Control Types](branches/main/device-control-types/)
+  - [Node Service Types](branches/main/node-service-types/)
+  - [Formats](branches/main/formats/)
+  - [Transports](branches/main/transports/)
+  - [Device Types](branches/main/device-types/)
+  - [Tags](branches/main/tags/)
   - [Caps Tags](branches/capabilities/tags/)
 
-- Defines [procedures](branches/master/common/) for updating these
+- Defines [procedures](branches/main/common/) for updating these
 
 ### Why does it matter?
 
