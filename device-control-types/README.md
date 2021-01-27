@@ -18,6 +18,21 @@ This Device Control Types parameter register contains values that may be used to
   - **Proponent:** [AMWA](https://github.com/AMWA-TV)
   - **Specification:** [AMWA IS-05 NMOS Device Connection Management v1.0](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.0.x)
   - **Applicability:** AMWA IS-04 v1.2+
+- **Name:** urn:x-nmos:control:sr-ctrl/v1.1
+  - **Description:** Identifies the Connection API v1.1.
+  - **Proponent:** [AMWA](https://github.com/AMWA-TV)
+  - **Specification:** [AMWA IS-05 NMOS Device Connection Management v1.1](https://github.com/AMWA-TV/nmos-device-connection-management/tree/v1.1.x)
+  - **Applicability:** AMWA IS-04 v1.3+
+- **Name:** urn:x-nmos:control:events/v1.0
+  - **Description:** Identifies the Events API v1.0.
+  - **Proponent:** [AMWA](https://github.com/AMWA-TV)
+  - **Specification:** [AMWA IS-07 NMOS Event & Tally v1.0](https://github.com/AMWA-TV/nmos-event-tally/tree/v1.0.x)
+  - **Applicability:** AMWA IS-04 v1.3+
+- **Name:** urn:x-nmos:control:cm-ctrl/v1.0
+  - **Description:** Identifies the Channel Mapping API v1.0.
+  - **Proponent:** [AMWA](https://github.com/AMWA-TV)
+  - **Specification:** [AMWA IS-08 NMOS Audio Channel Mapping v1.0](https://github.com/AMWA-TV/nmos-audio-channel-mapping/tree/v1.0.x)
+  - **Applicability:** AMWA IS-04 v1.2+
 - **Name:** urn:x-nmos:control:manifest-base/v1.0
   - **Description:** Use of this control type provides redundant locators for sender transport files (also known as manifests).
   - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb-sony](https://github.com/garethsb-sony))
