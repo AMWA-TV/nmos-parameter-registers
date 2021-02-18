@@ -7,21 +7,22 @@
 
 ### What does it do?
 
-- List constants for parameter values used in NMOS specifications, currently:
-  - [Device Control Types](branches/main/device-control-types/)
+- Lists constants for parameter values used in NMOS specifications, currently:	
   - [Node Service Types](branches/main/node-service-types/)
+  - [Device Control Types](branches/main/device-control-types/)	
   - [Formats](branches/main/formats/)
   - [Transports](branches/main/transports/)
   - [Device Types](branches/main/device-types/)
   - [Tags](branches/main/tags/)
-  - [Caps Tags](branches/capabilities/tags/)
+  - [Flow Attributes](branches/main/flow-attributes/)
+  - [Capabilities](branches/capabilities/capabilities/)
 
 - Defines [procedures](branches/main/common/) for updating these
 
 ### Why does it matter?
 
-- Support extensibity of NMOS 
-- Promote interoperability by ensuring common definitions can be shared easily
+- Supports extensibity of NMOS 
+- Promotes interoperability by ensuring common definitions can be shared easily
 
 ### How does it work?
 
