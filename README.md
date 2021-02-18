@@ -3,7 +3,7 @@
 [![Lint Status](https://github.com/AMWA-TV/nmos-parameter-registers/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/nmos-parameter-registers/actions?query=workflow%3ALint)
 [![Render Status](https://github.com/AMWA-TV/nmos-parameter-registers/workflows/Render/badge.svg)](https://github.com/AMWA-TV/nmos-parameter-registers/actions?query=workflow%3ARender)
 
-[//]: # "INTRO-START"
+<!-- INTRO-START -->
 
 ### What does it do?
 
@@ -30,7 +30,7 @@
 - Values are represented as ``urn:x-nmos:<type>:<value>/<version>``
 - Updates are made using GitHub pull requests (PRs)
 
-[//]: # "INTRO-END"
+<!-- INTRO-END -->
 
 ## Getting started
 
