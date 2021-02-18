@@ -5,7 +5,7 @@ The procedures for updating a parameter register are straightforward.
 - Any AMWA member can propose additions or updates.
 - In general, deprecation of an entry is to be preferred over removal or substantial amendment.
 - The changes should be submitted via a [Pull Request (PR)](https://help.github.com/articles/about-pull-requests/).
-- The Pull Request will be reviewed according to the criteria by an [AMWA review team](https://github.com/orgs/AMWA-TV/teams/nmos-parameters-admin).
+- The Pull Request will be reviewed according to the criteria by an [AMWA review team](https://github.com/orgs/AMWA-TV/teams/nmos-parameter-registers-admin).
 - If the necessary criteria have been met, the changes will be merged into this repository.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL

@@ -1,11 +1,5 @@
-.DS_Store
-*.swp
-*.html
-*~
 *#
-npm-debug.log
-output
-node_modules/
-package.json
-yarn.lock
-.scripts/
+*.html
+*.swp
+*~
+.DS_Store

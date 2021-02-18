@@ -1,28 +1,39 @@
 # AMWA NMOS Parameter Registers
 
-The [AMWA Networked Media Open Specifications](https://github.com/AMWA-TV/nmos) are intended to support extensibility, using constants for parameter values that identify additional operational constraints or capabilities. In order to promote interoperability, the parameter registers in this repository contain entries for constants used, for example, with the [AMWA IS-04 NMOS Discovery and Registration Specification](https://github.com/AMWA-TV/nmos-discovery-registration) and the [AMWA IS-05 NMOS Device Connection Management Specification](https://github.com/AMWA-TV/nmos-device-connection-management). These specifications do not require values to be included in this repository but doing so allows common definitions to be shared and deployed more easily.
+[![Lint Status](https://github.com/AMWA-TV/nmos-parameter-registers/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/nmos-parameter-registers/actions?query=workflow%3ALint)
+[![Render Status](https://github.com/AMWA-TV/nmos-parameter-registers/workflows/Render/badge.svg)](https://github.com/AMWA-TV/nmos-parameter-registers/actions?query=workflow%3ARender)
 
-Parameter values recorded herein may be applicable to one or more of the AMWA NMOS specifications, and to one or more versions of each specification. The Parameter Registers are not themselves versioned, and are expected to be updated as needed to promote interoperability.
+<!-- INTRO-START -->
 
-## Parameter Registers
+### What does it do?
 
-The following parameter registers are maintained:
+- Lists constants for many types of parameter values used in NMOS specifications
+- Defines procedures for updating these
 
-- [NMOS Node Service Types](node-service-types/)
-- [NMOS Device Control Types](device-control-types/)
-- [NMOS Formats](formats/)
-- [NMOS Transports](transports/)
-- [NMOS Device Types](device-types/)
-- [NMOS Tags](tags/)
-- [NMOS Flow Attributes](flow-attributes/)
-- [NMOS Capabilities](capabilities/)
+### Why does it matter?
 
-Each parameter register defines specific criteria and considerations for when and how values can be included, and identifies the procedures for revision and deprecation of entries.
+- Supports extensibity of NMOS 
+- Promotes interoperability by ensuring common definitions can be shared easily
 
-New parameter registers may be added in the future as required by AMWA NMOS specifications.
+### How does it work?
 
-### General Procedures and Criteria
+- Each type of parameter has a register, listed on this site
+- In most parameter registers, values are specified as ``urn:x-nmos:<type>:<value>[/<version>]``
+- Updates are proposed and reviewed using GitHub pull requests (PRs)
 
-There are a number of procedures and criteria that are common to all registers. These are documented [here](common/).
+<!-- INTRO-END -->
 
-For more information about AMWA, NMOS and the Networked Media Incubator, please refer to <http://amwa.tv/>.
+The following list of parameter registers are currently maintained:
+
+- [Node Service Types](./node-service-types/)
+- [Device Control Types](./device-control-types/)	
+- [Formats](./formats/)
+- [Transports](./transports/)
+- [Device Types](./device-types/)
+- [Tags](./tags/)
+- [Flow Attributes](./flow-attributes/)
+- [Capabilities](./capabilities/)
+
+## Getting started
+
+There is more information about the NMOS Specifications and their GitHub repos at <https://specs.amwa.tv/nmos>.
