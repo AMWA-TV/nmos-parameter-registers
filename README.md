@@ -7,17 +7,8 @@
 
 ### What does it do?
 
-- Lists constants for parameter values used in NMOS specifications, currently:	
-  - [Node Service Types](branches/main/node-service-types/)
-  - [Device Control Types](branches/main/device-control-types/)	
-  - [Formats](branches/main/formats/)
-  - [Transports](branches/main/transports/)
-  - [Device Types](branches/main/device-types/)
-  - [Tags](branches/main/tags/)
-  - [Flow Attributes](branches/main/flow-attributes/)
-  - [Capabilities](branches/capabilities/capabilities/)
-
-- Defines [procedures](branches/main/common/) for updating these
+- Lists constants for many types of parameter values used in NMOS specifications
+- Defines procedures for updating these
 
 ### Why does it matter?
 
@@ -26,11 +17,21 @@
 
 ### How does it work?
 
-- Each type of parameter has a register, listed on this site.
-- Values are represented as ``urn:x-nmos:<type>:<value>/<version>``
-- Updates are made using GitHub pull requests (PRs)
+- Each type of parameter has a register, listed on this site
+- In most parameter registers, values are specified as ``urn:x-nmos:<type>:<value>[/<version>]``
+- Updates are proposed and reviewed using GitHub pull requests (PRs)
 
 <!-- INTRO-END -->
+
+The following list of parameter registers are currently maintained:
+
+- [Node Service Types](./node-service-types/)
+- [Device Control Types](./device-control-types/)	
+- [Formats](./formats/)
+- [Transports](./transports/)
+- [Device Types](./device-types/)
+- [Tags](./tags/)
+- [Flow Attributes](./flow-attributes/)
 
 ## Getting started
 
