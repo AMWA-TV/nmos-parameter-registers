@@ -2,7 +2,7 @@
 
 - **Name:** urn:x-nmos:control:manifest-base/v1.0
   - **Description:** Use of this control type provides redundant locators for sender transport files (also known as manifests).
-  - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb-sony](https://github.com/garethsb-sony))
+  - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb](https://github.com/garethsb))
 
 This document describes a purely behavioural extension to AMWA IS-04 to provide redundant locators for an NMOS sender's transport file, using the above device control 'type'.
 
