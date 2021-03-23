@@ -35,6 +35,6 @@ This Device Control Types parameter register contains values that may be used to
   - **Applicability:** AMWA IS-04 v1.2+
 - **Name:** urn:x-nmos:control:manifest-base/v1.0
   - **Description:** Use of this control type provides redundant locators for sender transport files (also known as manifests).
-  - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb-sony](https://github.com/garethsb-sony))
+  - **Proponent:** [Sony](https://github.com/sony) (contact [@garethsb](https://github.com/garethsb))
   - **Specification:** [Manifest Base URL](manifest-base.md)
   - **Applicability:** AMWA IS-04 v1.1+
