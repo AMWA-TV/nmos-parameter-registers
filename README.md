@@ -32,6 +32,7 @@ The following list of parameter registers are currently maintained:
 - [Device Types](./device-types/)
 - [Tags](./tags/)
 - [Flow Attributes](./flow-attributes/)
+- [Capabilities](./capabilities/)
 
 ## Getting started
 
