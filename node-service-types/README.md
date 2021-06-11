@@ -14,7 +14,7 @@ This Node Service Types parameter register contains values that may be used to i
 ## Values
 
 - **Name:** urn:x-manufacturer:service:status
-  - **Description:** Used purely as an example in AMWA IS-04 (see [nodeapi-self-get-200.json](https://specs.amwa.tv/is-04/releases/v1.3/examples/nodeapi-self-get-200.html)).
+  - **Description:** Used purely as an example in AMWA IS-04 (see [nodeapi-self-get-200.json](https://specs.amwa.tv/is-04/v1.3/examples/nodeapi-self-get-200.html)).
   - **Proponent:** [AMWA](https://github.com/AMWA-TV)
 - **Name:** urn:x-ipstudio:service:mdnsbridge/v1.0
   - **Description:** This API provides a zeroconf/HTTP bridge for NMOS service types.

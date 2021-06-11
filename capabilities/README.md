@@ -87,13 +87,13 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
 - **Name:** urn:x-nmos:cap:format:colorspace
   - **Description:** Identifies the acceptable colorspace of a video stream.
   - **Specification:** per AMWA BCP-004-01
-    - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md) register)
+    - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/) register)
     - **Target:** (a) video Flow 'colorspace', (b) SDP attribute 'a=fmtp:' format-specific parameter 'colorimetry'
   - **Applicability:** AMWA IS-04
 - **Name:** urn:x-nmos:cap:format:transfer_characteristic
   - **Description:** Identifies the acceptable transfer characteristic system of a video stream.
   - **Specification:** per AMWA BCP-004-01
-    - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md) register)
+    - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/) register)
     - **Target:** (a) video Flow 'transfer_characteristic', (b) SDP attribute 'a=fmtp:' format-specific parameter 'TCS'
   - **Applicability:** AMWA IS-04
 - **Name:** urn:x-nmos:cap:format:color_sampling
