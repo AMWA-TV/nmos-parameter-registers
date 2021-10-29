@@ -65,6 +65,17 @@
     },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
       "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:transport:ipmx_pass_through_delay": {
+      "type": "object",
+      "properties": {
+        "minimum": {
+          "type": "integer"
+        },
+        "maximum": {
+          "type": "integer"
+        }
+      }
     }
   },
   "patternProperties": {
