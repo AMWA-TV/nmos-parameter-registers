@@ -67,15 +67,7 @@
       "$ref": "param_constraint_string.json"
     },
     "urn:x-nmos:cap:transport:ipmx_pass_through_delay": {
-      "type": "object",
-      "properties": {
-        "minimum": {
-          "type": "integer"
-        },
-        "maximum": {
-          "type": "integer"
-        }
-      }
+      "$ref": "param_constraint_integer.json"
     }
   },
   "patternProperties": {

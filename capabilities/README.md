@@ -151,10 +151,10 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
     - **Target:** SDP attribute 'a=fmtp:' format-specific parameter 'TP'
     - **Applicability:** AMWA IS-04
 - **Name:** urn:x-nmos:cap:transport:ipmx_pass_through_delay
-  - **Description:** Minimum and maximum delay pass-through delay values in microseconds supported for IPMX receiver.
+  - **Description:** Identifies minimum and maximum pass-through delay in microseconds supported by an IPMX receiver.
   - **Specification:** per [VSF TR-10-1][TR-10-1]
-    - **Type:** JSON object with 'minimum' and 'maximum' number attributes.
-    - **Target:** Used to calculate setting of ST-2110-10:2021 Link Offet Delay via 'ext_link_offset_delay' in AMWA IS-05 Transport Parameter.
+    - **Type:** integer
+    - **Note:** Used to calculate setting of ST 2110-10:2021 Link Offset Delay via 'ext_link_offset_delay' in AMWA IS-05 Transport Parameter.
     - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
