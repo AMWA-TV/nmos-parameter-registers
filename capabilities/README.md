@@ -82,7 +82,7 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
   - **Description:** Identifies the acceptable interlace mode of a video stream.
   - **Specification:** per AMWA BCP-004-01
     - **Type:** string (enumerated values as per AMWA IS-04)
-    - **Target:** (a) video Flow 'interlace_mode', (b) SDP attribute 'a=fmtp:' format-specific parameters 'interlace', 'segmented' and 'top-field-first'
+    - **Target:** (a) video Flow 'interlace_mode', (b) SDP attribute 'a=fmtp:' format-specific parameters 'interlace' and 'segmented'
   - **Applicability:** AMWA IS-04
 - **Name:** urn:x-nmos:cap:format:colorspace
   - **Description:** Identifies the acceptable colorspace of a video stream.
