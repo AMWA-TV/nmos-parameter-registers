@@ -22,3 +22,7 @@ Instead, they are clearly identified using the prefix `ext_`.
   - **Description:** URL of the Events API resource providing the current state and type of an Event emitter (Source).
   - **Specification:** [AMWA IS-07 v1.0](https://specs.amwa.tv/is-07/v1.0)
   - **Applicability:** AMWA IS-05 since v1.1, IS-07 since v1.0
+- **Name:** `ext_link_offset_delay`
+  - **Description:** Identifies the Link Offset Delay used to synchronise Playout Time of all components of a stream by receivers.
+  - **Specification:** ST 2110-10:2021 and VSF TR-10-x
+  - **Applicability:** AMWA IS-05 since v1.1
