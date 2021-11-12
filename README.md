@@ -18,7 +18,7 @@
 ### How does it work?
 
 - Each type of parameter has a register, listed on this site
-- In most parameter registers, values are specified as ``urn:x-nmos:<type>:<value>[/<version>]``
+- In most parameter registers, values are specified as `urn:x-nmos:<type>:<value>[/<version>]`
 - Updates are proposed and reviewed using GitHub pull requests (PRs)
 
 <!-- INTRO-END -->

@@ -16,7 +16,7 @@ Note that the force of these words is confined to the scope of this repository.
 
 ## Example
 
-A typical example of specific criteria is found in the [NMOS Node Service Types](../node-service-types/) parameter register. AMWA IS-04, since v1.1, allows a list of 'services' to be advertised on the node resource in the Node API. Each advertised service has a 'type' property whose value is a Uniform Resource Name (URN), as well as its 'href' property which provides a URL to reach the service. The Node Service Types parameter register provides implementers with the means to discover and disclose service type names (URNs) that are in use.
+A typical example of specific criteria is found in the [NMOS Node Service Types](../node-service-types/) parameter register. AMWA IS-04, since v1.1, allows a list of `services` to be advertised on the node resource in the Node API. Each advertised service has a `type` property whose value is a Uniform Resource Name (URN), as well as its `href` property which provides a URL to reach the service. The Node Service Types parameter register provides implementers with the means to discover and disclose service type names (URNs) that are in use.
 
 So, for example, its criteria includes the following statements:
 

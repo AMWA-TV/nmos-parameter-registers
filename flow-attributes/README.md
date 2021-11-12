@@ -1,6 +1,6 @@
 # NMOS Flow Attributes
 
-This Flow Attributes parameter register contains extensible attributes and their permitted values which may be used in Flow resources within the [AMWA IS-04 NMOS Discovery and Registration Specification](https://github.com/AMWA-TV/nmos-discovery-registration).
+This Flow Attributes parameter register contains extensible attributes and their permitted values which may be used in Flow resources within the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
 
 ## Criteria
 
@@ -21,25 +21,25 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 ### urn:x-nmos:format:video
 
-- **Name:** colorspace
+- **Name:** `colorspace`
   - **Description:** Colorspace used for the video.
-  - **Specification:** [AMWA IS-04 v1.1](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.1.x)
-  - **Applicability:** Schema values from AMWA IS-04 v1.1+, referenced values from AMWA IS-04 v1.3+
+  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
+  - **Applicability:** AMWA IS-04 video Flows; schema values since v1.1 and referenced values since v1.3
   - **Schema Permitted Values:**
     - `BT601`
     - `BT709`
     - `BT2020`
     - `BT2100`
   - **Referenced Permitted Values:**
-    - Entries defined by the 'Colorimetry' parameter in any published revision of SMPTE ST.2110-20.
+    - Entries defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
 
-- **Name:** transfer_characteristic
+- **Name:** `transfer_characteristic`
   - **Description:** Transfer characteristic.
-  - **Specification:** [AMWA IS-04 v1.1](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.1.x)
-  - **Applicability:** Schema values from AMWA IS-04 v1.1+, referenced values from AMWA IS-04 v1.3+
+  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
+  - **Applicability:** AMWA IS-04 video Flows; schema values since v1.1 and referenced values since v1.3
   - **Schema Permitted Values:**
     - `SDR`
     - `HLG`
     - `PQ`
   - **Referenced Permitted Values:**
-    - Entries defined by the 'TCS' parameter in any published revision of SMPTE ST.2110-20.
+    - Entries defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.

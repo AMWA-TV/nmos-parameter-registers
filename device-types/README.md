@@ -1,10 +1,10 @@
 # NMOS Device Types
 
-This Device Types parameter register contains values that may be used to identify the role of a device within the production environment (such as camera, mixer, tally light etc.), used in the 'type' property of the device resource defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://github.com/AMWA-TV/nmos-discovery-registration).
+This Device Types parameter register contains values that may be used to identify the role of a device within the production environment (such as camera, mixer, tally light etc.), used in the `type` property of the device resource defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
 
 ## Criteria
 
-- Values used for the device 'type' property are not required to be included in this parameter register.
+- Values used for the device `type` property are not required to be included in this parameter register.
 - Each entry MUST define a unique device type name (which is a URN).
 - Each entry MUST have a short description and include contact information for the proponent(s).
 - Each entry SHOULD provide a link to a specification for the device type, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
@@ -14,13 +14,13 @@ Manufacturers MAY use their own namespaces to indicate device types which are no
 
 ## Values
 
-- **Name:** urn:x-nmos:device:generic
+- **Name:** `urn:x-nmos:device:generic`
   - **Description:** Generic device.
-  - **Proponent:** [AMWA](https://github.com/AMWA-TV)
-  - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
-  - **Applicability:** AMWA IS-04 v1.1+
-- **Name:** urn:x-nmos:device:pipeline
+  - **Proponent:** [AMWA](https://www.amwa.tv/)
+  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+  - **Applicability:** AMWA IS-04 since v1.1
+- **Name:** `urn:x-nmos:device:pipeline`
   - **Description:** Pipeline device.
-  - **Proponent:** [AMWA](https://github.com/AMWA-TV)
-  - **Specification:** [AMWA IS-04 v1.0](https://github.com/AMWA-TV/nmos-discovery-registration/tree/v1.0.x)
-  - **Applicability:** AMWA IS-04 v1.1+
+  - **Proponent:** [AMWA](https://www.amwa.tv/)
+  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+  - **Applicability:** AMWA IS-04 since v1.1
