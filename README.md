@@ -33,7 +33,7 @@ The following list of parameter registers are currently maintained:
 - [Tags](./tags/)
 - [Flow Attributes](./flow-attributes/)
 - [Capabilities](./capabilities/)
-- [Transport Parameters](./ext-transport-parameters/)
+- [Transport Parameters](./transport-parameters/)
 
 ## Getting started
 
