@@ -1,8 +1,9 @@
-# NMOS Extra/External Transport Parameters
+# NMOS Transport Parameters
 
-This register contains the names of additional (or "extra") parameters that could be included in an [IS-05](https://specs.amwa.tv/is-05/v1.1/docs/4.0._Behaviour.html#externally-defined-parameters) `transport_params` array. These are also known as "external" parameters because they are defined externally to IS-05 (in another NMOS specification or by a third party).
+This register contains the names of additional transport parameters that could be included in the objects in an [IS-05](https://specs.amwa.tv/is-05) `transport_params` array.
 
-For historical reasons these start with `ext_` and are not URNs.
+For historical reasons, these ["externally-defined" parameters](https://specs.amwa.tv/is-05/v1.1/docs/4.0._Behaviour.html#externally-defined-parameters) are not URNs, like many other registered parameters.
+Instead, they are clearly identified using the prefix `ext_`.
 
 ## Criteria
 
@@ -16,8 +17,8 @@ For historical reasons these start with `ext_` and are not URNs.
 - **Name:** `ext_is_07_source_id`
   - **Description:** Identifies the Source that emits an IS-07 event.
   - **Specification:** [AMWA IS-07 v1.0](https://specs.amwa.tv/is-07/v1.0)
-  - **Applicability:** AMWA IS-05 v1.1+, IS-07 v1.0+
+  - **Applicability:** AMWA IS-05 since v1.1, IS-07 since v1.0
 - **Name:** `ext_is_07_rest_api_url`
   - **Description:** URL of the Events API resource providing the current state and type of an Event emitter (Source).
   - **Specification:** [AMWA IS-07 v1.0](https://specs.amwa.tv/is-07/v1.0)
-  - **Applicability:** AMWA IS-05 v1.1+, IS-07 v1.0+
+  - **Applicability:** AMWA IS-05 since v1.1, IS-07 since v1.0
