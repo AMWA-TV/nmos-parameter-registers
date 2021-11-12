@@ -108,6 +108,12 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
     - **Type:** integer
     - **Target:** (a) SDP attribute `a=fmtp:` format-specific parameter `depth`, (b) video Flow `components.bit_depth`
   - **Applicability:** AMWA IS-04
+- **Name:** `urn:x-nmos:cap:format:bit_rate`
+  - **Description:** Identifies the acceptable bit rate of a compressed video stream, in kilobits/second.
+  - **Specification:** per AMWA BCP-004-01
+    - **Type:** integer
+    - **Target:** (a) coded video Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
+  - **Applicability:** AMWA IS-04
 - **Name:** `urn:x-nmos:cap:format:channel_count`
   - **Description:** Identifies the acceptable number of channels of an audio stream.
   - **Specification:** per AMWA BCP-004-01
