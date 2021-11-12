@@ -6,7 +6,7 @@ For historical reasons these start with `ext_` and are not URNs.
 
 ## Criteria
 
-- Parameter names MUST start with `ext_`
+- Parameter names MUST match the regex pattern `^ext_[a-zA-Z0-9_]+$`. i.e. they start with `ext_` and contain only alphanumeric or underscore characters.
 - Each entry MUST have a short description.
 - Each entry SHOULD provide a link to a specification where the parameter is defined, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
