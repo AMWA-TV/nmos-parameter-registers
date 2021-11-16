@@ -30,12 +30,15 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
   - **Description:** Identifies streams from Senders which may be created or consumed based upon the attributes of the associated Source or Flow or contents of the associated transport file.
   - **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
   - **Applicability:** AMWA IS-04
-  - **Note:** A JSON schema for Constraint Sets, supporting validation of all the Constraint Set Metadata and Parameter Constraints defined in this register, is available as **[constraint_set.json](constraint_set.json)**.
-    It MAY be used in place of the file with the same name in the AMWA BCP-004-01 specification.
 - **Name:** `version`
   - **Description:** String formatted TAI timestamp (`<seconds>:<nanoseconds>`) indicating when an attribute of the `caps` object last changed.
   - **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
   - **Applicability:** AMWA IS-04
+
+## Constraint Sets
+
+**Note:** A JSON schema for Constraint Sets, supporting validation of all the Constraint Set Metadata and Parameter Constraints defined in this register, is available as **[constraint_set.json](constraint_set.json)**.
+It MAY be used in place of the file with the same name in the AMWA BCP-004-01 specification.
 
 ### Constraint Set Metadata
 
