@@ -21,6 +21,9 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 ### urn:x-nmos:format:video
 
+**Note:** A JSON schema supporting validation of all the attributes defined in this register is available as **[flow_video_register.json](flow_video_register.json)**.
+These MAY be used in addition to the schemas, such as **flow_video.json**, found in the AMWA IS-04 specification.
+
 - **Name:** `bit_rate`
   - **Description:** Bit rate, in kilobits/second
   - **Specification:** Depends on the media type (for example, for `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22)
