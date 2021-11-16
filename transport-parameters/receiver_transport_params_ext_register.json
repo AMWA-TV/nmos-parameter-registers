@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Describes external Receiver transport parameters defined in the Transport Parameters register of the NMOS Parameter Registers. The constraints in this schema are minimum constraints, but may be further constrained at the constraints endpoint.",
-  "title": "External Receiver Transport Parameters",
+  "description": "Describes additional Receiver transport parameters defined in the Transport Parameters register of the NMOS Parameter Registers. The constraints in this schema are minimum constraints, but may be further constrained at the constraints endpoint.",
+  "title": "Externally-defined Receiver Transport Parameters",
   "type": "object",
   "title": "Receiver Output",
   "properties": {
