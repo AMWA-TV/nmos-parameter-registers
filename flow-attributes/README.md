@@ -42,6 +42,13 @@ These MAY be used in addition to the schemas, such as **flow_video.json**, found
     - `BT2100`
   - **Referenced Permitted Values:**  
     Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+    - Since ST 2110-20:2017
+      - `ST2065-1`
+      - `ST2065-3`
+      - `UNSPECIFIED` (when no other value applies)
+      - `XYZ`
+    - Since ST 2110-20:2021
+      - `ALPHA`
 - **Name:** `components`
   - **Description:** Array of objects describing the components of the video.
   - **Specification:** Identical to the components attribute defined for raw video Flows in AMWA IS-04
@@ -66,3 +73,13 @@ These MAY be used in addition to the schemas, such as **flow_video.json**, found
     - `PQ`
   - **Referenced Permitted Values:**  
     Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+    - Since ST 2110-20:2017
+      - `LINEAR`
+      - `BT2100LINPQ`
+      - `BT2100LINHLG`
+      - `ST2065-1`
+      - `ST428-1`
+      - `DENSITY`
+      - `UNSPECIFIED` (when no other value applies)
+    - Since ST 2110-20:2021
+      - `ST2115LOGS3`

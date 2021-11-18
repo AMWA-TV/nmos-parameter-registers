@@ -8,6 +8,22 @@
       "description": "Bit rate, in kilobits/second. Integer value expressed in units of 1000 bits per second, rounding up.",
       "type": "integer"
     },
+    "colorspace": {
+      "description": "Colorspace used for the video. Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.",
+      "type": "string",
+      "enum": [
+        "BT601",
+        "BT709",
+        "BT2020",
+        "BT2100",
+        "ST2065-1",
+        "ST2065-3",
+        "UNSPECIFIED",
+        "XYZ",
+        "ALPHA",
+        "ST2115LOGS3"
+      ]
+    },
     "components" : {
       "description" : "Array of objects describing the components, or color (sub-)sampling, for coded video Flows. Identical to the components attribute defined for raw video Flows in AMWA IS-04.",
       "type": "array",
@@ -53,6 +69,22 @@
           }
         }
       }
+    },
+    "transfer_characteristic": {
+      "description": "Transfer characteristic. Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.",
+      "type": "string",
+      "enum": [
+        "SDR",
+        "HLG",
+        "PQ",
+        "LINEAR",
+        "BT2100LINPQ",
+        "BT2100LINHLG",
+        "ST2065-1",
+        "ST428-1",
+        "DENSITY",
+        "UNSPECIFIED"
+      ]
     }
   }
 }
