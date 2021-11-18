@@ -40,16 +40,15 @@ These MAY be used in addition to the schemas, such as **flow_video.json**, found
     - `BT709`
     - `BT2020`
     - `BT2100`
-  - **Referenced Permitted Values:**
-    - Entries defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
-
+  - **Referenced Permitted Values:**  
+    Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
 - **Name:** `components`
-  - **Description:** Object describing the components of the video.
+  - **Description:** Array of objects describing the components of the video.
   - **Specification:** Identical to the components attribute defined for raw video Flows in AMWA IS-04
   - **Applicability:** AMWA IS-04 coded video Flows since v1.3
-  - **Permitted Values:**
-    - Objects permitted by the JSON Schema, such as:
-      ```json
+  - **Permitted Values:**  
+    Values permitted by the JSON Schema, such as:
+    - ```json
       "components": [
         { "name": "Y",  "width": 1280, "height": 720, "bit_depth": 10 },
         { "name": "Cb", "width": 640,  "height": 720, "bit_depth": 10 },
@@ -65,5 +64,5 @@ These MAY be used in addition to the schemas, such as **flow_video.json**, found
     - `SDR`
     - `HLG`
     - `PQ`
-  - **Referenced Permitted Values:**
-    - Entries defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - **Referenced Permitted Values:**  
+    Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
