@@ -45,6 +45,9 @@
     "urn:x-nmos:cap:format:component_depth": {
       "$ref": "param_constraint_integer.json"
     },
+    "urn:x-nmos:cap:format:bit_rate": {
+      "$ref": "param_constraint_integer.json"
+    },
     "urn:x-nmos:cap:format:channel_count": {
       "$ref": "param_constraint_integer.json"
     },

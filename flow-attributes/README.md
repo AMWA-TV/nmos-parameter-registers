@@ -19,27 +19,66 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 ## Attributes
 
-### urn:x-nmos:format:video
+**Note:** JSON schemas supporting validation of all the attributes defined in this register are available as **[flow_video_register.json](flow_video_register.json)** and **[flow_audio_register.json](flow_audio_register.json)**.
+These MAY be used in addition to the schemas, such as _flow_video.json_ and _flow_audio.json_, found in the AMWA IS-04 specification.
+
+- **Name:** `bit_rate`
+  - **Description:** Bit rate, in kilobits/second.
+  - **Specification:** Depends on the media type (for example, for `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22)
+  - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio` Flows since AMWA IS-04 v1.3
+  - **Permitted Values:**
+    - Integer value expressed in units of 1000 bits per second, rounding up.
 
 - **Name:** `colorspace`
   - **Description:** Colorspace used for the video.
   - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** AMWA IS-04 video Flows; schema values since v1.1 and referenced values since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` Flows; schema values since AMWA IS-04 v1.1 and referenced values since v1.3
   - **Schema Permitted Values:**
     - `BT601`
     - `BT709`
     - `BT2020`
     - `BT2100`
-  - **Referenced Permitted Values:**
-    - Entries defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - **Referenced Permitted Values:**  
+    Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+    - Since ST 2110-20:2017
+      - `ST2065-1`
+      - `ST2065-3`
+      - `UNSPECIFIED` (when no other value applies)
+      - `XYZ`
+    - Since ST 2110-20:2021
+      - `ALPHA`
+
+- **Name:** `components`
+  - **Description:** Array of objects describing the components of the video.
+  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1) for raw video Flows, extended to coded video Flows since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` Flows; raw video Flows since AMWA IS-04 v1.1 and coded video Flows since v1.3
+  - **Permitted Values:**  
+    Values permitted by the JSON Schema, such as:
+    - ```json
+      "components": [
+        { "name": "Y",  "width": 1280, "height": 720, "bit_depth": 10 },
+        { "name": "Cb", "width": 640,  "height": 720, "bit_depth": 10 },
+        { "name": "Cr", "width": 640,  "height": 720, "bit_depth": 10 }
+      ]
+      ```
 
 - **Name:** `transfer_characteristic`
   - **Description:** Transfer characteristic.
   - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** AMWA IS-04 video Flows; schema values since v1.1 and referenced values since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` Flows; schema values since AMWA IS-04 v1.1 and referenced values since v1.3
   - **Schema Permitted Values:**
     - `SDR`
     - `HLG`
     - `PQ`
-  - **Referenced Permitted Values:**
-    - Entries defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - **Referenced Permitted Values:**  
+    Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+    - Since ST 2110-20:2017
+      - `LINEAR`
+      - `BT2100LINPQ`
+      - `BT2100LINHLG`
+      - `ST2065-1`
+      - `ST428-1`
+      - `DENSITY`
+      - `UNSPECIFIED` (when no other value applies)
+    - Since ST 2110-20:2021
+      - `ST2115LOGS3`
