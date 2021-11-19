@@ -19,22 +19,20 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 ## Attributes
 
-### urn:x-nmos:format:video
-
-**Note:** A JSON schema supporting validation of all the attributes defined in this register is available as **[flow_video_register.json](flow_video_register.json)**.
-These MAY be used in addition to the schemas, such as **flow_video.json**, found in the AMWA IS-04 specification.
+**Note:** JSON schemas supporting validation of all the attributes defined in this register are available as **[flow_video_register.json](flow_video_register.json)** and **[flow_audio_register.json](flow_audio_register.json)**.
+These MAY be used in addition to the schemas, such as _flow_video.json_ and _flow_audio.json_, found in the AMWA IS-04 specification.
 
 - **Name:** `bit_rate`
-  - **Description:** Bit rate, in kilobits/second
+  - **Description:** Bit rate, in kilobits/second.
   - **Specification:** Depends on the media type (for example, for `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22)
-  - **Applicability:** AMWA IS-04 coded video Flows since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio` Flows since AMWA IS-04 v1.3
   - **Permitted Values:**
     - Integer value expressed in units of 1000 bits per second, rounding up.
 
 - **Name:** `colorspace`
   - **Description:** Colorspace used for the video.
   - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** AMWA IS-04 video Flows; schema values since v1.1 and referenced values since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` Flows; schema values since AMWA IS-04 v1.1 and referenced values since v1.3
   - **Schema Permitted Values:**
     - `BT601`
     - `BT709`
@@ -49,10 +47,11 @@ These MAY be used in addition to the schemas, such as **flow_video.json**, found
       - `XYZ`
     - Since ST 2110-20:2021
       - `ALPHA`
+
 - **Name:** `components`
   - **Description:** Array of objects describing the components of the video.
-  - **Specification:** Identical to the components attribute defined for raw video Flows in AMWA IS-04
-  - **Applicability:** AMWA IS-04 coded video Flows since v1.3
+  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1) for raw video Flows, extended to coded video Flows since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` Flows; raw video Flows since AMWA IS-04 v1.1 and coded video Flows since v1.3
   - **Permitted Values:**  
     Values permitted by the JSON Schema, such as:
     - ```json
@@ -66,7 +65,7 @@ These MAY be used in addition to the schemas, such as **flow_video.json**, found
 - **Name:** `transfer_characteristic`
   - **Description:** Transfer characteristic.
   - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** AMWA IS-04 video Flows; schema values since v1.1 and referenced values since v1.3
+  - **Applicability:** `urn:x-nmos:format:video` Flows; schema values since AMWA IS-04 v1.1 and referenced values since v1.3
   - **Schema Permitted Values:**
     - `SDR`
     - `HLG`
