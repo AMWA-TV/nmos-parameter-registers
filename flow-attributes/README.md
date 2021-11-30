@@ -24,22 +24,24 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 
 - **Name:** `bit_rate`
   - **Description:** Bit rate, in kilobits/second.
-  - **Specification:** Depends on the media type (for example, for `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22)
-  - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio` Flows since AMWA IS-04 v1.3
+  - **Specification:** Depends on the media type
+  - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
+    -  For `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22
   - **Permitted Values:**
-    - Integer value expressed in units of 1000 bits per second, rounding up.
+    - Since AMWA IS-04 v1.3
+      - Integer value expressed in units of 1000 bits per second, rounding up.
 
 - **Name:** `colorspace`
   - **Description:** Colorspace used for the video.
   - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** `urn:x-nmos:format:video` Flows; schema values since AMWA IS-04 v1.1 and referenced values since v1.3
-  - **Schema Permitted Values:**
-    - `BT601`
-    - `BT709`
-    - `BT2020`
-    - `BT2100`
-  - **Referenced Permitted Values:**  
-    Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - **Applicability:** `urn:x-nmos:format:video`
+  - **Permitted Values:**
+    - Since AMWA IS-04 v1.1, values complying with the IS-04 schema
+      - `BT601`
+      - `BT709`
+      - `BT2020`
+      - `BT2100`
+    - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
     - Since ST 2110-20:2017
       - `ST2065-1`
       - `ST2065-3`
@@ -50,11 +52,13 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 
 - **Name:** `components`
   - **Description:** Array of objects describing the components of the video.
-  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1) for raw video Flows, extended to coded video Flows since v1.3
-  - **Applicability:** `urn:x-nmos:format:video` Flows; raw video Flows since AMWA IS-04 v1.1 and coded video Flows since v1.3
-  - **Permitted Values:**  
-    Values permitted by the JSON Schema, such as:
-    - ```json
+  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1) for raw video Flows, extended by this entry to coded video Flows since v1.3
+  - **Applicability:** `urn:x-nmos:format:video`
+  - **Permitted Values:**
+    - For raw video Flows, since AMWA IS-04 v1.1, values complying with the IS-04 schema
+    - For coded video Flows, since AMWA IS-04 v1.3, values complying with the schema accompanying this register
+    - For example:  
+      ```json
       "components": [
         { "name": "Y",  "width": 1280, "height": 720, "bit_depth": 10 },
         { "name": "Cb", "width": 640,  "height": 720, "bit_depth": 10 },
@@ -65,13 +69,13 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 - **Name:** `transfer_characteristic`
   - **Description:** Transfer characteristic.
   - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** `urn:x-nmos:format:video` Flows; schema values since AMWA IS-04 v1.1 and referenced values since v1.3
-  - **Schema Permitted Values:**
-    - `SDR`
-    - `HLG`
-    - `PQ`
-  - **Referenced Permitted Values:**  
-    Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - **Applicability:** `urn:x-nmos:format:video`
+  - **Permitted Values:**
+    - Since AMWA IS-04 v1.1, values complying with the IS-04 schema
+      - `SDR`
+      - `HLG`
+      - `PQ`
+    - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
     - Since ST 2110-20:2017
       - `LINEAR`
       - `BT2100LINPQ`
