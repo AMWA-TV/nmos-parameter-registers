@@ -18,7 +18,7 @@ Instead, they are clearly identified using the prefix `ext_`.
 
 ## Values
 
-**Note:** JSON schemas supporting validation of all the `ext_` transport parameters defined in this register are available as **[sender_transport_params_ext_register.json](sender_transport_params_ext_register.json)**
+Note: JSON schemas supporting validation of all the `ext_` transport parameters defined in this register are available as **[sender_transport_params_ext_register.json](sender_transport_params_ext_register.json)**
 and **[receiver_transport_params_ext_register.json](receiver_transport_params_ext_register.json)**.
 These MAY be used in addition to the transport-specific schemas, such as **sender_transport_params_rtp.json**, found in the AMWA IS-05 specification.
 

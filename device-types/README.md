@@ -16,6 +16,8 @@ This Device Types parameter register contains values that may be used to identif
 
 Manufacturers MAY use their own namespaces to indicate device types which are not currently defined within the NMOS namespace.
 
+Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
+
 ## Values
 
 ### Generic Device

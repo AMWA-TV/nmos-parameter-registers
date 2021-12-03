@@ -27,3 +27,5 @@ So, for example, its criteria includes the following statements:
 > - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the General Procedures and Criteria.
 
 However, modifications to a parameter register may be more closely controlled than this. For example, in the case of the [NMOS Formats](../formats/) parameter register, values are defined only by revisions of AMWA IS-04 itself.
+
+Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.

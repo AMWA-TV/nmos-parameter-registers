@@ -16,6 +16,8 @@ Note: the `controls` property was introduced in AMWA IS-04 v1.1.
 - In the case of substantial revision to the control specification, a new control type name MUST be defined. Using versioned names is therefore RECOMMENDED.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
+Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
+
 ## Values
 
 ### Connection API v1.0

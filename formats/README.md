@@ -16,6 +16,8 @@ This Formats parameter register contains values that may be used to identify a d
 
 Query API clients MUST be tolerant to the presence of formats not yet defined here which may be added in later API versions.
 
+Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
+
 ## Values
 
 ### Video
@@ -36,11 +38,13 @@ Query API clients MUST be tolerant to the presence of formats not yet defined he
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0
 
-### Event Data
+#### Event Data
 - **Name:** `urn:x-nmos:format:data.event`
 - **Description:** Identifies (sources of) Query API subscription event Grains.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0
+
+Note: This subclassification is only used for Query API subscription event data. IS-07 Event & Tally event sources and flows use the URN base.
 
 ### Multiplexed
 - **Name:** `urn:x-nmos:format:mux`

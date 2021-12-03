@@ -23,7 +23,7 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 ## Attributes
 
-**Note:** JSON schemas supporting validation of all the attributes defined in this register are available as **[flow_video_register.json](flow_video_register.json)** and **[flow_audio_register.json](flow_audio_register.json)**.
+Note: JSON schemas supporting validation of all the attributes defined in this register are available as **[flow_video_register.json](flow_video_register.json)** and **[flow_audio_register.json](flow_audio_register.json)**.
 These MAY be used in addition to the schemas, such as _flow_video.json_ and _flow_audio.json_, found in the AMWA IS-04 specification.
 
 ### Bit Rate

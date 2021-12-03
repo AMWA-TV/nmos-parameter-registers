@@ -18,6 +18,8 @@ Query API clients MUST be tolerant to the presence of capabilities not yet defin
 
 Manufacturers MAY use their own namespaces to indicate capabilities which are not currently defined within the NMOS namespace (`urn:x-nmos:cap:`). In order to avoid collisions with simple names allocated by AMWA specifications, they MUST NOT use capability names that do not start with `urn:`.
 
+Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
+
 Capabilities are most used by IS-04 Receivers to indicate what they may consume, but may be used by other `caps` objects in the future, potentially to indicate what they may be re-configured to generate.
 
 ## Values
@@ -48,7 +50,7 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
 
 ## Constraint Set
 
-**Note:** A JSON schema for a Constraint Set, supporting validation of all the Constraint Set Metadata and Parameter Constraints defined in this register, is available as **[constraint_set.json](constraint_set.json)**.
+Note: A JSON schema for a Constraint Set, supporting validation of all the Constraint Set Metadata and Parameter Constraints defined in this register, is available as **[constraint_set.json](constraint_set.json)**.
 It MAY be used in place of the file with the same name in the AMWA BCP-004-01 specification.
 
 ## Constraint Set Metadata
