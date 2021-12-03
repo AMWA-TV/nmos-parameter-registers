@@ -1,6 +1,10 @@
 # NMOS Formats
+{:.no_toc}
 
 This Formats parameter register contains values that may be used to identify a data format, used in the `format` property of the source and flow resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
+
+- A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+{:toc}
 
 ## Criteria
 
@@ -14,23 +18,27 @@ Query API clients MUST be tolerant to the presence of formats not yet defined he
 
 ## Values
 
-- **Name:** `urn:x-nmos:format:video`
-  - **Description:** Identifies (sources of) video flows.
-  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-  - **Applicability:** AMWA IS-04 since v1.0
-- **Name:** `urn:x-nmos:format:audio`
-  - **Description:** Identifies (sources of) audio flows.
-  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-  - **Applicability:** AMWA IS-04 since v1.0
-- **Name:** `urn:x-nmos:format:data`
-  - **Description:** Identifies (sources of) data flows.
-  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-  - **Applicability:** AMWA IS-04 since v1.0
-- **Name:** `urn:x-nmos:format:data.event`
-  - **Description:** Identifies (sources of) Query API subscription event Grains.
-  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-  - **Applicability:** AMWA IS-04 since v1.0
-- **Name:** `urn:x-nmos:format:mux`
-  - **Description:** Identifies (sources of) multiplexed flows.
-  - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
-  - **Applicability:** AMWA IS-04 since v1.1
+### `urn:x-nmos:format:video`
+- **Description:** Identifies (sources of) video flows.
+- **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### `urn:x-nmos:format:audio`
+- **Description:** Identifies (sources of) audio flows.
+- **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### `urn:x-nmos:format:data`
+- **Description:** Identifies (sources of) data flows.
+- **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### `urn:x-nmos:format:data.event`
+- **Description:** Identifies (sources of) Query API subscription event Grains.
+- **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### `urn:x-nmos:format:mux`
+- **Description:** Identifies (sources of) multiplexed flows.
+- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
+- **Applicability:** AMWA IS-04 since v1.1
