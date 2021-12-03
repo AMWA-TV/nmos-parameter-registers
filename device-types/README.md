@@ -1,6 +1,10 @@
 # NMOS Device Types
+{:.no_toc}
 
 This Device Types parameter register contains values that may be used to identify the role of a device within the production environment (such as camera, mixer, tally light etc.), used in the `type` property of the device resource defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
+
+- A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+{:toc}
 
 ## Criteria
 
@@ -12,15 +16,20 @@ This Device Types parameter register contains values that may be used to identif
 
 Manufacturers MAY use their own namespaces to indicate device types which are not currently defined within the NMOS namespace.
 
+Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
+
 ## Values
 
+### Generic Device
 - **Name:** `urn:x-nmos:device:generic`
-  - **Description:** Generic device.
-  - **Proponent:** [AMWA](https://www.amwa.tv/)
-  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-  - **Applicability:** AMWA IS-04 since v1.1
+- **Description:** Generic device.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+- **Applicability:** AMWA IS-04 since v1.1
+
+### Pipeline Device
 - **Name:** `urn:x-nmos:device:pipeline`
-  - **Description:** Pipeline device.
-  - **Proponent:** [AMWA](https://www.amwa.tv/)
-  - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-  - **Applicability:** AMWA IS-04 since v1.1
+- **Description:** Pipeline device.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
+- **Applicability:** AMWA IS-04 since v1.1

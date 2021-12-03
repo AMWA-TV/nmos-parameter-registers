@@ -28,7 +28,6 @@ Where
 | --------- | ----------- | ------ |
 | enabled version | A string that defines what version of BCP-003-03 is enabled | Version strings, `v<MAJOR>.<MINOR>`, e.g. `v1.0` |
 
-
 ### Examples
 
 #### 1. BCP-003-03 version 1.0 enabled
