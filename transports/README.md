@@ -18,34 +18,40 @@ Manufacturers MAY use their own namespaces to indicate transports which are not 
 
 ## Values
 
-### `urn:x-nmos:transport:rtp`
+### RTP
+- **Name:** `urn:x-nmos:transport:rtp`
 - **Description:** Identifies the Real-time Transport Protocol.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0, IS-05 since v1.0
 
-### `urn:x-nmos:transport:rtp.mcast`
+Note: An RTP Transmitter sending to a multicast group should use the transport `urn:x-nmos:transport:rtp.mcast`, but a receiver supporting both unicast and multicast should present the transport `urn:x-nmos:transport:rtp` to indicate its less restrictive state.
+
+### RTP Multicast
+- **Name:** `urn:x-nmos:transport:rtp.mcast`
 - **Description:** Identifies RTP multicast.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0, IS-05 since v1.0
 
-### `urn:x-nmos:transport:rtp.ucast`
+### RTP Unicast
+- **Name:** `urn:x-nmos:transport:rtp.ucast`
 - **Description:** Identifies RTP unicast.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0, IS-05 since v1.0
 
-### `urn:x-nmos:transport:dash`
+### DASH
+- **Name:** `urn:x-nmos:transport:dash`
 - **Description:** Identifies the Dynamic Adaptive Streaming over HTTP technology.
 - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
 - **Applicability:** AMWA IS-04 since v1.1, IS-05 since v1.0
 
-### `urn:x-nmos:transport:mqtt`
+### MQTT
+- **Name:** `urn:x-nmos:transport:mqtt`
 - **Description:** Identifies Message Queuing Telemetry Transport (MQTT).
 - **Specification:** [AMWA IS-05 v1.1](https://specs.amwa.tv/is-05/v1.1)
 - **Applicability:** AMWA IS-04 since v1.3, IS-05 since v1.1, IS-07 since v1.0
 
-### `urn:x-nmos:transport:websocket`
+### WebSocket
+- **Name:** `urn:x-nmos:transport:websocket`
 - **Description:** Identifies the WebSocket transport type.
 - **Specification:** [AMWA IS-05 v1.1](https://specs.amwa.tv/is-05/v1.1)
 - **Applicability:** AMWA IS-04 since v1.3, IS-05 since v1.1, IS-07 since v1.0
-
-Note: An RTP Transmitter sending to a multicast group should use the transport `urn:x-nmos:transport:rtp.mcast`, but a receiver supporting both unicast and multicast should present the transport `urn:x-nmos:transport:rtp` to indicate its less restrictive state.

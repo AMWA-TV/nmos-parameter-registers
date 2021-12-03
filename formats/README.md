@@ -18,27 +18,32 @@ Query API clients MUST be tolerant to the presence of formats not yet defined he
 
 ## Values
 
-### `urn:x-nmos:format:video`
+### Video
+- **Name:** `urn:x-nmos:format:video`
 - **Description:** Identifies (sources of) video flows.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0
 
-### `urn:x-nmos:format:audio`
+### Audio
+- **Name:** `urn:x-nmos:format:audio`
 - **Description:** Identifies (sources of) audio flows.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0
 
-### `urn:x-nmos:format:data`
+### Data
+- **Name:** `urn:x-nmos:format:data`
 - **Description:** Identifies (sources of) data flows.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0
 
-### `urn:x-nmos:format:data.event`
+### Event Data
+- **Name:** `urn:x-nmos:format:data.event`
 - **Description:** Identifies (sources of) Query API subscription event Grains.
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
 - **Applicability:** AMWA IS-04 since v1.0
 
-### `urn:x-nmos:format:mux`
+### Multiplexed
+- **Name:** `urn:x-nmos:format:mux`
 - **Description:** Identifies (sources of) multiplexed flows.
 - **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
 - **Applicability:** AMWA IS-04 since v1.1

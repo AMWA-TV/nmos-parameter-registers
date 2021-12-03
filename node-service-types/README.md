@@ -18,11 +18,13 @@ Note: the `services` property was introduced in AMWA IS-04 v1.1.
 
 ## Values
 
-### `urn:x-manufacturer:service:status`
+### Service Status (Example)
+- **Name:** `urn:x-manufacturer:service:status`
 - **Description:** Used purely as an example in AMWA IS-04 (see [nodeapi-self-get-200.json](https://specs.amwa.tv/is-04/v1.3/examples/nodeapi-self-get-200.html)).
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 
-### `urn:x-ipstudio:service:mdnsbridge/v1.0`
+### mDNS Bridge v1.0
+- **Name:** `urn:x-ipstudio:service:mdnsbridge/v1.0`
 - **Description:** This API provides a zeroconf/HTTP bridge for NMOS service types.
 - **Proponent:** [BBC](https://github.com/bbc) (contact [@simonrankine](https://github.com/simonrankine))
 - **Specification:** [NMOS MDNS Bridge](https://github.com/bbc/nmos-mdns-bridge)

@@ -22,17 +22,20 @@ Instead, they are clearly identified using the prefix `ext_`.
 and **[receiver_transport_params_ext_register.json](receiver_transport_params_ext_register.json)**.
 These MAY be used in addition to the transport-specific schemas, such as **sender_transport_params_rtp.json**, found in the AMWA IS-05 specification.
 
-### `ext_is_07_source_id`
+### IS-07 Source ID
+- **Name:** `ext_is_07_source_id`
 - **Description:** Identifies the Source that emits an IS-07 event.
 - **Specification:** [AMWA IS-07 v1.0](https://specs.amwa.tv/is-07/v1.0)
 - **Applicability:** AMWA IS-05 since v1.1, IS-07 since v1.0
 
-### `ext_is_07_rest_api_url`
+### IS-07 REST API URL
+- **Name:** `ext_is_07_rest_api_url`
 - **Description:** URL of the Events API resource providing the current state and type of an Event emitter (Source).
 - **Specification:** [AMWA IS-07 v1.0](https://specs.amwa.tv/is-07/v1.0)
 - **Applicability:** AMWA IS-05 since v1.1, IS-07 since v1.0
 
-### `ext_link_offset_delay`
+### Link Offset Delay
+- **Name:** `ext_link_offset_delay`
 - **Description:** Identifies the Link Offset Delay used to synchronise Playout Time of all components of a stream by receivers.
 - **Specification:** ST 2110-10:2021 and VSF TR-10-x
 - **Applicability:** AMWA IS-05 since v1.1
