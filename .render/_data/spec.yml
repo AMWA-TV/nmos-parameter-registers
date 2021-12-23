@@ -1,0 +1,10 @@
+amwa_id: NMOS-PARAMETER-REGISTERS
+url: https://specs.amwa.tv/nmos-parameter-registers
+name: Parameter Registers
+status: Continuing
+repo_name: nmos-parameter-registers
+alt_repo_name: nmos-parameter-registers
+repo_url: https://github.com/AMWA-TV/nmos-parameter-registers
+releases:
+default_branch: main
+show_in_index: true
