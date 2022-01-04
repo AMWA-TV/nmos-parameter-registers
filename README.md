@@ -21,12 +21,11 @@
 - In most parameter registers, values are specified as `urn:x-nmos:<type>:<value>[/<version>]`
 - Updates are proposed and reviewed using GitHub pull requests (PRs)
 
-<!-- INTRO-END -->
-
-The following parameter registers are currently maintained:
+## Parameter Registers
 
 {% include register_table.html %}
 
-## Getting started
+<!-- INTRO-END -->
 
-There is more information about the NMOS Specifications and their GitHub repos at <https://specs.amwa.tv/nmos>.
+> The list of registers is now generated on demand from `.render/_data/registers.yml` and rendered at <https://specs.amwa.tv/nmos-parameter-registers>:
+
