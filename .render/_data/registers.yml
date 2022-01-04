@@ -1,30 +1,30 @@
-- register_id: common
+- id: common
   name: General Procedures and Criteria
   show_in_index: true
-- register_id: capabilities
+- id: capabilities
   name: Capabilities
   show_in_index: true
-- register_id: device-control-types
+- id: device-control-types
   name: Device Control Types
   show_in_index: true
-- register_id: device-types
+- id: device-types
   name: Device Types
   show_in_index: true
-- register_id: flow-attributes
+- id: flow-attributes
   name: Flow Attributes
   show_in_index: true
-- register_id: formats
+- id: formats
   name: Formats
   show_in_index: true
-- register_id: node-service-types
+- id: node-service-types
   name: Node Service Types
   show_in_index: true
-- register_id: tags
+- id: tags
   name: Tags
   show_in_index: true
-- register_id: transports
+- id: transports
   name: Transports
   show_in_index: true
-- register_id: transport-parameters
+- id: transport-parameters
   name: Transport Parameters
   show_in_index: true
