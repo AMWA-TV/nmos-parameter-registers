@@ -1,0 +1,17 @@
+<table style="text-align: center">
+	<thead>
+		<tr>
+      <th>Id</th>
+      <th>Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% assign specs_to_show = site.data.specs | where_exp:"spec", "spec.amwa_id contains include.filter_id" | where: "show_in_index", true %}
+		{% for spec in specs_to_show %}
+		<tr>
+			<td><a href="{{ site.baseurl }}/{{ site.default_tree }}/">{{ spec.amwa_id }}</a></td>
+			<td><a href="{{ site.baseurl }}/{{ site.default_tree }}/">{{ spec.name }}</a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>

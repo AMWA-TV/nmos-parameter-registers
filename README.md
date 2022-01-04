@@ -23,17 +23,9 @@
 
 <!-- INTRO-END -->
 
-The following list of parameter registers are currently maintained:
+The following parameter registers are currently maintained:
 
-- [Node Service Types](./node-service-types/)
-- [Device Control Types](./device-control-types/)	
-- [Formats](./formats/)
-- [Transports](./transports/)
-- [Device Types](./device-types/)
-- [Tags](./tags/)
-- [Flow Attributes](./flow-attributes/)
-- [Capabilities](./capabilities/)
-- [Transport Parameters](./transport-parameters/)
+{% include register_table.html %}
 
 ## Getting started
 
