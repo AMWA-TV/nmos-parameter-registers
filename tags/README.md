@@ -32,3 +32,17 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [Certificate Provisioning tags](certprov.md)
 - **Applicability:** AMWA IS-04 since v1.0
+
+### TR-09-2 Booking List
+- **Name:** `urn:x-vsf:tag:tr-09-2:booking-list/v1.0`
+- **Description:** Booking List tag that can be used to indicate that an NMOS resource is part of one or more TR-09-2 bookings.
+- **Proponent:** [VSF](https://www.vsf.tv/)
+- **Specification:** [TR-09-2 tags](tr-09-2.md)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### TR-09-2 Current Booking
+- **Name:** `urn:x-vsf:tag:tr-09-2:current-booking/v1.0`
+- **Description:** Current Booking tag that can be used to indicate that an NMOS resource is part of an active TR-09-2 booking.
+- **Proponent:** [VSF](https://www.vsf.tv/)
+- **Specification:** [TR-09-2 tags](tr-09-2.md)
+- **Applicability:** AMWA IS-04 since v1.0
