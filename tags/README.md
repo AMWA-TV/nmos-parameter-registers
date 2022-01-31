@@ -42,7 +42,7 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 
 ### TR-09-2 Current Booking
 - **Name:** `urn:x-vsf:tag:tr-09-2:current-booking/v1.0`
-- **Description:** Current Booking tag that can be used to indicate that an NMOS resource is part of an active TR-09-2 booking.
+- **Description:** Current Booking tag that can be used to indicate the current active TR-09-2 booking.
 - **Proponent:** [VSF](https://www.vsf.tv/)
 - **Specification:** [TR-09-2 tags](tr-09-2.md)
 - **Applicability:** AMWA IS-04 since v1.0
