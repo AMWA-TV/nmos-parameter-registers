@@ -4,6 +4,10 @@
   "description": "Describes Video Flow additional and extensible attributes defined in the NMOS Parameter Registers.",
   "title": "Video Flow resource",
   "properties": {
+    "bits_per_pixel": {
+      "description": "Compression ratio expressed as bits per pixel (BPP).",
+      "type": "number"
+    },
     "bit_rate": {
       "description": "Bit rate, in kilobits/second. Integer value expressed in units of 1000 bits per second, rounding up.",
       "type": "integer"

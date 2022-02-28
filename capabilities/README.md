@@ -119,7 +119,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:colorspace`
 - **Description:** Identifies the acceptable colorspace of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/) register)
+  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/#colorspace) register)
   - **Target:** (a) video Flow `colorspace`, (b) SDP attribute `a=fmtp:` format-specific parameter `colorimetry`
 - **Applicability:** AMWA IS-04
 
@@ -127,7 +127,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:transfer_characteristic`
 - **Description:** Identifies the acceptable transfer characteristic system of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/) register)
+  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/#transfer-characteristic) register)
   - **Target:** (a) video Flow `transfer_characteristic`, (b) SDP attribute `a=fmtp:` format-specific parameter `TCS`
 - **Applicability:** AMWA IS-04
 
@@ -147,12 +147,21 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) SDP attribute `a=fmtp:` format-specific parameter `depth`, (b) video Flow `components.bit_depth`
 - **Applicability:** AMWA IS-04
 
+### Bits Per Pixel
+- **Name:** `bits_per_pixel`
+- **Description:** Identifies the range of acceptable compression ratios expressed as bits per pixel (BPP).
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** number
+  - **Target:** (a) coded video Flow `bits_per_pixel` (defined in the [Flow Attributes](../flow-attributes/#bits-per-pixel) register)
+- **Applicability:** AMWA IS-04
+
 ### Bit Rate
 - **Name:** `urn:x-nmos:cap:format:bit_rate`
 - **Description:** Identifies the acceptable bit rate of a compressed video or audio stream, in kilobits/second.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** integer
-  - **Target:** (a) coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
+  - **Target:** (a) coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/#bit-rate) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`  
+    However, note that an `b=AS:` value can include transport protocol overheads, e.g. as per ST 2110-22, not included here
 - **Applicability:** AMWA IS-04
 
 ### Channel Count

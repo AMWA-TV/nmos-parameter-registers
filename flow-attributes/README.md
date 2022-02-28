@@ -26,15 +26,22 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 Note: JSON schemas supporting validation of all the attributes defined in this register are available as **[flow_video_register.json](flow_video_register.json)** and **[flow_audio_register.json](flow_audio_register.json)**.
 These MAY be used in addition to the schemas, such as _flow_video.json_ and _flow_audio.json_, found in the AMWA IS-04 specification.
 
+### Bits Per Pixel
+- **Name:** `bits_per_pixel`
+- **Description:** Compression ratio expressed as bits per pixel (BPP).
+- **Specification:** Depends on the media type
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - Floating point numbers
+
 ### Bit Rate
 - **Name:** `bit_rate`
 - **Description:** Bit rate, in kilobits/second.
 - **Specification:** Depends on the media type
 - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
-  -  For `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3
-    - Integer value expressed in units of 1000 bits per second, rounding up.
+  - Integer values expressed in units of 1000 bits per second, rounding up
+  - Note that an SDP `b=AS:` application-specific bandwidth value can include transport protocol overheads, e.g. as per ST 2110-22, not included here
 
 ### Colorspace
 - **Name:** `colorspace`
@@ -47,7 +54,7 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `BT709`
     - `BT2020`
     - `BT2100`
-  - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20
   - Since ST 2110-20:2017
     - `ST2065-1`
     - `ST2065-3`
@@ -83,7 +90,7 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `SDR`
     - `HLG`
     - `PQ`
-  - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20
   - Since ST 2110-20:2017
     - `LINEAR`
     - `BT2100LINPQ`
