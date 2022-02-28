@@ -80,6 +80,14 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     ]
     ```
 
+### Level
+- **Name:** `level`
+- **Description:** Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.
+- **Specification:** Depends on the media type
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - String values defined for the Flow media type, as enumerated in the schema accompanying this register
+
 ### Profile
 - **Name:** `profile`
 - **Description:** Indicates the subset of coding tools that are in use, as defined for the Flow media type.

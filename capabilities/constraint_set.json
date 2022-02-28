@@ -54,6 +54,9 @@
     "urn:x-nmos:cap:format:profile": {
       "$ref": "param_constraint_string.json"
     },
+    "urn:x-nmos:cap:format:level": {
+      "$ref": "param_constraint_string.json"
+    },
     "urn:x-nmos:cap:format:channel_count": {
       "$ref": "param_constraint_integer.json"
     },

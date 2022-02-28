@@ -80,6 +80,10 @@
         }
       }
     },
+    "level": {
+      "description": "Level. Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.",
+      "type": "string"
+    },
     "profile": {
       "description": "Profile. Indicates the subset of coding tools that are in use, as defined for the Flow media type.",
       "type": "string",
