@@ -76,6 +76,30 @@
         }
       }
     },
+    "level": {
+      "description": "Level. Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "1k-1",
+        "Bayer2k-1",
+        "2k-1",
+        "Bayer4k-1",
+        "4k-1",
+        "Bayer8k-1",
+        "4k-2",
+        "Bayer8k-2",
+        "4k-3",
+        "Bayer8k-3",
+        "8k-1",
+        "Bayer16k-1",
+        "8k-2",
+        "Bayer16k-2",
+        "8k-3",
+        "Bayer16k-3",
+        "10k-1",
+        "Bayer20k-1"
+      ]
+    },
     "profile": {
       "description": "Profile. Indicates the subset of coding tools that are in use, as defined for the Flow media type.",
       "type": "string",
