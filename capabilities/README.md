@@ -164,6 +164,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
     However, note that an `b=AS:` value can include transport protocol overheads, e.g. as per ST 2110-22, not included here
 - **Applicability:** AMWA IS-04
 
+### Profile
+- **Name:** `profile`
+- **Description:** Identifies the acceptable profiles, as defined for the specific media type.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (values depending on the media type)
+  - **Target:** (a) video Flow `profile` (defined in the [Flow Attributes](../flow-attributes/#profile) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `profile`
+- **Applicability:** AMWA IS-04
+
 ### Channel Count
 - **Name:** `urn:x-nmos:cap:format:channel_count`
 - **Description:** Identifies the acceptable number of channels of an audio stream.

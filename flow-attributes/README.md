@@ -80,6 +80,17 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     ]
     ```
 
+### Profile
+- **Name:** `profile`
+- **Description:** Indicates the subset of coding tools that are in use, as defined for the Flow media type.
+- **Specification:** Depends on the media type
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - String values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv`, the values are the profile names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
+  - For example
+    - `Main444.12`
+
 ### Transfer Characteristic
 - **Name:** `transfer_characteristic`
 - **Description:** Transfer characteristic.
@@ -101,3 +112,5 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `UNSPECIFIED` (when no other value applies)
   - Since ST 2110-20:2021
     - `ST2115LOGS3`
+
+[RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
