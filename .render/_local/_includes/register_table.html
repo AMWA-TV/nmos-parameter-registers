@@ -9,8 +9,8 @@
 		{% assign registers_to_show = site.data.registers | where: "show_in_index", true %}
 		{% for register in registers_to_show %}
 		<tr>
-			<td><a href="{{ site.baseurl }}/{{ site.default_tree }}/{{ register.id }}">{{ register.id }}</a></td>
-			<td><a href="{{ site.baseurl }}/{{ site.default_tree }}/{{ register.id }}">{{ register.name }}</a></td>
+			<td><a href="{{ register.id }}">{{ register.id }}</a></td>
+			<td><a href="{{ register.id }}">{{ register.name }}</a></td>
 		</tr>
 		{% endfor %}
 	</tbody>
