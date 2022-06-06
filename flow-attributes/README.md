@@ -28,13 +28,11 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 
 ### Bit Rate
 - **Name:** `bit_rate`
-- **Description:** Bit rate, in kilobits/second.
+- **Description:** Target bit rate of the codestream, in kilobits/second.
 - **Specification:** Depends on the media type
 - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
-  -  For `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3
-    - Integer value expressed in units of 1000 bits per second, rounding up.
+  - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
 
 ### Colorspace
 - **Name:** `colorspace`
