@@ -232,7 +232,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the ST 2110-21 receiver capabilities, expressed as the acceptable sender type or types.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (enumerated values as per ST 2110-21, such as `2110TPNL` for narrow linear senders)
-  - **Target:** SDP attribute `a=fmtp:` format-specific parameter `TP`
+  - **Target:** (a) Sender `st2110_21_sender_type` (defined in the [Sender Attributes](../sender-attributes/#st-2110-21-sender-type) register), (b) SDP attribute `a=fmtp:` format-specific parameter `TP`
   - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Sender additional and extensible attributes defined in the NMOS Parameter Registers.",
+  "title": "Sender resource",
+  "properties": {
+    "st2110_21_sender_type": {
+      "description": "ST 2110-21 Sender Type. Indicates the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.",
+      "type": "string",
+      "enum": [
+        "2110TPN",
+        "2110TPNL",
+        "2110TPW"
+      ]
+    }
+  }
+}
