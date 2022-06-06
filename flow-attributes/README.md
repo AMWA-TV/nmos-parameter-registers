@@ -47,13 +47,13 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `BT709`
     - `BT2020`
     - `BT2100`
-  - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20
   - Since ST 2110-20:2017
     - `ST2065-1`
     - `ST2065-3`
     - `UNSPECIFIED` (when no other value applies)
     - `XYZ`
-  - Since ST 2110-20:2021
+  - Since ST 2110-20:2022
     - `ALPHA`
 
 ### Components
@@ -83,7 +83,7 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `SDR`
     - `HLG`
     - `PQ`
-  - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20
   - Since ST 2110-20:2017
     - `LINEAR`
     - `BT2100LINPQ`
@@ -92,5 +92,5 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `ST428-1`
     - `DENSITY`
     - `UNSPECIFIED` (when no other value applies)
-  - Since ST 2110-20:2021
+  - Since ST 2110-20:2022
     - `ST2115LOGS3`
