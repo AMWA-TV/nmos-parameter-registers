@@ -147,7 +147,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) SDP attribute `a=fmtp:` format-specific parameter `depth`, (b) video Flow `components.bit_depth`
 - **Applicability:** AMWA IS-04
 
-### Bit Rate
+### Format Bit Rate
 - **Name:** `urn:x-nmos:cap:format:bit_rate`
 - **Description:** Identifies the acceptable bit rate of a compressed video or audio stream, in kilobits/second.
 - **Specification:** per AMWA BCP-004-01
@@ -209,6 +209,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (values as per AMWA IS-07 [Event types capability management](https://specs.amwa.tv/is-07/releases/v1.0.1/docs/3.0._Event_types.html#event-types-capability-management))
   - **Target:** data Flow `event_type`
+- **Applicability:** AMWA IS-04
+
+### Transport Bit Rate
+- **Name:** `urn:x-nmos:cap:transport:bit_rate`
+- **Description:** Identifies the acceptable bit rate of a network stream, in kilobits/second, including the transport overhead.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** integer
+  - **Target:** (a) Sender `bit_rate` (defined in the [Sender Attributes](../sender-attributes/#bit-rate) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
 - **Applicability:** AMWA IS-04
 
 ### Packet Time

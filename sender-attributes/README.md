@@ -26,6 +26,15 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 Note: JSON schemas supporting validation of all the attributes defined in this register are available as **[sender_register.json](sender_register.json)**.
 These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS-04 specification.
 
+### Bit Rate
+- **Name:** `bit_rate`
+- **Description:** Bit rate, in kilobits/second, including the RTP transport overhead.
+- **Specification:** Depends on the media type
+- **Applicability:** `urn:x-nmos:transport:rtp`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
+  - The value is for the IP packets, including the RTP, UDP and IP packet headers and the payload
+
 ### ST 2110-21 Sender Type
 - **Name:** `st2110_21_sender_type`
 - **Description:** Identifies the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.
