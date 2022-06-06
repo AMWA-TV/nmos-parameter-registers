@@ -171,6 +171,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) video Flow `level` (defined in the [Flow Attributes](../flow-attributes/#level) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `level`
 - **Applicability:** AMWA IS-04
 
+### Sublevel Bits Per Pixel
+- **Name:** `sublevel_bpp`
+- **Description:** Identifies the acceptable range for the JPEG XS sublevel or compression ratio expressed as bits per pixel (BPP).
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** number
+  - **Target:** (a) coded video Flow `sublevel_bpp` (defined in the [Flow Attributes](../flow-attributes/#sublevel-bits-per-pixel) register)
+- **Applicability:** AMWA IS-04
+
 ### Channel Count
 - **Name:** `urn:x-nmos:cap:format:channel_count`
 - **Description:** Identifies the acceptable number of channels of an audio stream.

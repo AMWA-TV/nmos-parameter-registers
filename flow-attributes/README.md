@@ -95,6 +95,14 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
   - For example
     - `Main444.12`
 
+### Sublevel Bits Per Pixel
+- **Name:** `sublevel_bpp`
+- **Description:** JPEG XS sublevel or compression ratio expressed as bits per pixel (BPP).
+- **Specification:** ISO/IEC 21122-2
+- **Applicability:** `urn:x-nmos:format:video` with `video/jxsv` media
+- **Permitted Values:**
+  - Floating point numbers
+
 ### Transfer Characteristic
 - **Name:** `transfer_characteristic`
 - **Description:** Transfer characteristic.

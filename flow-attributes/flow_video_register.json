@@ -119,6 +119,10 @@
         "Main420.12"
       ]
     },
+    "sublevel_bpp": {
+      "description": "JPEG XS sublevel or compression ratio expressed as bits per pixel (BPP).",
+      "type": "number"
+    },
     "transfer_characteristic": {
       "description": "Transfer characteristic. Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.",
       "type": "string",
