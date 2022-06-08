@@ -28,7 +28,7 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 
 ### Bit Rate
 - **Name:** `bit_rate`
-- **Description:** Bit rate, in kilobits/second, including the RTP transport overhead.
+- **Description:** Bit rate, in kilobits/second, including the transport overhead.
 - **Specification:** Depends on the media type
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
