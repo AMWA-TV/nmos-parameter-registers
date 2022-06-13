@@ -95,11 +95,14 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 
 ### Sublevel Bits Per Pixel
 - **Name:** `sublevel_bpp`
-- **Description:** JPEG XS sublevel or compression ratio expressed as bits per pixel (BPP).
+- **Description:** JPEG XS sublevel expressed as bits per pixel (BPP).
 - **Specification:** ISO/IEC 21122-2
 - **Applicability:** `urn:x-nmos:format:video` with `video/jxsv` media
 - **Permitted Values:**
-  - Floating point numbers
+  - Since AMWA IS-04 v1.3, integer values corresponding to sublevels defined in ISO/IEC 21122-2
+  - For example
+    - `4` for Sublev4bpp
+  - The Full sublevel is indicated by the number of bits per component multiplied by the number of components in the uncompressed image
 
 ### Transfer Characteristic
 - **Name:** `transfer_characteristic`

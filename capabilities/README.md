@@ -173,9 +173,9 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 
 ### Sublevel Bits Per Pixel
 - **Name:** `sublevel_bpp`
-- **Description:** Identifies the acceptable range for the JPEG XS sublevel or compression ratio expressed as bits per pixel (BPP).
+- **Description:** Identifies the acceptable range for the JPEG XS sublevel expressed as bits per pixel (BPP).
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** number
+  - **Type:** integer
   - **Target:** (a) coded video Flow `sublevel_bpp` (defined in the [Flow Attributes](../flow-attributes/#sublevel-bits-per-pixel) register)
 - **Applicability:** AMWA IS-04
 
