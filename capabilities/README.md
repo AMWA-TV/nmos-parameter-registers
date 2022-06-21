@@ -156,7 +156,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Applicability:** AMWA IS-04
 
 ### Profile
-- **Name:** `profile`
+- **Name:** `urn:x-nmos:cap:format:profile`
 - **Description:** Identifies the acceptable profiles, as defined for the specific media type.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (values depending on the media type)
@@ -164,19 +164,19 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Applicability:** AMWA IS-04
 
 ### Level
-- **Name:** `level`
+- **Name:** `urn:x-nmos:cap:format:level`
 - **Description:** Identifies the acceptable levels, as defined for the specific media type.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (values depending on the media type)
   - **Target:** (a) video Flow `level` (defined in the [Flow Attributes](../flow-attributes/#level) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `level`
 - **Applicability:** AMWA IS-04
 
-### Sublevel Bits Per Pixel
-- **Name:** `sublevel_bpp`
-- **Description:** Identifies the acceptable range for the JPEG XS sublevel expressed as bits per pixel (BPP).
+### Sublevel
+- **Name:** `urn:x-nmos:cap:format:sublevel`
+- **Description:** Identifies the acceptable sublevels, as defined for the specific media type.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** integer
-  - **Target:** (a) coded video Flow `sublevel_bpp` (defined in the [Flow Attributes](../flow-attributes/#sublevel-bits-per-pixel) register)
+  - **Type:** string (values depending on the media type)
+  - **Target:** (a) coded video Flow `sublevel` (defined in the [Flow Attributes](../flow-attributes/#sublevel) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `sublevel`
 - **Applicability:** AMWA IS-04
 
 ### Channel Count

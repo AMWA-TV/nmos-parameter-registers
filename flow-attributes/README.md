@@ -77,7 +77,7 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 - **Specification:** Depends on the media type
 - **Applicability:** `urn:x-nmos:format:video`
 - **Permitted Values:**
-  - String values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
   - For `video/jxsv`, the values are the level names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
   - For example
     - `1k-1`
@@ -88,21 +88,21 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 - **Specification:** Depends on the media type
 - **Applicability:** `urn:x-nmos:format:video`
 - **Permitted Values:**
-  - String values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
   - For `video/jxsv`, the values are the profile names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
   - For example
     - `Main444.12`
 
-### Sublevel Bits Per Pixel
-- **Name:** `sublevel_bpp`
-- **Description:** JPEG XS sublevel expressed as bits per pixel (BPP).
-- **Specification:** ISO/IEC 21122-2
-- **Applicability:** `urn:x-nmos:format:video` with `video/jxsv` media
+### Sublevel
+- **Name:** `sublevel`
+- **Description:** Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type.
+- **Specification:** Depends on the media type
+- **Applicability:** `urn:x-nmos:format:video`
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3, integer values corresponding to sublevels defined in ISO/IEC 21122-2
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv`, the values are the sublevel names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
   - For example
-    - `4` for Sublev4bpp
-  - The Full sublevel is indicated by the number of bits per component multiplied by the number of components in the uncompressed image
+    - `Sublev3bpp`
 
 ### Transfer Characteristic
 - **Name:** `transfer_characteristic`

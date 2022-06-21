@@ -120,9 +120,18 @@
         "Main420.12"
       ]
     },
-    "sublevel_bpp": {
-      "description": "JPEG XS sublevel expressed as bits per pixel (BPP).",
-      "type": "integer"
+    "sublevel": {
+      "description": "Sublevel. Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type. For example, in the case of JPEG XS, the level indicates constraints in the decoded image domain, and the sublevel indicates constraints in the encoded image domain.",
+      "type": "string",
+      "enum": [
+        "Full",
+        "Sublev12bpp",
+        "Sublev9bpp",
+        "Sublev6bpp",
+        "Sublev4bpp",
+        "Sublev3bpp",
+        "Sublev2bpp"
+      ]
     },
     "transfer_characteristic": {
       "description": "Transfer characteristic. Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.",

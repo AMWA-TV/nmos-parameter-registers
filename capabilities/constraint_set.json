@@ -54,8 +54,8 @@
     "urn:x-nmos:cap:format:level": {
       "$ref": "param_constraint_string.json"
     },
-    "urn:x-nmos:cap:format:sublevel_bpp": {
-      "$ref": "param_constraint_integer.json"
+    "urn:x-nmos:cap:format:sublevel": {
+      "$ref": "param_constraint_string.json"
     },
     "urn:x-nmos:cap:format:channel_count": {
       "$ref": "param_constraint_integer.json"
