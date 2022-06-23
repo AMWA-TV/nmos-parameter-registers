@@ -78,6 +78,9 @@
     "urn:x-nmos:cap:transport:max_packet_time": {
       "$ref": "param_constraint_number.json"
     },
+    "urn:x-nmos:cap:transport:packet_transmission_mode": {
+      "$ref": "param_constraint_string.json"
+    },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
       "$ref": "param_constraint_string.json"
     }

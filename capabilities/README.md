@@ -235,6 +235,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** SDP attribute `a=maxptime:` `<maximum packet time>`
 - **Applicability:** AMWA IS-04
 
+### Packet Transmission Mode
+- **Name:** `urn:x-nmos:cap:transport:packet_transmission_mode`
+- **Description:** Identifies the acceptable JPEG XS packetization and transmission mode.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/#packet-transmission-mode) register)
+  - **Target:** (a) Sender `packet_transmission_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameters `packetmode` and `transmode`, per [RFC 9134][RFC-9134]
+- **Applicability:** AMWA IS-04
+
 ### ST 2110-21 Sender Type
 - **Name:** `urn:x-nmos:cap:transport:st2110_21_sender_type`
 - **Description:** Identifies the ST 2110-21 receiver capabilities, expressed as the acceptable sender type or types.
@@ -244,4 +252,5 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
+[RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
 [color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"
