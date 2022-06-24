@@ -35,6 +35,18 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
   - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
   - The value is for the IP packets, including the RTP, UDP and IP packet headers and the payload
 
+### Packet Transmission Mode
+- **Name:** `packet_transmission_mode`
+- **Description:** Identifies the JPEG XS packetization and transmission mode.
+- **Specification:** [RFC 9134][RFC-9134]
+- **Applicability:** `urn:x-nmos:transport:rtp`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values representing the valid combinations of the transmission mode (T) bit and packetization mode (K) bit, as enumerated in the schema accompanying this register
+    - `codestream` (T=1, K=0)
+    - `slice_sequential` (T=1, K=1)
+    - `slice_out_of_order` (T=0, K=1)
+  - When the attribute is omitted, a JPEG XS Sender is assumed to be using the `codestream` packetization mode
+
 ### ST 2110-21 Sender Type
 - **Name:** `st2110_21_sender_type`
 - **Description:** Identifies the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.
@@ -46,3 +58,5 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
     - `2110TPN`
     - `2110TPNL`
     - `2100TPW`
+
+[RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
