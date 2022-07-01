@@ -26,7 +26,7 @@ Where
 
 | Parameter | Description | Values |
 | --------- | ----------- | ------ |
-| enabled version | A string that defines what version of BCP-003-03 is enabled | Version strings, `v<MAJOR>.<MINOR>`, e.g. `v1.0` |
+| enabled version | A version of BCP-003-03 that is enabled | Version strings, `v<MAJOR>.<MINOR>`, e.g. `v1.0` |
 
 ### Examples
 
