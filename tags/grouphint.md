@@ -26,25 +26,26 @@ Result will be something like this:
 
 It is expected that system controllers use the natural group hints to guide users through a process of associating production meaning and naming with the NMOS resources. This is inherently a setup/configuration-time task. If the natural group hint tag changes later, there is not necessarily an opportunity to re-ask the user if/how that change affects the overall system naming and mapping configuration. That's why immutability is important for natural grouping and it MUST be respected.
 
-## Group hint URN
+## Group Hint URN
 
 The group hint URN `urn:x-nmos:tag:grouphint` defines a set of groups to which a resource belongs to.
 
 ```json
 "tags": {
    "urn:x-nmos:tag:grouphint/v1.0": [
-      "<group-name>:<role-in-group>:<optional-group-scope>"
+      "<group-name>:<role-in-group>[:<group-scope>]"
    ]
 }
 ```
 
-Where
+Where `<`...`>` indicates the named parameters and `[`...`]` indicates that component of the string is optional.
+Several examples are given below.
 
 | Parameter | Description | Values |
 | --------- | ----------- | ------ |
-| group-name | A string that defines the name of the group | Any string not containing `:` |
-| role-in-group | A string that defines the role of the resource in the group, MUST be unique inside the same group | Any string not containing `:` |
-| optional-group-scope | Optional string that defines the scope of the group, MUST be `device` or `node` | `device` (default) or `node` |
+| group-name | The name of the group | Any string not containing `:` |
+| role-in-group | The role of the resource in the group, MUST be unique inside the same group | Any string not containing `:` |
+| group-scope | The scope of the group, MUST be `device` or `node` | `device` (default) or `node` |
 
 The colon character, `:`, is therefore reserved and MUST not be used in any of the parameters listed.
 
@@ -68,14 +69,14 @@ The colon character, `:`, is therefore reserved and MUST not be used in any of t
 
 NOTE: There are no standard roles (or reserved role names) defined in this document. However these may be defined in the future inside the NMOS parameters register.
 
-#### optional-group-scope rules
+#### group-scope rules
 
-- Missing optional-group-scope assumes a default `device` scope. To extend the group scope to a node, `node` scope MUST be specified.
+- Omitting group-scope implies the default `device` scope. To extend the group scope to a node, `node` scope MUST be specified.
 - Note that extending a scope to `node` can lead to performance impact on the controller side since more work is required to track down the relationships.
 
 NOTE: There might be a need for a "system" scope in the future (group across multiple nodes) but this is out of the natural grouping described in this document. The system scope may be defined in the future inside the NMOS parameters register.
 
-## Natural groups
+## Natural Groups
 
 Natural groups applies only to NMOS senders and receivers
 
@@ -85,6 +86,7 @@ Natural groups applies only to NMOS senders and receivers
 ### Examples
 
 #### 1. Playout server sender with 1 video 2 audio
+
 - Video 1 group: "Playout Master", role: "Primary"
 - Audio 1 group: "Playout Master", role: "Audio 1 – 2ch"
 - Audio 2 group: "Playout Master", role: "Audio 2 – 5.1ch"
@@ -117,6 +119,7 @@ JSON tags for Audio 2 sender
 ```
 
 #### 2. MultiviewerPIP, receiver with 1 video 4 audio
+
 - Video 1 group: "MV PIP 1", role: "Video"
 - Audio 1 group : "MV PIP 1", role: "Audio 1"
 - Audio 2 group : "MV PIP 1", role: "Audio 2"
@@ -148,7 +151,7 @@ JSON tags for Audio 2 receiver
 }
 ```
 
-#### 2. Multiple groups
+#### 3. Multiple groups
 
 Multiple groups are mainly for usage outside "natural grouping".
 
@@ -164,7 +167,7 @@ JSON tags for Video 1 receiver and tally
 
 This defines an extra membership to tally group valid for the entire node scope.
 
-## NMOS resource JSON samples
+## NMOS Resource JSON Samples
 
 Receivers with tags
 
