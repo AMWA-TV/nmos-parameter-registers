@@ -17,9 +17,9 @@ This Flow Attributes parameter register contains extensible attributes and their
 - Each entry MUST link to a schema definition held within this repository (unless covered by a schema within the original specification).
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
-As noted in [IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3/docs/4.3._Behaviour_-_Nodes.html#sources--flows), new Flow attributes may be defined here as opposed to requiring a new version of the specification.
+As noted in [IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3.1/docs/4.3._Behaviour_-_Nodes.html#sources--flows), new Flow attributes may be defined here as opposed to requiring a new version of the specification.
 
-Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-version environment MUST be tolerant to the presence of Flow attributes and values which may be added at a later date. This is further detailed in the [IS-04 Upgrade Path](https://specs.amwa.tv/is-04/v1.3/docs/6.0._Upgrade_Path.html) document.
+Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-version environment MUST be tolerant to the presence of Flow attributes and values which may be added at a later date. This is further detailed in the [IS-04 Upgrade Path](https://specs.amwa.tv/is-04/v1.3.1/docs/6.0._Upgrade_Path.html) document.
 
 ## Attributes
 
@@ -28,13 +28,11 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 
 ### Bit Rate
 - **Name:** `bit_rate`
-- **Description:** Bit rate, in kilobits/second.
-- **Specification:** Depends on the media type
+- **Description:** Target bit rate of the codestream, in kilobits/second.
+- **Specification:** [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev)
 - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
-  -  For `video/jxsv`, the value specifies the average bit rate of an RTP stream as per RFC 9134 including IP headers and payload as per SMPTE ST 2110-22
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3
-    - Integer value expressed in units of 1000 bits per second, rounding up.
+  - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
 
 ### Colorspace
 - **Name:** `colorspace`
@@ -47,19 +45,19 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `BT709`
     - `BT2020`
     - `BT2100`
-  - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - Since AMWA IS-04 v1.3, values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20
   - Since ST 2110-20:2017
     - `ST2065-1`
     - `ST2065-3`
     - `UNSPECIFIED` (when no other value applies)
     - `XYZ`
-  - Since ST 2110-20:2021
+  - Since ST 2110-20:2022
     - `ALPHA`
 
 ### Components
 - **Name:** `components`
 - **Description:** Array of objects describing the components of the video.
-- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1) for raw video Flows, extended by this entry to coded video Flows since v1.3
+- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1) for raw video Flows, extended for [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev) to coded video Flows since IS-04 v1.3
 - **Applicability:** `urn:x-nmos:format:video`
 - **Permitted Values:**
   - For raw video Flows, since AMWA IS-04 v1.1, values complying with the IS-04 schema
@@ -73,6 +71,39 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     ]
     ```
 
+### Level
+- **Name:** `level`
+- **Description:** Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.
+- **Specification:** [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev)
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv`, the values are the level names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
+  - For example
+    - `1k-1`
+
+### Profile
+- **Name:** `profile`
+- **Description:** Indicates the subset of coding tools that are in use, as defined for the Flow media type.
+- **Specification:** [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev)
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv`, the values are the profile names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
+  - For example
+    - `Main444.12`
+
+### Sublevel
+- **Name:** `sublevel`
+- **Description:** Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type.
+- **Specification:** [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev)
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv`, the values are the sublevel names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
+  - For example
+    - `Sublev3bpp`
+
 ### Transfer Characteristic
 - **Name:** `transfer_characteristic`
 - **Description:** Transfer characteristic.
@@ -83,7 +114,7 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `SDR`
     - `HLG`
     - `PQ`
-  - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.
+  - Since AMWA IS-04 v1.3, values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20
   - Since ST 2110-20:2017
     - `LINEAR`
     - `BT2100LINPQ`
@@ -92,5 +123,7 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `ST428-1`
     - `DENSITY`
     - `UNSPECIFIED` (when no other value applies)
-  - Since ST 2110-20:2021
+  - Since ST 2110-20:2022
     - `ST2115LOGS3`
+
+[RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"

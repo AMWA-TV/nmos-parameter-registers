@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Sender additional and extensible attributes defined in the NMOS Parameter Registers.",
+  "title": "Sender resource",
+  "properties": {
+    "bit_rate": {
+      "description": "Bit rate, in kilobits/second. Integer value expressed in units of 1000 bits per second, rounding up.",
+      "type": "integer"
+    },
+    "packet_transmission_mode": {
+      "description": "JPEG XS packetization and transmission mode. String value representing the valid combinations of the transmission mode (T) bit and packetization mode (K) bit.",
+      "type": "string",
+      "enum": [
+        "codestream",
+        "slice_sequential",
+        "slice_out_of_order"
+      ],
+      "default": "codestream"
+    },
+    "st2110_21_sender_type": {
+      "description": "ST 2110-21 Sender Type. Indicates the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.",
+      "type": "string",
+      "enum": [
+        "2110TPN",
+        "2110TPNL",
+        "2110TPW"
+      ]
+    }
+  }
+}

@@ -19,6 +19,9 @@
 - id: node-service-types
   name: Node Service Types
   show_in_index: true
+- id: sender-attributes
+  name: Sender Attributes
+  show_in_index: true
 - id: tags
   name: Tags
   show_in_index: true

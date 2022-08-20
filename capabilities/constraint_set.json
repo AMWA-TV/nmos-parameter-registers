@@ -48,6 +48,15 @@
     "urn:x-nmos:cap:format:bit_rate": {
       "$ref": "param_constraint_integer.json"
     },
+    "urn:x-nmos:cap:format:profile": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:format:level": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:format:sublevel": {
+      "$ref": "param_constraint_string.json"
+    },
     "urn:x-nmos:cap:format:channel_count": {
       "$ref": "param_constraint_integer.json"
     },
@@ -60,11 +69,17 @@
     "urn:x-nmos:cap:format:event_type": {
       "$ref": "param_constraint_string.json"
     },
+    "urn:x-nmos:cap:transport:bit_rate": {
+      "$ref": "param_constraint_integer.json"
+    },
     "urn:x-nmos:cap:transport:packet_time": {
       "$ref": "param_constraint_number.json"
     },
     "urn:x-nmos:cap:transport:max_packet_time": {
       "$ref": "param_constraint_number.json"
+    },
+    "urn:x-nmos:cap:transport:packet_transmission_mode": {
+      "$ref": "param_constraint_string.json"
     },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
       "$ref": "param_constraint_string.json"

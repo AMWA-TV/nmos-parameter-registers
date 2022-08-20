@@ -1,7 +1,7 @@
 # NMOS Capabilities
 {:.no_toc}
 
-This Capabilities parameter register contains values that may be used to identify a capability, used in the `caps` property of the resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04/).
+This Capabilities parameter register contains values that may be used to identify a capability, used in the `caps` property of the resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
 
 - A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
 {:toc}
@@ -27,25 +27,25 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
 ### Media Types
 - **Name:** `media_types`
 - **Description:** Identifies Flows which may be created or consumed based upon their `media_type` attribute.
-- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1.x/)
+- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
 - **Applicability:** AMWA IS-04 since v1.1
 
 ### Event Types
 - **Name:** `event_types`
 - **Description:** Identifies Sources or Flows which may be created or consumed based upon their `event_type` attribute.
-- **Specification:** [AMWA IS-04 v1.3](hhttps://specs.amwa.tv/is-04/v1.3.x/)
+- **Specification:** [AMWA IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3)
 - **Applicability:** AMWA IS-04 since v1.3
 
 ### Constraint Sets
 - **Name:** `constraint_sets`
 - **Description:** Identifies streams from Senders which may be created or consumed based upon the attributes of the associated Source or Flow or contents of the associated transport file.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ### Version
 - **Name:** `version`
 - **Description:** String formatted TAI timestamp (`<seconds>:<nanoseconds>`) indicating when an attribute of the `caps` object last changed.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ## Constraint Set
@@ -58,19 +58,19 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 ### Label
 - **Name:** `urn:x-nmos:cap:meta:label`
 - **Description:** Freeform string label to provide a human-readable name for a Constraint Set.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ### Preference
 - **Name:** `urn:x-nmos:cap:meta:preference`
 - **Description:** Expresses the relative 'weight' that the Receiver assigns to its preference for the streams satisfied by the associated Constraint Set.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ### Enabled
 - **Name:** `urn:x-nmos:cap:meta:enabled`
 - **Description:** Indicates whether a Constraint Set is available to use immediately (true) or whether this is an offline capability which can be activated via some unspecified configuration mechanism (false).
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ## Parameter Constraints
@@ -119,7 +119,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:colorspace`
 - **Description:** Identifies the acceptable colorspace of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/) register)
+  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/#colorspace) register)
   - **Target:** (a) video Flow `colorspace`, (b) SDP attribute `a=fmtp:` format-specific parameter `colorimetry`
 - **Applicability:** AMWA IS-04
 
@@ -127,7 +127,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:transfer_characteristic`
 - **Description:** Identifies the acceptable transfer characteristic system of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/) register)
+  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/#transfer-characteristic) register)
   - **Target:** (a) video Flow `transfer_characteristic`, (b) SDP attribute `a=fmtp:` format-specific parameter `TCS`
 - **Applicability:** AMWA IS-04
 
@@ -147,12 +147,36 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) SDP attribute `a=fmtp:` format-specific parameter `depth`, (b) video Flow `components.bit_depth`
 - **Applicability:** AMWA IS-04
 
-### Bit Rate
+### Format Bit Rate
 - **Name:** `urn:x-nmos:cap:format:bit_rate`
 - **Description:** Identifies the acceptable bit rate of a compressed video or audio stream, in kilobits/second.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** integer
-  - **Target:** (a) coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
+  - **Target:** coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/#bit-rate) register)
+- **Applicability:** AMWA IS-04
+
+### Profile
+- **Name:** `urn:x-nmos:cap:format:profile`
+- **Description:** Identifies the acceptable profiles, as defined for the specific media type.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (values depending on the media type)
+  - **Target:** (a) video Flow `profile` (defined in the [Flow Attributes](../flow-attributes/#profile) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `profile`
+- **Applicability:** AMWA IS-04
+
+### Level
+- **Name:** `urn:x-nmos:cap:format:level`
+- **Description:** Identifies the acceptable levels, as defined for the specific media type.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (values depending on the media type)
+  - **Target:** (a) video Flow `level` (defined in the [Flow Attributes](../flow-attributes/#level) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `level`
+- **Applicability:** AMWA IS-04
+
+### Sublevel
+- **Name:** `urn:x-nmos:cap:format:sublevel`
+- **Description:** Identifies the acceptable sublevels, as defined for the specific media type.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (values depending on the media type)
+  - **Target:** (a) coded video Flow `sublevel` (defined in the [Flow Attributes](../flow-attributes/#sublevel) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `sublevel`
 - **Applicability:** AMWA IS-04
 
 ### Channel Count
@@ -187,6 +211,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** data Flow `event_type`
 - **Applicability:** AMWA IS-04
 
+### Transport Bit Rate
+- **Name:** `urn:x-nmos:cap:transport:bit_rate`
+- **Description:** Identifies the acceptable bit rate of a network stream, in kilobits/second, including the transport overhead.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** integer
+  - **Target:** (a) Sender `bit_rate` (defined in the [Sender Attributes](../sender-attributes/#bit-rate) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
+- **Applicability:** AMWA IS-04
+
 ### Packet Time
 - **Name:** `urn:x-nmos:cap:transport:packet_time`
 - **Description:** Identifies the acceptable length of time in milliseconds represented by the media in a packet.
@@ -203,13 +235,22 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** SDP attribute `a=maxptime:` `<maximum packet time>`
 - **Applicability:** AMWA IS-04
 
+### Packet Transmission Mode
+- **Name:** `urn:x-nmos:cap:transport:packet_transmission_mode`
+- **Description:** Identifies the acceptable JPEG XS packetization and transmission mode.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/#packet-transmission-mode) register)
+  - **Target:** (a) Sender `packet_transmission_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameters `packetmode` and `transmode`, per [RFC 9134][RFC-9134]
+- **Applicability:** AMWA IS-04
+
 ### ST 2110-21 Sender Type
 - **Name:** `urn:x-nmos:cap:transport:st2110_21_sender_type`
 - **Description:** Identifies the ST 2110-21 receiver capabilities, expressed as the acceptable sender type or types.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (enumerated values as per ST 2110-21, such as `2110TPNL` for narrow linear senders)
-  - **Target:** SDP attribute `a=fmtp:` format-specific parameter `TP`
+  - **Target:** (a) Sender `st2110_21_sender_type` (defined in the [Sender Attributes](../sender-attributes/#st-2110-21-sender-type) register), (b) SDP attribute `a=fmtp:` format-specific parameter `TP`
 - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
+[RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
 [color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"

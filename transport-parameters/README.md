@@ -3,7 +3,7 @@
 
 This register contains the names of additional transport parameters that could be included in the objects in an [IS-05](https://specs.amwa.tv/is-05) `transport_params` array.
 
-For historical reasons, these ["externally-defined" parameters](https://specs.amwa.tv/is-05/v1.1/docs/4.0._Behaviour.html#externally-defined-parameters) are not URNs, like many other registered parameters.
+For historical reasons, these ["externally-defined" parameters](https://specs.amwa.tv/is-05/v1.1.1/docs/4.0._Behaviour.html#externally-defined-parameters) are not URNs, like many other registered parameters.
 Instead, they are clearly identified using the prefix `ext_`.
 
 - A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
@@ -37,5 +37,5 @@ These MAY be used in addition to the transport-specific schemas, such as **sende
 ### Link Offset Delay
 - **Name:** `ext_link_offset_delay`
 - **Description:** Identifies the Link Offset Delay used to synchronise Playout Time of all components of a stream by receivers.
-- **Specification:** ST 2110-10:2021 and VSF TR-10-x
+- **Specification:** ST 2110-10:2022 and VSF TR-10-8
 - **Applicability:** AMWA IS-05 since v1.1
