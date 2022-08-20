@@ -1,7 +1,7 @@
 # NMOS Capabilities
 {:.no_toc}
 
-This Capabilities parameter register contains values that may be used to identify a capability, used in the `caps` property of the resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04/).
+This Capabilities parameter register contains values that may be used to identify a capability, used in the `caps` property of the resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
 
 - A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
 {:toc}
@@ -27,25 +27,25 @@ Capabilities are most used by IS-04 Receivers to indicate what they may consume,
 ### Media Types
 - **Name:** `media_types`
 - **Description:** Identifies Flows which may be created or consumed based upon their `media_type` attribute.
-- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1.x/)
+- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
 - **Applicability:** AMWA IS-04 since v1.1
 
 ### Event Types
 - **Name:** `event_types`
 - **Description:** Identifies Sources or Flows which may be created or consumed based upon their `event_type` attribute.
-- **Specification:** [AMWA IS-04 v1.3](hhttps://specs.amwa.tv/is-04/v1.3.x/)
+- **Specification:** [AMWA IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3)
 - **Applicability:** AMWA IS-04 since v1.3
 
 ### Constraint Sets
 - **Name:** `constraint_sets`
 - **Description:** Identifies streams from Senders which may be created or consumed based upon the attributes of the associated Source or Flow or contents of the associated transport file.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ### Version
 - **Name:** `version`
 - **Description:** String formatted TAI timestamp (`<seconds>:<nanoseconds>`) indicating when an attribute of the `caps` object last changed.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ## Constraint Set
@@ -58,19 +58,19 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 ### Label
 - **Name:** `urn:x-nmos:cap:meta:label`
 - **Description:** Freeform string label to provide a human-readable name for a Constraint Set.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ### Preference
 - **Name:** `urn:x-nmos:cap:meta:preference`
 - **Description:** Expresses the relative 'weight' that the Receiver assigns to its preference for the streams satisfied by the associated Constraint Set.
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ### Enabled
 - **Name:** `urn:x-nmos:cap:meta:enabled`
 - **Description:** Indicates whether a Constraint Set is available to use immediately (true) or whether this is an offline capability which can be activated via some unspecified configuration mechanism (false).
-- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0.x/)
+- **Specification:** [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/v1.0)
 - **Applicability:** AMWA IS-04
 
 ## Parameter Constraints

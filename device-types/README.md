@@ -25,11 +25,11 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Description:** Generic device.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-- **Applicability:** AMWA IS-04 since v1.1
+- **Applicability:** AMWA IS-04 since v1.0
 
 ### Pipeline Device
 - **Name:** `urn:x-nmos:device:pipeline`
 - **Description:** Pipeline device.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [AMWA IS-04 v1.0](https://specs.amwa.tv/is-04/v1.0)
-- **Applicability:** AMWA IS-04 since v1.1
+- **Applicability:** AMWA IS-04 since v1.0

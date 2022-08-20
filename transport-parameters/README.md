@@ -3,7 +3,7 @@
 
 This register contains the names of additional transport parameters that could be included in the objects in an [IS-05](https://specs.amwa.tv/is-05) `transport_params` array.
 
-For historical reasons, these ["externally-defined" parameters](https://specs.amwa.tv/is-05/v1.1/docs/4.0._Behaviour.html#externally-defined-parameters) are not URNs, like many other registered parameters.
+For historical reasons, these ["externally-defined" parameters](https://specs.amwa.tv/is-05/v1.1.1/docs/4.0._Behaviour.html#externally-defined-parameters) are not URNs, like many other registered parameters.
 Instead, they are clearly identified using the prefix `ext_`.
 
 - A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above

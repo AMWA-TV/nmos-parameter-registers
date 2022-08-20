@@ -17,9 +17,9 @@ This Sender Attributes parameter register contains extensible attributes and the
 - Each entry MUST link to a schema definition held within this repository (unless covered by a schema within the original specification).
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
-As noted in [IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3/docs/4.3._Behaviour_-_Nodes.html#sources--flows) **(Reference To Be Confirmed)**, new Sender attributes may be defined here as opposed to requiring a new version of the specification.
+As noted in [IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3.1/docs/4.3._Behaviour_-_Nodes.html#sources--flows) **(Reference To Be Confirmed)**, new Sender attributes may be defined here as opposed to requiring a new version of the specification.
 
-Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-version environment MUST be tolerant to the presence of Sender attributes and values which may be added at a later date. This is further detailed in the [IS-04 Upgrade Path](https://specs.amwa.tv/is-04/v1.3/docs/6.0._Upgrade_Path.html) document.
+Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-version environment MUST be tolerant to the presence of Sender attributes and values which may be added at a later date. This is further detailed in the [IS-04 Upgrade Path](https://specs.amwa.tv/is-04/v1.3.1/docs/6.0._Upgrade_Path.html) document.
 
 ## Attributes
 
@@ -29,7 +29,7 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 ### Bit Rate
 - **Name:** `bit_rate`
 - **Description:** Bit rate, in kilobits/second, including the transport overhead.
-- **Specification:** Depends on the media type
+- **Specification:** [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev/)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
@@ -38,10 +38,10 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 ### Packet Transmission Mode
 - **Name:** `packet_transmission_mode`
 - **Description:** Identifies the JPEG XS packetization and transmission mode.
-- **Specification:** [RFC 9134][RFC-9134]
+- **Specification:** [\[Work In Progress\] AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0-dev/)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3, string values representing the valid combinations of the transmission mode (T) bit and packetization mode (K) bit, as enumerated in the schema accompanying this register
+  - Since AMWA IS-04 v1.3, string values representing the valid combinations of the [RFC 9134][RFC-9134] transmission mode (T) bit and packetization mode (K) bit, as enumerated in the schema accompanying this register
     - `codestream` (T=1, K=0)
     - `slice_sequential` (T=1, K=1)
     - `slice_out_of_order` (T=0, K=1)
