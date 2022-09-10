@@ -17,7 +17,7 @@ This Sender Attributes parameter register contains extensible attributes and the
 - Each entry MUST link to a schema definition held within this repository (unless covered by a schema within the original specification).
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
-As noted in [IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3.1/docs/4.3._Behaviour_-_Nodes.html#sources--flows) **(Reference To Be Confirmed)**, new Sender attributes may be defined here as opposed to requiring a new version of the specification.
+As noted in [IS-04 v1.3](https://specs.amwa.tv/is-04/releases/v1.3.2/docs/Behaviour_-_Nodes.html#all-resources), new Sender attributes may be defined here as opposed to requiring a new version of the specification.
 
 Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-version environment MUST be tolerant to the presence of Sender attributes and values which may be added at a later date. This is further detailed in the [IS-04 Upgrade Path](https://specs.amwa.tv/is-04/v1.3.1/docs/6.0._Upgrade_Path.html) document.
 
