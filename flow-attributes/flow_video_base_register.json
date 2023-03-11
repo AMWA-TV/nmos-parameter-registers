@@ -20,8 +20,7 @@
         "ST2065-3",
         "UNSPECIFIED",
         "XYZ",
-        "ALPHA",
-        "ST2115LOGS3"
+        "ALPHA"
       ]
     },
     "components" : {
@@ -101,6 +100,7 @@
         "ST2065-1",
         "ST428-1",
         "DENSITY",
+        "ST2115LOGS3",
         "UNSPECIFIED"
       ]
     }
