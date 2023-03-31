@@ -26,7 +26,7 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
 - **Applicability:** AMWA IS-04 since v1.0
 
-### Asset Product
+### Asset Product Name
 - **Name:** `urn:x-nmos:tag:asset:product/v1.0`
 - **Description:** The name given by the Manufacturer for the Asset.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
