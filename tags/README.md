@@ -19,9 +19,37 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 
 ## Values
 
+### Asset Manufacturer
+- **Name:** `urn:x-nmos:tag:asset:manufacturer/v1.0`
+- **Description:** The name used by the company or other organisation creating/selling an Asset.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### Asset Product
+- **Name:** `urn:x-nmos:tag:asset:product/v1.0`
+- **Description:** The name given by the Manufacturer for the Asset.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### Asset Instance Identifier
+- **Name:** `urn:x-nmos:tag:asset:instance-id/v1.0`
+- **Description:** This identifier distinguishes Assets that have the same Product name. For a hardware Asset this is the serial number assigned by the Manufacturer.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
+- **Applicability:** AMWA IS-04 since v1.0
+
+### Asset Function
+- **Name:** `urn:x-nmos:tag:asset:function/v1.0`
+- **Description:** The name of the function implemented by a Device within its Node.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
+- **Applicability:** AMWA IS-04 since v1.0
+
 ### Group Hint v1.0
 - **Name:** `urn:x-nmos:tag:grouphint/v1.0`
-- **Description:** Group tag that can be used in a JSON description for an NMOS resource v1.0.
+- **Description:** Group tag that can be used to identify natural groups of sources and destinations.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [Group Hint tags](grouphint.md)
 - **Applicability:** AMWA IS-04 since v1.0
