@@ -24,28 +24,28 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Description:** The name used by the company or other organisation creating/selling an Asset.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
-- **Applicability:** AMWA IS-04 since v1.0
+- **Applicability:** AMWA IS-04 since v1.1
 
 ### Asset Product Name
 - **Name:** `urn:x-nmos:tag:asset:product/v1.0`
 - **Description:** The name given by the Manufacturer for the Asset.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
-- **Applicability:** AMWA IS-04 since v1.0
+- **Applicability:** AMWA IS-04 since v1.1
 
 ### Asset Instance Identifier
 - **Name:** `urn:x-nmos:tag:asset:instance-id/v1.0`
 - **Description:** This identifier distinguishes Assets that have the same Product name. For a hardware Asset this is the serial number assigned by the Manufacturer.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
-- **Applicability:** AMWA IS-04 since v1.0
+- **Applicability:** AMWA IS-04 since v1.1
 
 ### Asset Function
 - **Name:** `urn:x-nmos:tag:asset:function/v1.0`
 - **Description:** The name of the function implemented by a Device within its Node.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [BCP-002-02](https://specs.amwa.tv/bcp-002-02)
-- **Applicability:** AMWA IS-04 since v1.0
+- **Applicability:** AMWA IS-04 since v1.1
 
 ### Group Hint v1.0
 - **Name:** `urn:x-nmos:tag:grouphint/v1.0`
@@ -59,7 +59,7 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Description:** Certificate Provisioning tag that can be used to advertise if BCP-003-03 is enabled.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [Certificate Provisioning tags](certprov.md)
-- **Applicability:** AMWA IS-04 since v1.0
+- **Applicability:** AMWA IS-04 since v1.1
 
 ### TR-09-2 Booking List
 - **Name:** `urn:x-vsf:tag:tr-09-2:booking-list/v1.0`
