@@ -22,6 +22,9 @@
 - id: sender-attributes
   name: Sender Attributes
   show_in_index: true
+- id: source-attributes
+  name: Source Attributes
+  show_in_index: true
 - id: tags
   name: Tags
   show_in_index: true
