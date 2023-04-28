@@ -57,6 +57,6 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
   - Since ST 2110-20:2017
     - `2110TPN`
     - `2110TPNL`
-    - `2100TPW`
+    - `2110TPW`
 
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
