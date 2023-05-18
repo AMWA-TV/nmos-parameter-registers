@@ -74,3 +74,10 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Proponent:** [VSF](https://www.vsf.tv/)
 - **Specification:** [TR-09-2 tags](tr-09-2.md)
 - **Applicability:** AMWA IS-04 since v1.0
+
+### User-Assigned Distinguishing Information
+- **Name:** `urn:x-nmos:tag:user:<name>[.<subclassification>][/<version>]`
+- **Description:** Tags in the `urn:x-nmos:tag:user:` namespace are intended to be applied and interpreted by the User or Controller in the context of a specific networked media system.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [\[Work In Progress\] AMWA IS-13 NMOS Read/Write Node Specification v1.0](https://specs.amwa.tv/is-13/v1.0-dev)
+- **Applicability:** AMWA IS-04 since v1.1
