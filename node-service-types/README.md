@@ -25,11 +25,11 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Description:** Used purely as an example in AMWA IS-04 (see [nodeapi-self-get-200.json](https://specs.amwa.tv/is-04/v1.3/examples/nodeapi-self-get-200.html)).
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 
-### Read/Write Node API v1.0
-- **Name:** `urn:x-nmos:service:rw-node/v1.0`
-- **Description:** Identifies the Read/Write Node API v1.0.
+### Annotation API v1.0
+- **Name:** `urn:x-nmos:service:annotation/v1.0`
+- **Description:** Identifies the Annotation API v1.0.
 - **Proponent:** [AMWA](https://www.amwa.tv/)
-- **Specification:** [\[Work In Progress\] AMWA IS-13 NMOS Read/Write Node Specification v1.0](https://specs.amwa.tv/is-13/v1.0-dev)
+- **Specification:** [\[Work In Progress\] AMWA IS-13 NMOS Annotation Specification v1.0](https://specs.amwa.tv/is-13/v1.0-dev)
 - **Applicability:** AMWA IS-04 since v1.1
 
 ### mDNS Bridge v1.0
