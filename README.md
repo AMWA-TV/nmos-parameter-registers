@@ -12,7 +12,7 @@
 
 ### Why does it matter?
 
-- Supports extensibity of NMOS 
+- Supports extensibility of NMOS 
 - Promotes interoperability by ensuring common definitions can be shared easily
 
 ### How does it work?
