@@ -18,6 +18,13 @@
       "type": "boolean",
       "default": true
     },
+    "urn:x-nmos:substreams": {
+      "description": "This exposes any substream constraints.",
+      "type": "array",
+      "items": {
+        "$ref": "substream_constraints.json"
+      }
+    },
     "urn:x-nmos:cap:format:media_type": {
       "$ref": "param_constraint_string.json"
     },
@@ -83,13 +90,6 @@
     },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
       "$ref": "param_constraint_string.json"
-    },
-    "urn:x-nmos:substreams": {
-      "description": "This exposes any substream constraints.",
-      "type": "array",
-      "items": {
-        "$ref": "substream_constraints.json"
-      }
     }
   },
   "patternProperties": {
