@@ -251,6 +251,19 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) Sender `st2110_21_sender_type` (defined in the [Sender Attributes](../sender-attributes/#st-2110-21-sender-type) register), (b) SDP attribute `a=fmtp:` format-specific parameter `TP`
 - **Applicability:** AMWA IS-04
 
+## Substream Constraints
+
+MUX Senders create IS-04 flow objects for each subflow included in the MUX flow.
+The MUX flow links to each subflow object using the `parents` construct described in [AMWA IS-04](https://specs.amwa.tv/is-04/)
+
+### Substreams
+- **Name:** `urn:x-nmos:substreams`
+- **Description:** Identifies any per substream constraints.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** object (as per [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/))
+  - **Target:** MUX Sender subflows and their associated attributes sub-targeted by individual Substream Parameter Constraints
+- **Applicability:** AMWA IS-04
+
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
 [color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"
