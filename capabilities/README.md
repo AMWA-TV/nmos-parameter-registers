@@ -77,7 +77,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 
 ### Media Type
 - **Name:** `urn:x-nmos:cap:format:media_type`
-- **Description:** Identifies streams which may be created or consumed based upon their IANA media type.
+- **Description:** Identifies streams which may be created or consumed based upon their media type.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string
   - **Target:** (a) Flow `media_type` attribute, (b) SDP media description `m=` `<media>` and associated attribute `a=rtpmap:` `<encoding name>`

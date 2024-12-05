@@ -82,6 +82,22 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
   - For example
     - `1k-1`
 
+### Media Type
+- **Name:** `media_type`
+- **Description:** Subclassification of the format, using IANA assigned media types where available.
+- **Specification:** [AMWA IS-04 v1.1](https://specs.amwa.tv/is-04/v1.1)
+- **Applicability:** all formats
+- **Permitted Values:**
+  - String values listed in the [IANA Media Types register](https://www.iana.org/assignments/media-types/media-types.xhtml)
+  - Commonly used IANA Media Types and Subtypes are enumerated in the Flow schemas in AMWA IS-04
+  - For example
+    - `video/raw` in raw video Flows
+    - `audio/L24` in raw audio Flows
+    - `video/smpte291` in data Flows
+  - Other values identifying well-defined media types are also permitted
+  - For example
+    - `video/SMPTE2022-6` for mux Flows, which is defined by SMPTE ST 2022-8 but is not listed in the IANA register
+
 ### Profile
 - **Name:** `profile`
 - **Description:** Indicates the subset of coding tools that are in use, as defined for the Flow media type.
