@@ -119,9 +119,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:colorspace`
 - **Description:** Identifies the acceptable colorspace of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  <!--lint disable-->
   - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md#colorspace) register)
-  <!--lint enable-->
   - **Target:** (a) video Flow `colorspace`, (b) SDP attribute `a=fmtp:` format-specific parameter `colorimetry`
 - **Applicability:** AMWA IS-04
 
