@@ -119,7 +119,9 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:colorspace`
 - **Description:** Identifies the acceptable colorspace of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/#colorspace) register)
+  <!--lint disable-->
+  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md#colorspace) register)
+  <!--lint enable-->
   - **Target:** (a) video Flow `colorspace`, (b) SDP attribute `a=fmtp:` format-specific parameter `colorimetry`
 - **Applicability:** AMWA IS-04
 
@@ -127,7 +129,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:format:transfer_characteristic`
 - **Description:** Identifies the acceptable transfer characteristic system of a video stream.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/#transfer-characteristic) register)
+  - **Type:** string (enumerated values as per AMWA IS-04 and the [Flow Attributes](../flow-attributes/README.md#transfer-characteristic) register)
   - **Target:** (a) video Flow `transfer_characteristic`, (b) SDP attribute `a=fmtp:` format-specific parameter `TCS`
 - **Applicability:** AMWA IS-04
 
@@ -152,7 +154,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the acceptable bit rate of a compressed video or audio stream, in kilobits/second.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** integer
-  - **Target:** coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/#bit-rate) register)
+  - **Target:** coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/README.md#bit-rate) register)
 - **Applicability:** AMWA IS-04
 
 ### Profile
@@ -160,7 +162,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the acceptable profiles, as defined for the specific media type.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (values depending on the media type)
-  - **Target:** (a) video Flow `profile` (defined in the [Flow Attributes](../flow-attributes/#profile) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `profile`
+  - **Target:** (a) video Flow `profile` (defined in the [Flow Attributes](../flow-attributes/README.md#profile) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `profile`
 - **Applicability:** AMWA IS-04
 
 ### Level
@@ -168,7 +170,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the acceptable levels, as defined for the specific media type.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (values depending on the media type)
-  - **Target:** (a) video Flow `level` (defined in the [Flow Attributes](../flow-attributes/#level) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `level`
+  - **Target:** (a) video Flow `level` (defined in the [Flow Attributes](../flow-attributes/README.md#level) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `level`
 - **Applicability:** AMWA IS-04
 
 ### Sublevel
@@ -176,7 +178,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the acceptable sublevels, as defined for the specific media type.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (values depending on the media type)
-  - **Target:** (a) coded video Flow `sublevel` (defined in the [Flow Attributes](../flow-attributes/#sublevel) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `sublevel`
+  - **Target:** (a) coded video Flow `sublevel` (defined in the [Flow Attributes](../flow-attributes/README.md#sublevel) register), (b) depending on the media type, an SDP attribute `a=fmtp:` format-specific parameter, e.g. `sublevel`
 - **Applicability:** AMWA IS-04
 
 ### Channel Count
@@ -216,7 +218,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the acceptable bit rate of a network stream, in kilobits/second, including the transport overhead.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** integer
-  - **Target:** (a) Sender `bit_rate` (defined in the [Sender Attributes](../sender-attributes/#bit-rate) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
+  - **Target:** (a) Sender `bit_rate` (defined in the [Sender Attributes](../sender-attributes/README.md#bit-rate) register), (b) depending on the media type, SDP application-specific bandwidth `b=AS:`, for example as per ST 2110-22
 - **Applicability:** AMWA IS-04
 
 ### Packet Time
@@ -239,7 +241,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:transport:packet_transmission_mode`
 - **Description:** Identifies the acceptable JPEG XS packetization and transmission mode.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/#packet-transmission-mode) register)
+  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/README.md#packet-transmission-mode) register)
   - **Target:** (a) Sender `packet_transmission_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameters `packetmode` and `transmode`, per [RFC 9134][RFC-9134]
 - **Applicability:** AMWA IS-04
 
@@ -248,7 +250,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Identifies the ST 2110-21 receiver capabilities, expressed as the acceptable sender type or types.
 - **Specification:** per AMWA BCP-004-01
   - **Type:** string (enumerated values as per ST 2110-21, such as `2110TPNL` for narrow linear senders)
-  - **Target:** (a) Sender `st2110_21_sender_type` (defined in the [Sender Attributes](../sender-attributes/#st-2110-21-sender-type) register), (b) SDP attribute `a=fmtp:` format-specific parameter `TP`
+  - **Target:** (a) Sender `st2110_21_sender_type` (defined in the [Sender Attributes](../sender-attributes/README.md#st-2110-21-sender-type) register), (b) SDP attribute `a=fmtp:` format-specific parameter `TP`
 - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
