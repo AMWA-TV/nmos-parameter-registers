@@ -86,10 +86,10 @@
     }
   },
   "patternProperties": {
-    "^urn:(x-nmos|x-[a-z]+):cap:(?!meta:)": {
+    "^urn:[a-z0-9][a-z0-9-]+:cap:(?!meta:)": {
       "$ref": "param_constraint.json"
     },
-    "^urn:x-[a-z]+:cap:meta:": {
+    "^urn:(?!x-nmos)[a-z0-9][a-z0-9-]+:cap:meta:": {
       "oneOf": [
           {
             "type": [ "boolean", "integer", "number", "string", "null" ]
