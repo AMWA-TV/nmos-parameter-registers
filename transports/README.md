@@ -66,3 +66,10 @@ Note: The IS-05 v1.1 `/transporttype` endpoint returns the URN base; the subclas
 - **Specification:** [AMWA IS-05](https://specs.amwa.tv/is-05/)
 - **Schemas:** [AMWA IS-05 (schemas)](https://specs.amwa.tv/is-05/latest/APIs/schemas/)
 - **Applicability:** AMWA IS-04 since v1.3, IS-05 since v1.1, IS-07 since v1.0
+
+### NDI
+- **Name:** `urn:x-nmos:transport:ndi`
+- **Description:** Identifies the WebSocket transport type.
+- **Specification:** [AMWA BCP-007-01](https://specs.amwa.tv/bcp-007-01/)
+- **Schemas:** [AMWA BCP-007-01 (schemas)](https://specs.amwa.tv/bcp-007-01/branches/v1.0-dev/APIs/schemas/)
+- **Applicability:** AMWA IS-04 since v1.3, IS-05 since v1.2, BCP-007-01 since v1.0
