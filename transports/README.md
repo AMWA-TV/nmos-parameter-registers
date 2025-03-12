@@ -8,13 +8,12 @@ This Transports parameter register contains values that may be used to identify 
 
 ## Criteria
 
-- Values used for the `transport` property are not required to be included in this parameter register.
 - Each entry MUST define a unique transport name (which is a URN).
 - Each entry MUST have a short description.
-- Each entry SHOULD provide a link to a specification for the transport, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
+- Each entry SHOULD provide a link to a specification for the transport, a link to the associated schemas for the transport, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
-Manufacturers MAY use their own namespaces to indicate transports which are not currently defined within the NMOS namespace.
+Manufacturers MAY use their own namespaces to indicate transports which are not currently defined within the NMOS namespace. Transports not part of the NMOS namespace are not included in this register.
 
 Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
 
