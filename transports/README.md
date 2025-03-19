@@ -1,7 +1,7 @@
 # NMOS Transports
 {:.no_toc}
 
-This Transports parameter register contains values that may be used to identify a transport protocol, used in the `transport` property of the sender and receiver resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04).
+This Transports parameter register contains values that identify a transport protocol, used in the `transport` property of the sender and receiver resources defined in the [AMWA IS-04 NMOS Discovery and Registration Specification](https://specs.amwa.tv/is-04) and as used in [AMWA IS-05 NMOS Device Connection Management Specification](https://specs.amwa.tv/is-05).
 
 - A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
 {:toc}
