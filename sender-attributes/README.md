@@ -59,4 +59,11 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
     - `2110TPNL`
     - `2110TPW`
 
+### hkep
+- **Name:** `urn:x-nmos:hkep`
+- **Description:** Identifies the use of HDCP encryption and the HKEP protocol by the Sender.
+- **Specification:** [AMWA BCP-???-??](https://specs.amwa.tv/bcp-???-??/v1.0)
+- **Applicability:** `urn:x-nmos:transport:rtp`
+- **Permitted Values:** boolean `true`, `false`
+
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
