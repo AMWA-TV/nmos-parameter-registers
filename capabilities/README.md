@@ -254,7 +254,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 ### HKEP
 - **Name:** `urn:x-nmos:cap:transport:hkep`
 - **Description:** Indicates support for streams that use HDCP encryption and the HKEP protocol.
-- **Specification:** per AMWA BCP-???-??
+- **Specification:** per AMWA BCP-005-02
   - **Type:** boolean
   - **Target:** (a) Sender `urn:x-nmos:hkep` attribute, (b) SDP attribute `a=hkep:`
 - **Applicability:** AMWA IS-04
