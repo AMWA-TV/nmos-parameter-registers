@@ -256,7 +256,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Description:** Indicates support for streams that use HDCP encryption and the HKEP protocol.
 - **Specification:** per AMWA BCP-005-02
   - **Type:** boolean
-  - **Target:** (a) Sender `urn:x-nmos:hkep` attribute, (b) SDP attribute `a=hkep:`
+  - **Target:** (a) Sender `hkep` attribute, (b) SDP attribute `a=hkep:`
 - **Applicability:** AMWA IS-04
 
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"

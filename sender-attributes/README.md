@@ -60,7 +60,7 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
     - `2110TPW`
 
 ### hkep
-- **Name:** `urn:x-nmos:hkep`
+- **Name:** `hkep`
 - **Description:** Identifies the use of HDCP encryption and the HKEP protocol by the Sender.
 - **Specification:** [AMWA BCP-005-02](https://specs.amwa.tv/bcp-005-02)
 - **Applicability:** `urn:x-nmos:transport:rtp`

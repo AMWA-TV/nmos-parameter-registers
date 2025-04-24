@@ -27,7 +27,7 @@
         "2110TPW"
       ]
     },
-    "urn:x-nmos:hkep": {
+    "hkep": {
       "description": "Identifies the use of HDCP encryption and the HKEP protocol by the Sender.",
       "type": "boolean"
     }
