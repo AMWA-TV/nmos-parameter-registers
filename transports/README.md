@@ -73,3 +73,10 @@ Note: The IS-05 v1.1 `/transporttype` endpoint returns the URN base; the subclas
 - **Specification:** [AMWA BCP-007-01](https://specs.amwa.tv/bcp-007-01/)
 - **Schemas:** [AMWA BCP-007-01 (schemas)](https://specs.amwa.tv/bcp-007-01/branches/v1.0-dev/APIs/schemas/)
 - **Applicability:** AMWA IS-04 since v1.3, IS-05 since v1.2, BCP-007-01 since v1.0
+
+### USB
+- **Name:** `urn:x-nmos:transport:usb`
+- **Description:** Identifies the IPMX USB transport type.
+- **Specification:** [AMWA BCP-005-04](https://specs.amwa.tv/bcp-005-04/)
+- **Schemas:** [AMWA BCP-005-04 (schemas)](https://specs.amwa.tv/bcp-005-04/branches/v1.0-dev/APIs/schemas/)
+- **Applicability:** AMWA IS-04 since v1.3, IS-05 since v1.1, BCP-005-04 since v1.0

@@ -20,6 +20,42 @@
       ],
       "description": "URL of the Events API resource providing the current state and type of an Event emitter (Source). A null value indicates that the source has not been configured.",
       "format": "uri"
+    },
+    "ext_privacy_protocol": {
+      "type": "string",
+      "description": "Defines the privacy encryption protocol adaptation."
+    },
+    "ext_privacy_mode": {
+      "type": "string",
+      "description": "Defines the encryption, authentication and key derivation functions."
+    },
+    "ext_privacy_iv": {
+      "type": "string",
+      "description": "Defines the initial vector."
+    },
+    "ext_privacy_key_generator": {
+      "type": "string",
+      "description": "Defines the key generator."
+    },
+    "ext_privacy_key_version": {
+      "type": "string",
+      "description": "Defines the key version."
+    },
+    "ext_privacy_key_id": {
+      "type": "string",
+      "description": "Defines the key identifier."
+    },
+    "ext_privacy_ecdh_sender_public_key": {
+      "type": "string",
+      "description": "Defines the ECDH public key of the Sender."
+    },
+    "ext_privacy_ecdh_receiver_public_key": {
+      "type": "string",
+      "description": "Defines the ECDH public key of the Receiver."
+    },
+    "ext_privacy_ecdh_curve": {
+      "type": "string",
+      "description": "Defines the ECDH elliptic curve."
     }
   }
 }
