@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "patternProperties": {
     "^ext_[a-zA-Z0-9_]+$":{
-      "$ref": "ext_constraint-schema.json#/definitions/constraint"
+      "$ref": "ext-constraint-schema.json#/definitions/constraint"
     }
   }
 }
