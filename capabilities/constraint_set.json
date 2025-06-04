@@ -91,16 +91,16 @@
     },
     "^urn:(?!x-nmos)[a-z0-9][a-z0-9-]+:cap:meta:": {
       "oneOf": [
-          {
-            "type": [ "boolean", "integer", "number", "string", "null" ]
-          },
-          {
-            "type": "array",
-            "items": {
-                "type": [ "boolean", "integer", "number", "string" ]
-            }
+        {
+          "type": [ "boolean", "integer", "number", "string", "null" ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": [ "boolean", "integer", "number", "string" ]
           }
+        }
       ]
-   }
+    }
   }
 }
