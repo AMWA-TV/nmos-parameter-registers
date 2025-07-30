@@ -62,7 +62,7 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 ### HKEP
 - **Name:** `hkep`
 - **Description:** Identifies the use of HDCP encryption and the HKEP protocol by the Sender.
-- **Specification:** [AMWA BCP-005-02 v1.0](https://specs.amwa.tv/bcp-005-02/v1.0)
+- **Specification:** [AMWA BCP-005-02 v1.0](https://specs.amwa.tv/bcp-005-02)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, boolean `true`, `false`
