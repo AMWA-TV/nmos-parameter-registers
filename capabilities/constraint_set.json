@@ -83,6 +83,9 @@
     },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
       "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:transport:hkep": {
+      "$ref": "param_constraint_boolean.json"
     }
   },
   "patternProperties": {
