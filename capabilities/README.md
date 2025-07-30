@@ -259,6 +259,19 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) Sender `hkep` attribute, (b) SDP attribute `a=hkep:`
 - **Applicability:** AMWA IS-04
 
+## Substream Constraints
+
+Mux Senders create IS-04 Flow objects for each subflow included in the mux Flow.
+The mux Flow links to each subflow object using the IS-04 [`parents`](https://specs.amwa.tv/is-04/latest/docs/Data_Model_-_Identifier_Mapping.html#source-and-flow-representation) attribute.
+
+### Substreams
+- **Name:** `urn:x-nmos:substreams`
+- **Description:** Identifies any per substream constraints.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** array of objects (as per [AMWA BCP-004-01](https://specs.amwa.tv/bcp-004-01/))
+  - **Target:** mux Sender subflows and their associated attributes targeted by individual Substream Parameter Constraints
+- **Applicability:** AMWA IS-04
+
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
 [color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"
