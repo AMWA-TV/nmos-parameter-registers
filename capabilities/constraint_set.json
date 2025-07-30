@@ -83,11 +83,27 @@
     },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
       "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:transport:hkep": {
+      "$ref": "param_constraint_boolean.json"
     }
   },
   "patternProperties": {
-    "^urn:x-nmos:cap:(?!meta:)": {
+    "^urn:[a-z0-9][a-z0-9-]{0,30}[a-z0-9]:cap:(?!meta:)": {
       "$ref": "param_constraint.json"
+    },
+    "^urn:(?!x-nmos)[a-z0-9][a-z0-9-]{0,30}[a-z0-9]:cap:meta:": {
+      "oneOf": [
+        {
+          "type": [ "boolean", "integer", "number", "string", "null" ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": [ "boolean", "integer", "number", "string" ]
+          }
+        }
+      ]
     }
   }
 }
