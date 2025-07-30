@@ -29,7 +29,7 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 ### Bit Rate
 - **Name:** `bit_rate`
 - **Description:** Bit rate, in kilobits/second, including the transport overhead.
-- **Specifications:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/), [AMWA BCP-006-04](https://specs.amwa.tv/bcp-006-04/)
+- **Specifications:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-04 v1.0](https://specs.amwa.tv/bcp-006-04/v1.0)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
