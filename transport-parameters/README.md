@@ -39,3 +39,57 @@ These MAY be used in addition to the transport-specific schemas, such as **sende
 - **Description:** Identifies the Link Offset Delay used to synchronise Playout Time of all components of a stream by receivers.
 - **Specification:** ST 2110-10:2022 and VSF TR-10-8
 - **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption Protocol
+- **Name:** `ext_privacy_protocol`
+- **Description:** Defines the privacy encryption protocol adaptation.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption Mode
+- **Name:** `ext_privacy_mode`
+- **Description:** Defines the encryption, authentication and key derivation functions.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption IV
+- **Name:** `ext_privacy_iv`
+- **Description:** Defines the initial vector.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption Key Generator
+- **Name:** `ext_privacy_key_generator`
+- **Description:** Defines the key generator.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption Key Version
+- **Name:** `ext_privacy_key_version`
+- **Description:** Defines the key version.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption Key ID
+- **Name:** `ext_privacy_key_id`
+- **Description:** Defines the key identifier.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption ECDH Sender Public Key
+- **Name:** `ext_privacy_ecdh_sender_public_key`
+- **Description:** Defines the ECDH public key of the Sender.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption ECDH Receiver Public Key
+- **Name:** `ext_privacy_ecdh_receiver_public_key`
+- **Description:** Defines the ECDH public key of the Receiver.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
+
+### Privacy Encryption ECDH Curve
+- **Name:** `ext_privacy_ecdh_curve`
+- **Description:** Defines the ECDH elliptic curve.
+- **Specification:** VSF TR-10-13
+- **Applicability:** AMWA IS-05 since v1.1
