@@ -86,6 +86,9 @@
     },
     "urn:x-nmos:cap:transport:hkep": {
       "$ref": "param_constraint_boolean.json"
+    },
+    "urn:x-nmos:cap:transport:usb_class": {
+      "$ref": "param_constraint_integer.json"
     }
   },
   "patternProperties": {

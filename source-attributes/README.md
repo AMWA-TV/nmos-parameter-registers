@@ -25,3 +25,11 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 Note: JSON schemas supporting validation of all the attributes will be defined in this register.
 These MAY be used in addition to the schemas, such as _source_generic.json_ and _source_audio.json_, found in the AMWA IS-04 specification.
+
+### USB Devices
+- **Name:** `usb_devices`
+- **Description:** Describes the USB devices accessible to a Receiver via the USB data stream.
+- **Specification:** [AMWA BCP-007-02 v1.0](https://specs.amwa.tv/bcp-007-02)
+- **Applicability:** `urn:x-nmos:transport:usb`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, Array of `usb_device` objects 
