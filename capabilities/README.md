@@ -155,6 +155,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** coded video or audio Flow `bit_rate` (defined in the [Flow Attributes](../flow-attributes/README.md#bit-rate) register)
 - **Applicability:** AMWA IS-04
 
+### Format Constant Bit Rate
+- **Name:** `urn:x-nmos:cap:format:constant_bit_rate`
+- **Description:** Identifies the acceptable bit rate mode (constant or variable) of a compressed video or audio stream.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** boolean
+  - **Target:** coded video or audio Flow `constant_bit_rate` (defined in the [Flow Attributes](../flow-attributes/README.md#constant-bit-rate) register)
+- **Applicability:** AMWA IS-04
+
 ### Profile
 - **Name:** `urn:x-nmos:cap:format:profile`
 - **Description:** Identifies the acceptable profiles, as defined for the specific media type.
@@ -237,10 +245,10 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 
 ### Packet Transmission Mode
 - **Name:** `urn:x-nmos:cap:transport:packet_transmission_mode`
-- **Description:** Identifies the acceptable JPEG XS packetization and transmission mode.
+- **Description:** Identifies the acceptable packet transmission mode.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/README.md#packet-transmission-mode) register)
-  - **Target:** (a) Sender `packet_transmission_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameters `packetmode` and `transmode`, per [RFC 9134][RFC-9134]
+  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/README.md#packet-transmission-mode), [H.264 Sender Attributes](../sender-h264-attributes/README.md#packet-transmission-mode), [H.265 Sender Attributes](../sender-h265-attributes/README.md#packet-transmission-mode) registers)
+  - **Target:** (a) Sender `packet_transmission_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameters `packetmode` and `transmode`, per [RFC 9134][RFC-9134], (c) SDP attribute `a=fmtp:` format-specific parameter `packetization-mode`, per [RFC 6184][RFC-6184], (d) SDP attribute `a=fmtp:` format-specific parameter `sprop-max-don-diff`, per [RFC 7798][RFC-7798]
 - **Applicability:** AMWA IS-04
 
 ### ST 2110-21 Sender Type
@@ -259,6 +267,24 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) Sender `hkep` attribute, (b) SDP attribute `a=hkep:`
 - **Applicability:** AMWA IS-04
 
+### Parameter Sets Transport Mode
+- **Name:** `urn:x-nmos:cap:transport:parameter_sets_transport_mode`
+- **Description:** Identifies the acceptable parameter sets transport modes.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (enumerated values as per the [H.264 Sender Attributes](../sender-h264-attributes/README.md#parameter-sets-transport-mode), [H.265 Sender Attributes](../sender-h265-attributes/README.md#parameter-sets-transport-mode) registers)
+  - **Target:** (a) Sender `parameter_sets_transport_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameter `sprop-parameter-sets`, per [RFC 6184][RFC-6184], (c) SDP attribute `a=fmtp:` format-specific parameters `sprop-vps`, `sprop-sps` and `sprop-pps`, per [RFC 7798][RFC-7798]
+- **Applicability:** AMWA IS-04
+
+### Parameter Sets Flow Mode
+- **Name:** `urn:x-nmos:cap:transport:parameter_sets_flow_mode`
+- **Description:** Identifies the acceptable parameter sets flow modes.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (enumerated values as per the [H.264 Sender Attributes](../sender-h264-attributes/README.md#parameter-sets-transport-mode), [H.265 Sender Attributes](../sender-h265-attributes/README.md#parameter-sets-transport-mode) registers)
+  - **Target:** (a) Sender `parameter_sets_flow_mode` (defined in the Sender Attributes register)
+- **Applicability:** AMWA IS-04
+
 [RFC-4566]: https://tools.ietf.org/html/rfc4566 "SDP: Session Description Protocol"
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
+[RFC-6184]: https://tools.ietf.org/html/rfc6184 "RTP Payload Format for H.264 Video"
+[RFC-7798]: https://tools.ietf.org/html/rfc7798 "RTP Payload Format for High Efficiency Video Coding (HEVC)"
 [color-sampling]: https://www.iana.org/assignments/media-type-sub-parameters/media-type-sub-parameters.xhtml#media-type-sub-parameters-15 "Media Type Sub-Parameter Registry for video/raw: Color (sub-)sampling"

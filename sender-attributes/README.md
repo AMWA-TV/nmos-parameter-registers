@@ -29,7 +29,7 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 ### Bit Rate
 - **Name:** `bit_rate`
 - **Description:** Bit rate, in kilobits/second, including the transport overhead.
-- **Specifications:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-04 v1.0](https://specs.amwa.tv/bcp-006-04/v1.0)
+- **Specifications:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-04 v1.0](https://specs.amwa.tv/bcp-006-04/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
@@ -38,19 +38,31 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 ### Packet Transmission Mode
 - **Name:** `packet_transmission_mode`
 - **Description:** Identifies the JPEG XS packetization and transmission mode.
-- **Specification:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0)
+- **Specification:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3, string values representing the valid combinations of the [RFC 9134][RFC-9134] transmission mode (T) bit and packetization mode (K) bit, as enumerated in the schema accompanying this register
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv` string values representing the valid combinations of the [RFC 9134][RFC-9134] transmission mode (T) bit and packetization mode (K) bit, as enumerated in the schema accompanying this register
     - `codestream` (T=1, K=0)
     - `slice_sequential` (T=1, K=1)
     - `slice_out_of_order` (T=0, K=1)
-  - When the attribute is omitted, a JPEG XS Sender is assumed to be using the `codestream` packetization mode
+  - When the attribute is omitted, a JPEG XS Sender is assumed to be using the `codestream` packet transmission mode
+  - For `video/H264` string values representing the valid packetization-mode of [RFC 6184][RFC-6184] 
+as enumerated in the schema accompanying this register
+    - `single_nal_unit` (value 0)
+    - `non_interleaved_nal_units` (value 1)
+    - `interleaved_nal_units` (value 2)
+  - When the attribute is omitted, a H.264 Sender is assumed to be using the `single_nal_unit` packet transmission mode
+  - For `video/H265` string values representing the value sprop-max-don-diff of [RFC 7798][RFC-7798] 
+as enumerated in the schema accompanying this register
+    - `non_interleaved_nal_units` (value 0)
+    - `interleaved_nal_units` (value greater than 0)
+  - When the attribute is omitted, a H.265 Sender is assumed to be using the `non_interleaved_nal_units` packet transmission mode
 
 ### ST 2110-21 Sender Type
 - **Name:** `st2110_21_sender_type`
 - **Description:** Identifies the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.
-- **Specification:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0)
+- **Specification:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03]
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, values defined for the TP format-specific parameter in any published revision of SMPTE ST 2110-21
@@ -67,4 +79,30 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, boolean `true`, `false`
 
+### Parameter Sets Transport Mode
+- **Name:** `parameter_sets_transport_mode`
+- **Description:** Identifies the codec parameter sets transport mode.
+- **Specification:** [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
+- **Applicability:** `urn:x-nmos:transport:rtp` (when media_type is not `video/MP2T`)
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+- For `video/H264` or `video/H265` string values representing the valid parameter sets flow as enumerated in the schema accompanying this register
+  - `strict`
+  - `static`
+  - `dynamic`
+
+### Parameter Sets Flow Mode
+- **Name:** `parameter_sets_flow_mode`
+- **Description:** Identifies the codec parameter sets flow mode.
+- **Specification:** [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
+- **Applicability:** `urn:x-nmos:transport:rtp` (when media_type is not `video/MP2T`)
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+- For `video/H264` or `video/H265` string values representing the valid parameter sets flow as enumerated in the schema accompanying this register
+  - `in_band`
+  - `out_of_band`
+  - `in_and_out_of_band`
+
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
+[RFC-6184]: https://tools.ietf.org/html/rfc6184 "RTP Payload Format for H.264 Video"
+[RFC-7798]: https://tools.ietf.org/html/rfc7798 "RTP Payload Format for High Efficiency Video Coding (HEVC)"

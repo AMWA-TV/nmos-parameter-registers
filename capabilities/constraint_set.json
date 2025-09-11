@@ -48,6 +48,9 @@
     "urn:x-nmos:cap:format:bit_rate": {
       "$ref": "param_constraint_integer.json"
     },
+    "urn:x-nmos:cap:format:constant_bit_rate": {
+      "$ref": "param_constraint_integer.json"
+    },
     "urn:x-nmos:cap:format:profile": {
       "$ref": "param_constraint_string.json"
     },
@@ -82,6 +85,12 @@
       "$ref": "param_constraint_string.json"
     },
     "urn:x-nmos:cap:transport:st2110_21_sender_type": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:transport:parameter_sets_transport_mode": {
+      "$ref": "param_constraint_string.json"
+    },
+    "urn:x-nmos:cap:transport:parameter_sets_flow_mode": {
       "$ref": "param_constraint_string.json"
     },
     "urn:x-nmos:cap:transport:hkep": {

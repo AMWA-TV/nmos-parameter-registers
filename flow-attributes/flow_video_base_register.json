@@ -87,6 +87,10 @@
       "description": "Sublevel. Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type. For example, in the case of JPEG XS, the level indicates constraints in the decoded image domain, and the sublevel indicates constraints in the encoded image domain.",
       "type": "string"
     },
+    "constant_bit_tate": {
+      "description": "Constant bit rate. Indicates that the Flow is constant or variable bit rate.",
+      "type": "boolean"
+    },
     "transfer_characteristic": {
       "description": "Transfer characteristic. Values defined for the TCS format-specific parameter in any published revision of SMPTE ST 2110-20.",
       "type": "string",

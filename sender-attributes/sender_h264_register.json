@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Sender additional and extensible attributes defined in the NMOS Parameter Registers.",
+  "title": "Sender resource",
+  "allOf": [
+    { "$ref": "sender_h26x_register.json" },
+    {
+      "type": "object",
+      "description": "Describes Video Flow constraints specific to H.264 defined in the NMOS Parameter Registers.",
+      "title": "Sender resource",
+      "properties": {
+        "packet_transmission_mode": {
+          "description": "H.264 packetization and transmission mode.",
+          "type": "string",
+          "enum": [
+            "non_interleaved_nal_units",
+            "interleaved_nal_units",
+            "single_nal_unit"
+          ],
+          "default": "single_nal_unit"
+        }
+      }
+    }
+  ]
+}
