@@ -247,7 +247,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:transport:packet_transmission_mode`
 - **Description:** Identifies the acceptable packet transmission mode.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/README.md#packet-transmission-mode), [H.264 Sender Attributes](../sender-h264-attributes/README.md#packet-transmission-mode), [H.265 Sender Attributes](../sender-h265-attributes/README.md#packet-transmission-mode) registers)
+  - **Type:** string (enumerated values as per the [Sender Attributes](../sender-attributes/README.md#packet-transmission-mode), [H.264 Sender Attributes](../sender-attributes/README.md#packet-transmission-mode), [H.265 Sender Attributes](../sender-attributes/README.md#packet-transmission-mode) registers)
   - **Target:** (a) Sender `packet_transmission_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameters `packetmode` and `transmode`, per [RFC 9134][RFC-9134], (c) SDP attribute `a=fmtp:` format-specific parameter `packetization-mode`, per [RFC 6184][RFC-6184], (d) SDP attribute `a=fmtp:` format-specific parameter `sprop-max-don-diff`, per [RFC 7798][RFC-7798]
 - **Applicability:** AMWA IS-04
 
@@ -271,7 +271,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:transport:parameter_sets_transport_mode`
 - **Description:** Identifies the acceptable parameter sets transport modes.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per the [H.264 Sender Attributes](../sender-h264-attributes/README.md#parameter-sets-transport-mode), [H.265 Sender Attributes](../sender-h265-attributes/README.md#parameter-sets-transport-mode) registers)
+  - **Type:** string (enumerated values as per the [H.264 Sender Attributes](../sender-attributes/README.md#parameter-sets-transport-mode), [H.265 Sender Attributes](../sender-attributes/README.md#parameter-sets-transport-mode) registers)
   - **Target:** (a) Sender `parameter_sets_transport_mode` (defined in the Sender Attributes register), (b) SDP attribute `a=fmtp:` format-specific parameter `sprop-parameter-sets`, per [RFC 6184][RFC-6184], (c) SDP attribute `a=fmtp:` format-specific parameters `sprop-vps`, `sprop-sps` and `sprop-pps`, per [RFC 7798][RFC-7798]
 - **Applicability:** AMWA IS-04
 
@@ -279,7 +279,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 - **Name:** `urn:x-nmos:cap:transport:parameter_sets_flow_mode`
 - **Description:** Identifies the acceptable parameter sets flow modes.
 - **Specification:** per AMWA BCP-004-01
-  - **Type:** string (enumerated values as per the [H.264 Sender Attributes](../sender-h264-attributes/README.md#parameter-sets-transport-mode), [H.265 Sender Attributes](../sender-h265-attributes/README.md#parameter-sets-transport-mode) registers)
+  - **Type:** string (enumerated values as per the [H.264 Sender Attributes](../sender-attributes/README.md#parameter-sets-transport-mode), [H.265 Sender Attributes](../sender-attributes/README.md#parameter-sets-transport-mode) registers)
   - **Target:** (a) Sender `parameter_sets_flow_mode` (defined in the Sender Attributes register)
 - **Applicability:** AMWA IS-04
 
