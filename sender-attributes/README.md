@@ -62,7 +62,7 @@ as enumerated in the schema accompanying this register
 ### ST 2110-21 Sender Type
 - **Name:** `st2110_21_sender_type`
 - **Description:** Identifies the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.
-- **Specification:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03]
+- **Specification:** [AMWA BCP-006-01 v1.0](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
 - **Applicability:** `urn:x-nmos:transport:rtp`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, values defined for the TP format-specific parameter in any published revision of SMPTE ST 2110-21
