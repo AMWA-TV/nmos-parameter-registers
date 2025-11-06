@@ -32,4 +32,4 @@ These MAY be used in addition to the schemas, such as _source_generic.json_ and 
 - **Specification:** [AMWA BCP-007-02 v1.0](https://specs.amwa.tv/bcp-007-02)
 - **Applicability:** `urn:x-nmos:transport:usb`
 - **Permitted Values:**
-  - Since AMWA IS-04 v1.3, Array of `usb_device` objects 
+  - Since AMWA IS-04 v1.3, Array of `usb_device` objects
