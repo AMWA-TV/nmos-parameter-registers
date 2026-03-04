@@ -261,7 +261,7 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 
 ### Privacy
 - **Name:** `urn:x-nmos:cap:transport:privacy`
-- **Description:** Indicates support for streams that use Privacy Encryption.
+- **Description:** Indicates support for streams that use the Privacy Encryption Protocol.
 - **Specification:** per AMWA BCP-005-03
   - **Type:** boolean
   - **Target:** (a) Sender `privacy` attribute, (b) SDP attribute `a=privacy:`
