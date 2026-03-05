@@ -91,5 +91,5 @@ These MAY be used in addition to the transport-specific schemas, such as **sende
 ### Privacy Encryption ECDH Curve
 - **Name:** `ext_privacy_ecdh_curve`
 - **Description:** Defines the ECDH elliptic curve.
-- **Specification:** VSF TR-10-13
+- **Specification:** BCP-005-03 and VSF TR-10-13
 - **Applicability:** AMWA IS-05 since v1.1
