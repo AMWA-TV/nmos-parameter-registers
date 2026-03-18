@@ -86,6 +86,9 @@
     },
     "urn:x-nmos:cap:transport:hkep": {
       "$ref": "param_constraint_boolean.json"
+    },
+    "urn:x-nmos:cap:transport:privacy": {
+      "$ref": "param_constraint_boolean.json"
     }
   },
   "patternProperties": {

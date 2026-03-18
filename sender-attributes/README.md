@@ -67,4 +67,12 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, boolean `true`, `false`
 
+### Privacy
+- **Name:** `privacy`
+- **Description:** Identifies the use of the Privacy Encryption Protocol by the Sender.
+- **Specification:** [AMWA BCP-005-03 v1.0](https://specs.amwa.tv/bcp-005-03)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-nmos:transport:usb`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, boolean `true`, `false`
+
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"

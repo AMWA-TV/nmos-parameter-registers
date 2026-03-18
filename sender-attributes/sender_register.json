@@ -30,6 +30,10 @@
     "hkep": {
       "description": "Identifies the use of HDCP encryption and the HKEP protocol by the Sender.",
       "type": "boolean"
+    },
+    "privacy": {
+      "description": "Identifies the use of the Privacy Encryption Protocol by the Sender.",
+      "type": "boolean"
     }
   }
 }
