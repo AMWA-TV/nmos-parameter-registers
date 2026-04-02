@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "description": "Describes the Source additional and extensible attributes defined in the NMOS Parameter Registers.",
-    "title": "Source resource",
+    "title": "Data Source resource",
     "properties": {
         "usb_devices": {
             "description": "Describes the USB devices accessible to a Receiver via the USB data stream.",
