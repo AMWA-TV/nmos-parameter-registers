@@ -27,7 +27,7 @@ This Media Types parameter register contains values that may be used to identify
 
 ### Audio float32
 - **Name:** `audio/float32`
-- **Description:** Identifies audio stored as 32 bit float values with a full-scale range of [−1.0 ; +1.0]
+- **Description:** Identifies audio stored as 32 bit float values with a full-scale range of −1.0 to +1.0
 - **Applicability:** AMWA IS-04 since v1.3, AMWA BCP-007-03 since v1.0
 
 ### Ancillary data
