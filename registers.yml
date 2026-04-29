@@ -16,6 +16,9 @@
 - id: formats
   name: Formats
   show_in_index: true
+- id: media-types
+  name: Media Types
+  show_in_index: true
 - id: node-service-types
   name: Node Service Types
   show_in_index: true
