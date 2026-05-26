@@ -15,6 +15,9 @@ This Media Types parameter register contains values that may be used to identify
 
 ## Values
 
+Note: A JSON schema supporting validation of all the media types defined in this register is available as **[media_type_register.json](media_type_register.json)**.
+These MAY be used in addition to the Flow and Receiver schemas found in the AMWA IS-04 specification.
+
 ### Video v210
 - **Name:** `video/v210`
 - **Description:** Identifies an uncompressed buffer carrying 10 bit 4:2:2 video without transparency
