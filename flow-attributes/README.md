@@ -28,11 +28,19 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 
 ### Bit Rate
 - **Name:** `bit_rate`
-- **Description:** Target bit rate of the codestream, in kilobits/second.
-- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0)
+- **Description:** Target bit rate of the codestream/bitstream, in kilobits/second.
+- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
 - **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, integer values expressed in units of 1000 bits per second, rounding up
+
+### Constant Bit Rate
+- **Name:** `constant_bit_rate`
+- **Description:**  Indicates that the Flow is constant or variable bit rate.
+- **Specification:** [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
+- **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, boolean values true or false.
 
 ### Colorspace
 - **Name:** `colorspace`
@@ -74,24 +82,36 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
 ### Level
 - **Name:** `level`
 - **Description:** Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.
-- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0)
-- **Applicability:** `urn:x-nmos:format:video`
+- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0), [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
+- **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
   - For `video/jxsv`, the values are the level names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
   - For example
     - `1k-1`
+  - For `video/H264`, the values are the level names defined by Rec. ITU-T H.264 Annex A.
+    - For example
+      - `5.1`
+  - For `video/H265`, the values are the level names defined Rec. ITU-T H.265 Annex A where the tier name prefixes the level number.
+    - For example
+      - `Main-5.1`
 
 ### Profile
 - **Name:** `profile`
 - **Description:** Indicates the subset of coding tools that are in use, as defined for the Flow media type.
-- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0)
-- **Applicability:** `urn:x-nmos:format:video`
+- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0),  [AMWA BCP-006-02](https://specs.amwa.tv/bcp-006-02/v1.0), [AMWA BCP-006-03](https://specs.amwa.tv/bcp-006-03/v1.0)
+- **Applicability:** `urn:x-nmos:format:video` or `urn:x-nmos:format:audio`
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
   - For `video/jxsv`, the values are the profile names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
   - For example
     - `Main444.12`
+  - For `video/H264`, the values are the profile names defined by Rec. ITU-T H.264 Annex A, with whitespace omitted, the sampling mode always positioned at the end of the string, preceded by a '-' and the terms High and Baseline positioned at the beginning of the string.
+    - For example
+      - `High-422`
+  - For `video/H265`, the values are the profile names defined by Rec. ITU-T H.265 Annex A, with whitespace omitted and the sampling mode always positioned at the end of the string, preceded by a '-'.
+    - For example
+      - `Main12-422`
 
 ### Sublevel
 - **Name:** `sublevel`

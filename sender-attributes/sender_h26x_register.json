@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Sender additional and extensible attributes defined in the NMOS Parameter Registers.",
+  "title": "Sender resource",
+  "properties": {
+    "bit_rate": {
+      "description": "Bit rate, in kilobits/second. Integer value expressed in units of 1000 bits per second, rounding up.",
+      "type": "integer"
+    },
+    "st2110_21_sender_type": {
+      "description": "ST 2110-21 Sender Type. Indicates the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.",
+      "type": "string",
+      "enum": [
+        "2110TPN",
+        "2110TPNL",
+        "2110TPW"
+      ]
+    },
+    "parameter_sets_flow_mode": {
+      "description": "H.264 / H.265 parameter sets flow mode.",
+      "type": "string",
+      "enum": [
+        "strict",
+        "static",
+        "dynamic"
+      ],
+      "default": "dynamic"
+    },
+    "parameter_sets_transport_mode": {
+      "description": "H.264 / H.265 parameter sets transport mode.",
+      "type": "string",
+      "enum": [
+        "in_band",
+        "out_of_band",
+        "in_and_out_of_band"
+      ],
+      "default": "in_band"
+    }
+  }
+}
