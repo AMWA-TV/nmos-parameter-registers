@@ -1,0 +1,15 @@
+### Registers
+
+- [Common (NMOS Parameter Registers: General Procedures and Criteria)](common/README.md)
+- [Capabilities](capabilities/README.md)
+- [Device control types](device-control-types/README.md)
+- [Device types](device-types/README.md)
+- [Flow attributes](flow-attributes/README.md)
+- [Formats](formats/README.md)
+- [Media types](media-types/README.md)
+- [Node service types](node-service-types/README.md)
+- [Sender attributes](sender-attributes/README.md)
+- [Source attributes](source-attributes/README.md)
+- [Tags](tags/README.md)
+- [Transport parameters](transport-parameters/README.md)
+- [Transports](transports/README.md)
