@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "NMOS Media Types parameter register value. Identifies a media type used in the media_type property of a Flow resource or in the media_types capability of a Receiver, as defined in the AMWA IS-04 NMOS Discovery and Registration Specification.",
+  "title": "NMOS Media Type",
+  "type": "string",
+  "enum": [
+    "video/v210",
+    "video/v210a",
+    "audio/float32",
+    "video/smpte291"
+  ]
+}

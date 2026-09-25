@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Video Flow constraints specific to JPEG XS defined in the NMOS Parameter Registers.",
+  "title": "Video Flow resource",
+  "properties": {
+    "level": {
+      "description": "Level. Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "1k-1",
+        "Bayer2k-1",
+        "2k-1",
+        "Bayer4k-1",
+        "4k-1",
+        "Bayer8k-1",
+        "4k-2",
+        "Bayer8k-2",
+        "4k-3",
+        "Bayer8k-3",
+        "8k-1",
+        "Bayer16k-1",
+        "8k-2",
+        "Bayer16k-2",
+        "8k-3",
+        "Bayer16k-3",
+        "10k-1",
+        "Bayer20k-1"
+      ]
+    },
+    "profile": {
+      "description": "Profile. Indicates the subset of coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "HighBayer",
+        "MainBayer",
+        "LightBayer",
+        "High4444.12",
+        "Main4444.12",
+        "High444.12",
+        "Main444.12",
+        "Light444.12",
+        "Main422.10",
+        "Light422.10",
+        "Light-Subline422.10",
+        "MLS.12",
+        "High420.12",
+        "Main420.12"
+      ]
+    },
+    "sublevel": {
+      "description": "Sublevel. Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type. For example, in the case of JPEG XS, the level indicates constraints in the decoded image domain, and the sublevel indicates constraints in the encoded image domain.",
+      "type": "string",
+      "enum": [
+        "Full",
+        "Sublev12bpp",
+        "Sublev9bpp",
+        "Sublev6bpp",
+        "Sublev4bpp",
+        "Sublev3bpp",
+        "Sublev2bpp"
+      ]
+    }
+  }
+}

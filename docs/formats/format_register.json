@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "NMOS Formats parameter register value. Identifies a data format used in the format property of Source and Flow resources, as defined in the AMWA IS-04 NMOS Discovery and Registration Specification.",
+  "title": "NMOS Format",
+  "type": "string",
+  "enum": [
+    "urn:x-nmos:format:video",
+    "urn:x-nmos:format:audio",
+    "urn:x-nmos:format:data",
+    "urn:x-nmos:format:data.event",
+    "urn:x-nmos:format:mux"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "Describes the Source additional and extensible attributes defined in the NMOS Parameter Registers.",
+    "title": "Data Source resource",
+    "properties": {
+        "usb_devices": {
+            "description": "Describes the USB devices accessible to a Receiver via the USB data stream.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "title": "USB Class",
+                "properties": {
+                    "ipmx_bus_id": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 255
+                        },
+                        "minItems": 64,
+                        "maxItems": 64,
+                        "description": "IPMX USB UTF-8 BUSID 64-byte value"
+                    },
+                    "class": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 255
+                        },
+                        "description": "Device class or classes if a composite device"
+                    },
+                    "vendor": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 65535,
+                        "description": "Vendor ID"
+                    },
+                    "product": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 65535,
+                        "description": "Product ID"
+                    },
+                    "serial": {
+                        "type": "string",
+                        "description": "Serial number"
+                    }
+                },
+                "required": [
+                    "ipmx_bus_id",
+                    "class",
+                    "vendor",
+                    "product",
+                    "serial"
+                ]
+            }
+        }
+    }
+}
