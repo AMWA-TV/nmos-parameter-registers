@@ -4,19 +4,13 @@
         <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/Overview/</loc>
+        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/common/</loc>
       </url>
       <url>
         <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/capabilities/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/common/</loc>
-      </url>
-      <url>
         <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/device-control-types/</loc>
-      </url>
-      <url>
-        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/device-control-types/manifest-base/</loc>
       </url>
       <url>
         <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/device-types/</loc>
@@ -41,15 +35,6 @@
       </url>
       <url>
         <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/tags/</loc>
-      </url>
-      <url>
-        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/tags/certprov/</loc>
-      </url>
-      <url>
-        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/tags/grouphint/</loc>
-      </url>
-      <url>
-        <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/tags/tr-09-2/</loc>
       </url>
       <url>
         <loc>https://specs.amwa.tv/new/nmos-parameter-registers/latest/transport-parameters/</loc>
