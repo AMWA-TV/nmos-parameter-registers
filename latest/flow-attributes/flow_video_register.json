@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Video Flow additional and extensible attributes defined in the NMOS Parameter Registers.",
+  "title": "Video Flow resource",
+  "allOf": [
+    { "$ref": "flow_video_base_register.json" },
+    {
+      "anyOf": [
+        { "not": { "properties": { "media_type": { "enum": [ "video/jxsv" ] } } } },
+        { "$ref": "flow_video_jxsv_register.json" }
+      ]
+    }
+  ]
+}

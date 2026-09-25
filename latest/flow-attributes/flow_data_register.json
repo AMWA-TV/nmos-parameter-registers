@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Data Flow additional and extensible attributes defined in the NMOS Parameter Registers.",
+  "title": "Data Flow resource",
+  "properties": {
+  }
+}

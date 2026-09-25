@@ -1,0 +1,27 @@
+{
+  "amwa_id": "NMOS-PARAMETER-REGISTERS",
+  "url": "https://specs.amwa.tv/nmos-parameter-registers",
+  "name": "Parameter Registers",
+  "status": "Continuing",
+  "repo_name": "nmos-parameter-registers",
+  "alt_repo_name": "nmos-parameter-registers",
+  "repo_url": "https://github.com/AMWA-TV/nmos-parameter-registers",
+  "releases": null,
+  "default_branch": "main",
+  "show_in_index": true,
+  "intro": {
+    "what_does_it_do": [
+      "Lists constants for many types of parameter values used in NMOS specifications",
+      "Defines procedures for updating these"
+    ],
+    "why_does_it_matter": [
+      "Supports extensibility of NMOS",
+      "Promotes interoperability by ensuring common definitions can be shared easily"
+    ],
+    "how_does_it_work": [
+      "Each type of parameter has a register, listed on this site",
+      "In most parameter registers, values are specified as `urn:x-nmos:<type>:<value>[/<version>]`",
+      "Updates are proposed and reviewed using GitHub pull requests (PRs)"
+    ]
+  }
+}
