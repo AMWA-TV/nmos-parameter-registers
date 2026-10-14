@@ -26,7 +26,9 @@ jobs:
     with:
       versioned: false
       site-name: ${{ github.event.repository.name }}
-      public-docs-root: ${{ format('https://specs.amwa.tv/new/{0}', github.event.repository.name) }}
+      public-docs-root: https://specs.amwa.tv/nmos-parameter-registers
+      upload-prefix: ''
+      legacy-mapping: .docs/legacy-mappings.csv
       source-ref: ${{ inputs.ref || github.ref_name }}
       # Pin this to a released toolkit tag or commit SHA once available.
       toolkit-ref: main
