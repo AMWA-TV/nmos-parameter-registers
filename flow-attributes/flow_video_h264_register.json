@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Video Flow constraints specific to H.264 defined in the NMOS Parameter Registers.",
+  "title": "Video Flow resource",
+  "properties": {
+    "level": {
+      "description": "Level. Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "1",
+        "1b", "1.1", "1.2", "1.3",
+        "2", "2.1", "2.2",
+        "3", "3.1", "3.2",
+        "4", "4.1", "4.2",
+        "5", "5.1", "5.2",
+        "6", "6.1", "6.2"
+      ]
+    },
+    "profile": {
+      "description": "Profile. Indicates the subset of coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "BaselineConstrained",
+        "Baseline",
+        "Main",
+        "Extended",
+        "High", "High-422",
+        "HighProgressive",
+        "HighConstrained",
+        "High10",
+        "High10Progressive",
+        "HighPredictive-444",
+        "High10Intra",
+        "HighIntra-422", "HighIntra-444",
+        "CAVLCIntra-444"
+      ]
+    },
+    "constant_bit_rate": {
+      "description": "Constant bit rate. Indicates that the Flow is constant or variable bit rate.",
+      "type": "boolean",
+      "enum": [
+        true, false
+      ]
+    }
+  }
+}
