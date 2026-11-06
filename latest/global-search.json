@@ -3,12 +3,6 @@
   "repository": "AMWA-TV/nmos-parameter-registers",
   "documents": [
     {
-      "title": "Page not found",
-      "url": "https://specs.amwa.tv/nmos-parameter-registers/latest/404/",
-      "text": "Page not found Page not found Page not found - AMWA NMOS Parameter Registers Skip to content Page not found The page you requested could not be found. Return to the documentation home",
-      "repository": "AMWA-TV/nmos-parameter-registers"
-    },
-    {
       "title": "NMOS Parameter Registers",
       "url": "https://specs.amwa.tv/nmos-parameter-registers/latest/Overview/",
       "text": "NMOS Parameter Registers NMOS Parameter Registers Register index NMOS Parameter Registers - AMWA NMOS Parameter Registers Skip to content NMOS Parameter Registers The parameter registers define shared values used by AMWA NMOS specifications. Each register includes its criteria and current values. Register index General procedures and criteria Capabilities Device control types Device types Flow attributes Formats Media types Node service types Sender attributes Source attributes Tags Transport parameters Transports",
