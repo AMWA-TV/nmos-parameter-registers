@@ -34,6 +34,13 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Specification:** [AMWA IS-05 NMOS Device Connection Management v1.1](https://specs.amwa.tv/is-05/v1.1)
 - **Applicability:** AMWA IS-04 since v1.3
 
+### Connection API v1.2
+- **Name:** `urn:x-nmos:control:sr-ctrl/v1.2`
+- **Description:** Identifies the Connection API v1.2.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [AMWA IS-05 NMOS Device Connection Management v1.2](https://specs.amwa.tv/is-05/v1.2)
+- **Applicability:** AMWA IS-04 since v1.3
+
 ### Events API v1.0
 - **Name:** `urn:x-nmos:control:events/v1.0`
 - **Description:** Identifies the Events API v1.0.
@@ -47,6 +54,20 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 - **Proponent:** [AMWA](https://www.amwa.tv/)
 - **Specification:** [AMWA IS-08 NMOS Audio Channel Mapping v1.0](https://specs.amwa.tv/is-08/v1.0)
 - **Applicability:** AMWA IS-04 since v1.2
+
+### Control Protocol v1.0
+- **Name:** `urn:x-nmos:control:ncp/v1.0`
+- **Description:** Identifies the Control Protocol v1.0.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [AMWA IS-12 NMOS Control Protocol v1.0](https://specs.amwa.tv/is-12/v1.0)
+- **Applicability:** AMWA IS-04 since v1.1
+
+### Configuration API v1.0
+- **Name:** `urn:x-nmos:control:configuration/v1.0`
+- **Description:** Identifies the Configuration API v1.0.
+- **Proponent:** [AMWA](https://www.amwa.tv/)
+- **Specification:** [AMWA IS-14 NMOS Device Configuration Specification v1.0](https://specs.amwa.tv/is-14/v1.0)
+- **Applicability:** AMWA IS-04 since v1.1
 
 ### Manifest Base v1.0
 - **Name:** `urn:x-nmos:control:manifest-base/v1.0`
