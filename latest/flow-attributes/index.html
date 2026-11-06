@@ -510,6 +510,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#media-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Media Type
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#profile" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -888,6 +899,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#media-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Media Type
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#profile" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1032,6 +1054,27 @@ These MAY be used in addition to the schemas, such as <em>flow_video.json</em> a
 <li>For <code>video/jxsv</code>, the values are the level names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per <a href="https://tools.ietf.org/html/rfc9134" title="RTP Payload Format for ISO/IEC 21122 (JPEG XS)">RFC 9134</a></li>
 <li>For example<ul>
 <li><code>1k-1</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="media-type">Media Type</h3>
+<ul>
+<li><strong>Name:</strong> <code>media_type</code></li>
+<li><strong>Description:</strong> Subclassification of the format, using IANA assigned media types where available.</li>
+<li><strong>Specification:</strong> <a href="https://specs.amwa.tv/is-04/v1.1">AMWA IS-04 v1.1</a></li>
+<li><strong>Applicability:</strong> all formats</li>
+<li><strong>Permitted Values:</strong></li>
+<li>String values listed in the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">IANA Media Types register</a></li>
+<li>Commonly used IANA Media Types and Subtypes are enumerated in the Flow schemas in AMWA IS-04</li>
+<li>For example<ul>
+<li><code>video/raw</code> in raw video Flows</li>
+<li><code>audio/L24</code> in raw audio Flows</li>
+<li><code>video/smpte291</code> in data Flows</li>
+</ul>
+</li>
+<li>Other values identifying well-defined media types are also permitted</li>
+<li>For example<ul>
+<li><code>video/SMPTE2022-6</code> for mux Flows, which is defined by SMPTE ST 2022-8 but is not listed in the IANA register</li>
 </ul>
 </li>
 </ul>
