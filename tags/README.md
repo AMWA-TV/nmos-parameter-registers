@@ -13,11 +13,15 @@ The register contains values that may be used in the `tags` property defined in 
 - Each entry MUST have a short description and include contact information for the proponent(s).
 - Each entry SHOULD provide a link to a specification for the tag usage, as well as identifying any AMWA Specifications and versions for which the entry is applicable.
 - In the case of substantial revision to the tag specification, a new tag type name MUST be defined. Using versioned names is therefore RECOMMENDED when this applies.
+- Each entry MUST define the permitted values of the tag in the JSON schema accompanying this register, [tags_register.json](tags_register.json).
 - Additions and updates to this parameter register are to be submitted via a Pull Request (PR) according to the [General Procedures and Criteria](../common/).
 
 Note: AMWA IS-04 specifies general requirements for the construction and [use of URNs](https://specs.amwa.tv/is-04/releases/v1.3.1/docs/2.1._APIs_-_Common_Keys.html#use-of-urns) in NMOS specifications.
 
 ## Values
+
+Note: A JSON schema supporting validation of the values of all the tags defined in this register is available as **[tags_register.json](tags_register.json)**.
+It MAY be applied to the `tags` property of any resource, in addition to the resource schemas found in the AMWA IS-04 specification.
 
 ### Asset Manufacturer
 - **Name:** `urn:x-nmos:tag:asset:manufacturer/v1.0`
