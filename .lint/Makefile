@@ -1,6 +1,7 @@
--include .scripts/scripts.mk
+.PHONY: build-tools distclean lint
 
-.PHONY: build-tools distclean
+lint:
+	.init-scripts/lint-with-staged-docs.sh
 
 build-tools:
 	.init-scripts/make-build-tools.sh
