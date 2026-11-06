@@ -23,6 +23,15 @@
         "ALPHA"
       ]
     },
+    "component_range": {
+      "description": "Encoding range of the component sample values. Values defined for the RANGE format-specific parameter in SMPTE ST 2110-20 and RFC 9134.",
+      "type": "string",
+      "enum": [
+        "NARROW",
+        "FULLPROTECT",
+        "FULL"
+      ]
+    },
     "components" : {
       "description" : "Array of objects describing the components, or color (sub-)sampling, for coded video Flows. Identical to the components attribute defined for raw video Flows in AMWA IS-04.",
       "type": "array",

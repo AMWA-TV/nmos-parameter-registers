@@ -147,6 +147,14 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) SDP attribute `a=fmtp:` format-specific parameter `depth`, (b) video Flow `components.bit_depth`
 - **Applicability:** AMWA IS-04
 
+### Component Range
+- **Name:** `urn:x-nmos:cap:format:component_range`
+- **Description:** Identifies the acceptable encoding range of the component sample values of a video stream.
+- **Specification:** per AMWA BCP-004-01
+  - **Type:** string (enumerated values as per the [Flow Attributes](../flow-attributes/README.md#component-range) register)
+  - **Target:** (a) video Flow `component_range` (defined in the [Flow Attributes](../flow-attributes/README.md#component-range) register), (b) SDP attribute `a=fmtp:` format-specific parameter `RANGE`
+- **Applicability:** AMWA IS-04
+
 ### Format Bit Rate
 - **Name:** `urn:x-nmos:cap:format:bit_rate`
 - **Description:** Identifies the acceptable bit rate of a compressed video or audio stream, in kilobits/second.
