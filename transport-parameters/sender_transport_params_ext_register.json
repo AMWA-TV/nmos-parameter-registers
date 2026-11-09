@@ -6,19 +6,13 @@
   "title": "Sender Output",
   "properties": {
     "ext_is_07_source_id": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "Identifies the Source that emits an IS-07 event. The sender should provide the ID of its associated Source. A null value indicates that the source has not been configured.",
+      "type": "string",
+      "description": "Identifies the Source that emits an IS-07 event.",
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
     },
     "ext_is_07_rest_api_url": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "URL of the Events API resource providing the current state and type of an Event emitter (Source). A null value indicates that the source has not been configured.",
+      "type": "string",
+      "description": "URL of the Events API resource providing the current state and type of an Event emitter (Source).",
       "format": "uri"
     },
     "ext_privacy_protocol": {
