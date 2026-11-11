@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.1.0">
+      <meta name="generator" content="zensical-0.1.1">
     
     
       
@@ -29,7 +29,7 @@
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.4ab2de0c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ebb7f775.min.css">
       
       
 
@@ -800,7 +800,7 @@
 <li><strong>Description:</strong> Current Booking tag that can be used to indicate the current active TR-09-2 booking.</li>
 <li><strong>Proponent:</strong> <a href="https://www.vsf.tv/">VSF</a></li>
 </ul>
-<p>This document describes an application of the AMWA IS-04 <code>tags</code> structures to enable control systems to identify NMOS resources that are being shared across a facility boundary as described in the VSF TR-09-2 specification.</p>
+<p>This document describes an application of the AMWA IS-04 <code>tags</code> structures to enable control systems to identify NMOS resources that are being shared across a facility boundary as described in the <a href="https://static.vsf.tv/download/technical_recommendations/VSF_TR-09-Part-2_2022-11-17.pdf">VSF TR-09-2</a> specification.</p>
 <h2 id="introduction">Introduction</h2>
 <p>The aim of the TR-09-2 booking tags is to facilitate the sharing of NMOS resources between two independent media facilities.</p>
 <p>The tags contain information that allows an NMOS resource to be identified and matched to information defined during an earlier booking process.</p>
@@ -808,7 +808,7 @@
 <p>Two TR-09-2 tags are defined: the <code>booking-list</code> tag and the <code>current-booking</code> tag.</p>
 <p>When an NMOS resource is to be shared with another facility, the facility offering the shared resource MUST include these tags in the JSON of the NMOS resource at the point it is made available at the facility edge.</p>
 <h2 id="booking-list-urn">Booking List URN</h2>
-<p>The booking list URN <code>urn:x-vsf:tag:tr-09-2:booking-list/v1.0</code> defines a list of bookings associated with the shared NMOS resource. It is defined by an array containing a list of one or more bookings.</p>
+<p>The booking list URN <code>urn:x-vsf:tag:tr-09-2:booking-list/v1.0</code> defines a list of bookings associated with the shared NMOS resource. It is defined by an array containing a list of zero or more bookings.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">   </span><span class="nt">"urn:x-vsf:tag:tr-09-2:booking-list/v1.0"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">      </span><span class="s2">"&lt;consumer-id&gt;:&lt;booking-id&gt;:&lt;element-id&gt;[:&lt;label&gt;]"</span>
@@ -852,7 +852,7 @@ Several examples are given below.</p>
 <p>As defined in the VSF TR-09-2 specification:
 - The <code>consumer-id</code> and <code>element-id</code> MUST be provided by the facility <em>offering</em> the shared resource.
 - The <code>booking-id</code> MUST be provided by the facility <em>consuming</em> the shared resource.
-- The optional <code>label</code> SHOULD be provided by the facility <em>consuming</em> the shared resource.
+- The optional <code>label</code> MAY be provided by the facility <em>consuming</em> the shared resource.
 - The <code>element-id</code> MUST be unique within a booking (as identified by <code>&lt;consumer-id&gt;:&lt;booking-id&gt;</code>).
 - The <code>element-id</code> SHOULD NOT be the same as the NMOS UUID associated with the resource (from the resource's <code>id</code> field).
 - The same <code>element-id</code> MAY be used for a given resource across multiple bookings.</p>
@@ -1052,7 +1052,7 @@ Several examples are given below.</p>
       <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.footer"],"redirect":null,"search":"../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d31f0ffa.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3cb411a8.min.js"></script>
       
         <script src="../../javascripts/json-viewer.js"></script>
       
