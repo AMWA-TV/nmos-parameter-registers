@@ -58,7 +58,6 @@
     "urn:x-vsf:tag:tr-09-2:booking-list/v1.0": {
       "description": "The VSF TR-09-2 bookings associated with the shared resource. Each value has the form <consumer-id>:<booking-id>:<element-id>[:<label>].",
       "type": "array",
-      "minItems": 1,
       "items": {
         "type": "string",
         "pattern": "^[-_a-z0-9]{1,64}:[-_a-z0-9]{1,64}:[-_a-z0-9]{1,64}(:[^:]{1,128})?$"
