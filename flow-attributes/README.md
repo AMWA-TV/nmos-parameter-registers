@@ -54,6 +54,20 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
   - Since ST 2110-20:2022
     - `ALPHA`
 
+### Component Range
+- **Name:** `component_range`
+- **Description:** Encoding range of the component sample values of the video.
+- **Specification:** [AMWA IS-04 v1.3](https://specs.amwa.tv/is-04/v1.3)
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, values defined for the RANGE format-specific parameter in SMPTE ST 2110-20 and [RFC 9134][RFC-9134]
+    - `NARROW`
+    - `FULLPROTECT` (the "permitted" range specified in SMPTE RP 2077)
+    - `FULL`
+  - When the `colorspace` is `BT2100`, only `NARROW` and `FULL` are permitted
+  - When the attribute is omitted, the range is unspecified; it can be communicated out-of-band (for example, in the SDP format-specific parameter `RANGE`) and/or have a default specified by the media type specification
+    - For example, the [MXL documentation](https://github.com/dmf-mxl/mxl/blob/main/docs/Architecture.md#videov210) specifies the default for `video/v210` and `video/v210a`
+
 ### Components
 - **Name:** `components`
 - **Description:** Array of objects describing the components of the video.
