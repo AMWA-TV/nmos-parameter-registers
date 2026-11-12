@@ -606,6 +606,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#component-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Component Range
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#format-bit-rate" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1385,6 +1396,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#component-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Component Range
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#format-bit-rate" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1738,6 +1760,15 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
 <li><strong>Specification:</strong> per AMWA BCP-004-01</li>
 <li><strong>Type:</strong> integer</li>
 <li><strong>Target:</strong> (a) SDP attribute <code>a=fmtp:</code> format-specific parameter <code>depth</code>, (b) video Flow <code>components.bit_depth</code></li>
+<li><strong>Applicability:</strong> AMWA IS-04</li>
+</ul>
+<h3 id="component-range">Component Range</h3>
+<ul>
+<li><strong>Name:</strong> <code>urn:x-nmos:cap:format:component_range</code></li>
+<li><strong>Description:</strong> Identifies the acceptable encoding range of the component sample values of a video stream.</li>
+<li><strong>Specification:</strong> per AMWA BCP-004-01</li>
+<li><strong>Type:</strong> string (enumerated values as per the <a href="../flow-attributes/#component-range">Flow Attributes</a> register)</li>
+<li><strong>Target:</strong> (a) video Flow <code>component_range</code> (defined in the <a href="../flow-attributes/#component-range">Flow Attributes</a> register), (b) SDP attribute <code>a=fmtp:</code> format-specific parameter <code>RANGE</code></li>
 <li><strong>Applicability:</strong> AMWA IS-04</li>
 </ul>
 <h3 id="format-bit-rate">Format Bit Rate</h3>

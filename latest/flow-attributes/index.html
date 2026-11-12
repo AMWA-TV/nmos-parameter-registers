@@ -488,6 +488,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#component-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Component Range
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#components" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -877,6 +888,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#component-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Component Range
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#components" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1023,6 +1045,25 @@ These MAY be used in addition to the schemas, such as <em>flow_video.json</em> a
 </li>
 <li>Since ST 2110-20:2022<ul>
 <li><code>ALPHA</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="component-range">Component Range</h3>
+<ul>
+<li><strong>Name:</strong> <code>component_range</code></li>
+<li><strong>Description:</strong> Encoding range of the component sample values of the video.</li>
+<li><strong>Specification:</strong> <a href="https://specs.amwa.tv/is-04/v1.3">AMWA IS-04 v1.3</a></li>
+<li><strong>Applicability:</strong> <code>urn:x-nmos:format:video</code></li>
+<li><strong>Permitted Values:</strong></li>
+<li>Since AMWA IS-04 v1.3, values defined for the RANGE format-specific parameter in SMPTE ST 2110-20 and <a href="https://tools.ietf.org/html/rfc9134" title="RTP Payload Format for ISO/IEC 21122 (JPEG XS)">RFC 9134</a><ul>
+<li><code>NARROW</code></li>
+<li><code>FULLPROTECT</code> (the "permitted" range specified in SMPTE RP 2077)</li>
+<li><code>FULL</code></li>
+</ul>
+</li>
+<li>When the <code>colorspace</code> is <code>BT2100</code>, only <code>NARROW</code> and <code>FULL</code> are permitted</li>
+<li>When the attribute is omitted, the range is unspecified; it can be communicated out-of-band (for example, in the SDP format-specific parameter <code>RANGE</code>) and/or have a default specified by the media type specification<ul>
+<li>For example, the <a href="https://github.com/dmf-mxl/mxl/blob/main/docs/Architecture.md#videov210">MXL documentation</a> specifies the default for <code>video/v210</code> and <code>video/v210a</code></li>
 </ul>
 </li>
 </ul>
