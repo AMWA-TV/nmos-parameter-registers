@@ -87,7 +87,7 @@
       "description": "Sublevel. Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type. For example, in the case of JPEG XS, the level indicates constraints in the decoded image domain, and the sublevel indicates constraints in the encoded image domain.",
       "type": "string"
     },
-    "constant_bit_tate": {
+    "constant_bit_rate": {
       "description": "Constant bit rate. Indicates that the Flow is constant or variable bit rate.",
       "type": "boolean"
     },
