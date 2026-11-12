@@ -9,7 +9,7 @@
       "type": "integer"
     },
     "colorspace": {
-      "description": "Colorspace used for the video. Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20.",
+      "description": "Colorspace used for the video. Values defined for the colorimetry format-specific parameter in any published revision of SMPTE ST 2110-20, and the value defined in RFC 9134 for SMPTE ST 240M.",
       "type": "string",
       "enum": [
         "BT601",
@@ -20,7 +20,8 @@
         "ST2065-3",
         "UNSPECIFIED",
         "XYZ",
-        "ALPHA"
+        "ALPHA",
+        "SMPTE240M"
       ]
     },
     "component_range": {

@@ -53,6 +53,8 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
     - `XYZ`
   - Since ST 2110-20:2022
     - `ALPHA`
+  - Since AMWA IS-04 v1.3, the value defined for the colorimetry format-specific parameter in [RFC 9134][RFC-9134] for SMPTE ST 240M
+    - `SMPTE240M`
 
 ### Component Range
 - **Name:** `component_range`
