@@ -96,7 +96,10 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
   - `in_band`
   - `out_of_band`
   - `in_and_out_of_band`
-
+  - For `video/H264` or `video/H265` string values representing the valid parameter sets flow as enumerated in the schema accompanying this register
+    - `in_band`
+    - `out_of_band`
+    - `in_and_out_of_band`
 ### Parameter Sets Flow Mode
 - **Name:** `parameter_sets_flow_mode`
 - **Description:** Identifies the codec parameter sets flow mode.
