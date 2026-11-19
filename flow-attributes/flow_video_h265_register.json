@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "description": "Describes Video Flow constraints specific to H.264 defined in the NMOS Parameter Registers.",
+  "title": "Video Flow resource",
+  "properties": {
+    "level": {
+      "description": "Level. Indicates constraints on parameters of the coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "Main-1",
+        "Main-2", "Main-2.1",
+        "Main-3",
+        "Main-3.1",
+        "Main-4", "Main-4.1",
+        "Main-5", "Main-5.1", "Main-5.2",
+        "Main-6", "Main-6.1", "Main-6.2",
+        "High-4", "High-4.1",
+        "High-5", "High-5.1", "High-5.2",
+        "High-6", "High-6.1", "High-6.2",
+        "High-8.5"
+      ]
+    },
+    "profile": {
+      "description": "Profile. Indicates the subset of coding tools that are in use, as defined for the Flow media type.",
+      "type": "string",
+      "enum": [
+        "Main", "Main-444",
+        "MainStillPicture", "MainStillPicture-444",
+        "Main10StillPicture",
+        "Main16StillPicture-444",
+        "Main10", "Main10-422", "Main10-444",
+        "Main12", "Main12-422", "Main12-444",
+        "MainIntra", "MainIntra-444",
+        "Main10Intra", "Main10Intra-422", "Main10Intra-444",
+        "Main12Intra", "Main12Intra-422", "Main12Intra-444",
+        "Main16Intra-444",
+        "Monochrome",
+        "Monochrome10",
+        "Monochrome12",
+        "Monochrome16",
+        "HighThroughput-444",
+        "HighThroughput10-444",
+        "HighThroughput14-444",
+        "HighThroughput16Intra-444",
+        "ScreenExtendedMain","ScreenExtendedMain-444",
+        "ScreenExtendedMain10", "ScreenExtendedMain10-444",
+        "ScreenExtendedHighThroughput-444",
+        "ScreenExtendedHighThroughput10-444",
+        "ScreenExtendedHighThroughput14-444"
+      ]
+    },
+    "constant_bit_rate": {
+      "description": "Constant bit rate. Indicates that the Flow is constant or variable bit rate.",
+      "type": "boolean",
+      "enum": [
+        true, false
+      ]
+    }
+  }
+}
