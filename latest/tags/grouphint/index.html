@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -14,11 +16,12 @@
       
       
       
+      
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.1.1">
+      <meta name="generator" content="zensical-0.1.3">
     
     
       
@@ -29,7 +32,8 @@
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ebb7f775.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.e2cf241e.min.css">
+      
       
       
 
@@ -48,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
       <link rel="stylesheet" href="../../stylesheets/amwa-branding.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
@@ -759,10 +763,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-multiviewerpip-receiver-with-1-video-4-audio" class="md-nav__link">
+  <a href="#2-multiviewer-pip-receiver-with-1-video-2-audio" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        2. MultiviewerPIP, receiver with 1 video 4 audio
+        2. Multiviewer PIP, receiver with 1 video 2 audio
       </span>
     </span>
   </a>
@@ -832,24 +836,24 @@
 <h2 id="introduction">Introduction</h2>
 <p>Since AMWA IS-04 v1.0, NMOS resources contain a <code>tags</code> field that has not been used in a standard way. However when the control systems are trying to control multiple NMOS devices there is no defined way of representing related resources together.</p>
 <p>The initial goal of the group hints definition is to have an easy way of identifying natural groups of sources and destinations. This document defines a clear way of identifying natural groups in the NMOS registry but it does not limit usage of these tags to natural grouping. The only requirement is to respect the rules for natural grouping.</p>
-<p>Natural grouping can be defined as the default relationship between senders or receivers inside a node. This relationship SHOULD remain the same inside a similar device (hardware or software) and it is mostly to help build relationship. Natural groups are not created by users in a dynamic way, they are defined by device manufacturers.</p>
-<p>A good example of a natural group would be a device named "camera" that produces one video and two audio streams. A natural group for this device could be named "camera" and each sender should carry the group tag "camera". Natural grouping is by devices by default and the same group name may be used in all the camera devices. Then a role SHOULD be assigned to each sender so we can differenciate the senders within the same group.</p>
+<p>Natural grouping can be defined as the default relationship between senders or receivers inside a node. This relationship SHOULD remain the same inside a similar device (hardware or software) and it is mostly to help build relationships. Natural groups are not created by users in a dynamic way, they are defined by device manufacturers.</p>
+<p>A good example of a natural group would be a device named "camera" that produces one video and two audio streams. A natural group for this device could be named "camera" and each sender would carry the group tag "camera". Natural grouping is by devices by default and the same group name can be used in all the camera devices. Then a role SHOULD be assigned to each sender so we can differentiate the senders within the same group.</p>
 <p>Result will be something like this:</p>
 <ul>
-<li>Video group: "Camera", role: "Primary"</li>
-<li>Audio 1 group: "Camera", role: "Audio 1"</li>
-<li>Audio 2 group: "Camera", role: "Audio 2"</li>
+<li>Video group: "camera", role: "Primary"</li>
+<li>Audio 1 group: "camera", role: "Audio 1"</li>
+<li>Audio 2 group: "camera", role: "Audio 2"</li>
 </ul>
 <p>It is expected that system controllers use the natural group hints to guide users through a process of associating production meaning and naming with the NMOS resources. This is inherently a setup/configuration-time task. If the natural group hint tag changes later, there is not necessarily an opportunity to re-ask the user if/how that change affects the overall system naming and mapping configuration. That's why immutability is important for natural grouping and it MUST be respected.</p>
 <h2 id="group-hint-urn">Group Hint URN</h2>
-<p>The group hint URN <code>urn:x-nmos:tag:grouphint</code> defines a set of groups to which a resource belongs to.</p>
+<p>The group hint URN <code>urn:x-nmos:tag:grouphint</code> defines a set of groups to which a resource belongs.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">   </span><span class="nt">"urn:x-nmos:tag:grouphint/v1.0"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">      </span><span class="s2">"&lt;group-name&gt;:&lt;role-in-group&gt;[:&lt;group-scope&gt;]"</span>
 <span class="w">   </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Where <code>&lt;</code>...<code>&gt;</code> indicates the named parameters and <code>[</code>...<code>]</code> indicates that component of the string is optional.
+<p>Where <code>&lt;</code>...<code>&gt;</code> indicates the named parameters and <code>[</code>...<code>]</code> indicates that component of the string can be omitted.
 Several examples are given below.</p>
 <table>
 <thead>
@@ -867,7 +871,7 @@ Several examples are given below.</p>
 </tr>
 <tr>
 <td>role-in-group</td>
-<td>The role of the resource in the group, MUST be unique inside the same group</td>
+<td>The role of the resource in the group, MUST be unique among resources of the same type inside the same group</td>
 <td>Any string not containing <code>:</code></td>
 </tr>
 <tr>
@@ -877,37 +881,37 @@ Several examples are given below.</p>
 </tr>
 </tbody>
 </table>
-<p>The colon character, <code>:</code>, is therefore reserved and MUST not be used in any of the parameters listed.</p>
+<p>The colon character, <code>:</code>, is therefore reserved and MUST NOT be used in any of the parameters listed.</p>
 <h4 id="group-name-rules">group-name rules</h4>
 <ul>
 <li>Group names and roles exist only at the scope boundary. No relationship can be resolved between two resources using the same group tag if outside the scope boundary.</li>
-<li>If the group hint tag is missing, no assumption MUST be made on relationships.</li>
-<li>If the group hint tag is present but contains an empty string, no assumption MUST be made on relationships.</li>
-<li>If a group hint tag is present inside a resource within the same scope which have matching values of this tag MUST be considered as related members of a group by a controlling entity.</li>
-<li>If multiple group tags are present in the same resource, resource can be considered part of multiple groups if this applies.</li>
-<li>A resource may contain multiple group hints but special rules apply to senders and receivers for natural grouping.</li>
+<li>If the group hint tag is missing or is an empty array, a controlling entity MUST NOT assume any relationship between the resource and other resources.</li>
+<li>A controlling entity MUST NOT treat an empty string in the group hint tag as membership of any group.</li>
+<li>Resources within the same scope whose group hint tag values have the same group name MUST be considered by a controlling entity as related members of that group.</li>
+<li>A resource MAY have multiple values in the group hint tag, and is then a member of each of those groups. Special rules apply to Senders and Receivers for natural grouping.</li>
 <li>Group names MAY be used to index groups within the same scope and so nodes SHOULD make it easy to sort on alphanumerical values (example: ..., 'SDI 09', 'SDI 10', 'SDI 11', ...)</li>
 <li>Group names SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.</li>
 </ul>
 <h4 id="role-in-group-rules">role-in-group rules</h4>
 <ul>
 <li>Resources within the same group MUST use the role to differentiate themselves.</li>
-<li>Roles MUST be unique within the same group.</li>
+<li>Roles MUST be unique among resources of the same type within the same group. For example, a Sender and a Receiver in the same group MAY have the same role.</li>
 <li>Roles SHOULD be used to index a sender or a receiver inside a group and so nodes SHOULD make it easy to sort on alphanumerical values (example: ..., 'audio 09', 'audio 10', 'audio 11', ...)</li>
 <li>Group roles SHOULD be easy to read and long IDs such as UUIDs SHOULD be avoided.</li>
 </ul>
-<p>NOTE: There are no standard roles (or reserved role names) defined in this document. However these may be defined in the future inside the NMOS parameters register.</p>
+<p>NOTE: There are no standard roles (or reserved role names) defined in this document. However these might be defined in the future inside the NMOS parameters register.</p>
 <h4 id="group-scope-rules">group-scope rules</h4>
 <ul>
 <li>Omitting group-scope implies the default <code>device</code> scope. To extend the group scope to a node, <code>node</code> scope MUST be specified.</li>
-<li>Note that extending a scope to <code>node</code> can lead to performance impact on the controller side since more work is required to track down the relationships.</li>
+<li>Note that extending a scope to <code>node</code> can lead to performance impact on the controller side since more work is needed to track down the relationships.</li>
 </ul>
-<p>NOTE: There might be a need for a "system" scope in the future (group across multiple nodes) but this is out of the natural grouping described in this document. The system scope may be defined in the future inside the NMOS parameters register.</p>
+<p>NOTE: There might be a need for a "system" scope in the future (group across multiple nodes) but this is out of the natural grouping described in this document. The system scope might be defined in the future inside the NMOS parameters register.</p>
 <h2 id="natural-groups">Natural Groups</h2>
-<p>Natural groups applies only to NMOS senders and receivers</p>
+<p>Natural groups apply only to NMOS senders and receivers.</p>
 <ul>
-<li>If <code>urn:x-nmos:tag:grouphint</code> tags array of string contains more than one string, only the first string in the JSON array of strings (index 0) is considered as the natural group.</li>
-<li>Senders and Receivers may both contain matching values of the <code>urn:x-nmos:tag:grouphint</code> tag, indicating that the group has elements in both signal flow directions.</li>
+<li>If the <code>urn:x-nmos:tag:grouphint</code> tag array contains more than one string, a controlling entity MUST consider only the first string in the array (index 0) as the natural group.</li>
+<li>If the first string is empty, a controlling entity MUST NOT treat the resource as a member of any natural group.</li>
+<li>Senders and Receivers MAY both have <code>urn:x-nmos:tag:grouphint</code> tag values with the same group name, indicating that the group has elements in both signal flow directions.</li>
 </ul>
 <h3 id="examples">Examples</h3>
 <h4 id="1-playout-server-sender-with-1-video-2-audio">1. Playout server sender with 1 video 2 audio</h4>
@@ -937,11 +941,11 @@ Several examples are given below.</p>
 <span class="w">   </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div></p>
-<h4 id="2-multiviewerpip-receiver-with-1-video-4-audio">2. MultiviewerPIP, receiver with 1 video 4 audio</h4>
+<h4 id="2-multiviewer-pip-receiver-with-1-video-2-audio">2. Multiviewer PIP, receiver with 1 video 2 audio</h4>
 <ul>
 <li>Video 1 group: "MV PIP 1", role: "Video"</li>
-<li>Audio 1 group : "MV PIP 1", role: "Audio 1"</li>
-<li>Audio 2 group : "MV PIP 1", role: "Audio 2"</li>
+<li>Audio 1 group: "MV PIP 1", role: "Audio 1"</li>
+<li>Audio 2 group: "MV PIP 1", role: "Audio 2"</li>
 </ul>
 <p>JSON tags for Video 1 receiver
 <div class="highlight"><pre><span></span><code><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1008,7 +1012,7 @@ Several examples are given below.</p>
 <span class="w">      </span><span class="nt">"sender_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51e6b7ef-7061-4121-b8d3-426527d3ac4f"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7a3c2f1e-9b4d-4e8a-a6f2-3c5d1e7b9a04"</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1525121173:668000000"</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GV[KIP_AMWA] Audio 1"</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:1"</span><span class="p">,</span>
@@ -1029,7 +1033,7 @@ Several examples are given below.</p>
 <span class="w">      </span><span class="nt">"sender_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="w">   </span><span class="p">},</span>
-<span class="w">   </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"51e6b7ef-7061-4121-b8d3-426527d3ac4f"</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c4e8b2a6-1d3f-4a5c-8e7b-9f0a2d4c6e18"</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1525121173:668000000"</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GV[KIP_AMWA] Audio 2"</span><span class="p">,</span>
 <span class="w">   </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(KIP_AMWA@10.37.65.20) MV node receiver 1 ID AUDIO index:2"</span><span class="p">,</span>
@@ -1100,11 +1104,12 @@ Several examples are given below.</p>
       <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.footer"],"redirect":null,"search":"../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.3cb411a8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.9e76c64c.min.js"></script>
       
-        <script src="../../javascripts/json-viewer.js"></script>
       
         <script src="../../javascripts/amwa-branding.js"></script>
+      
+        <script src="../../javascripts/json-viewer.js"></script>
       
     
   </body>
